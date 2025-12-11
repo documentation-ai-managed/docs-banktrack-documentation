@@ -1,0 +1,136 @@
+---
+title: Changelog
+description: Version history and updates for Banktrack, highlighting new features and improvements.
+---
+
+## Recent Releases
+
+Banktrack releases updates regularly to enhance your treasury management experience. Review the latest changes below to stay informed about new features, improvements, and fixes.
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added WhatsApp notifications for real-time expense alerts. Configure channels in your dashboard settings.
+- Introduced categorized income visualization with pie charts for quick insights.
+
+## Improvements
+
+- Optimized dashboard load times by 40% for datasets `{>1000}` transactions.
+- Enhanced export functionality to include custom date ranges.
+
+## Bug Fixes
+
+- Resolved sync issues with Spanish bank APIs during peak hours.
+- Fixed categorization errors for recurring transfers.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Multi-account support: Track expenses across multiple bank accounts in one view.
+- Email summaries now include projected cash flow forecasts.
+
+## Improvements
+
+- Better mobile responsiveness for on-the-go financial checks.
+
+## Bug Fixes
+
+- Corrected duplicate transaction logging in reconciliation.
+- Improved error handling for invalid bank credentials.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Updated API endpoints: Replace `/v1/transactions` with `/v2/transactions`.
+
+## New Features
+
+- Real-time collaboration for teams in holdings.
+- Free trial extension to 30 days.
+
+## Bug Fixes
+
+- Fixed authentication token refresh loops.
+
+</Update>
+
+## Version Summary
+
+| Version | Date       | Key Tags              | Highlights                          |
+|---------|------------|-----------------------|-------------------------------------|
+| v1.3.0  | 2024-10-15 | feature, improvement | WhatsApp alerts, faster dashboard   |
+| v1.2.0  | 2024-09-20 | feature, bugfix      | Multi-account, cash flow forecasts  |
+| v1.1.0  | 2024-08-10 | breaking, feature    | API v2, team collaboration          |
+
+<Callout kind="info">
+Review your current setup against these changes. Most updates apply automatically, but check API integrations.
+</Callout>
+
+## Migration Guide
+
+Follow these steps to upgrade to the latest version smoothly.
+
+<Steps>
+  <Step title="Backup Data" icon="database">
+    Export your transactions via the dashboard.
+  </Step>
+  <Step title="Update Integrations" icon="settings">
+    <CodeGroup tabs="JavaScript,Python">
+      ```javascript
+      // Old endpoint
+      fetch('https://api.banktrack.com/v1/transactions');
+
+      // New endpoint (v1.3.0+)
+      fetch('https://api.banktrack.com/v2/transactions', {
+        headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+      });
+      ```
+      ```python
+      import requests
+
+      # Old
+      requests.get('https://api.banktrack.com/v1/transactions')
+
+      # New (v1.3.0+)
+      requests.get('https://api.banktrack.com/v2/transactions', headers={
+        'Authorization': f'Bearer {YOUR_API_KEY}'
+      })
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Test Notifications" icon="bell">
+    Verify email and WhatsApp channels in settings.
+  </Step>
+  <Step title="Deploy Changes" icon="rocket">
+    Restart your Banktrack sync service.
+  </Step>
+</Steps>
+
+## Upcoming Features
+
+<ExpandableGroup>
+  <Expandable title="Q4 2024 Roadmap" default-open="true">
+    - AI-powered expense categorization.
+    - Integration with major Spanish payroll providers.
+    - Advanced reporting with custom dashboards.
+  </Expandable>
+  <Expandable title="Beta Features">
+    Explore early access to voice-activated queries via WhatsApp bots.
+  </Expandable>
+</ExpandableGroup>
+
+<Columns cols={2}>
+  <Card title="Start Free Trial" icon="zap" href="https://banktrack.com/trial" target="_blank">
+    Try Banktrack risk-free for 30 days.
+  </Card>
+  <Card title="API Reference" icon="code" href="/docs/api">
+    Integrate programmatically with full docs.
+  </Card>
+</Columns>
