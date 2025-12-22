@@ -1,6 +1,6 @@
 {
   "name": "Banktrack Documentation",
-  "initialRoute": "introduction",
+  "initialRoute": "banktrack/como-empezar/bienvenido",
   "colors": {
     "light": {
       "brand": "#b84abc"
@@ -10,81 +10,498 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
+        "language": "Español",
+        "icon": "languages",
+        "tabs": [
           {
-            "group": "Getting Started",
-            "icon": "rocket",
-            "pages": [
+            "tab": "Documentación",
+            "icon": "book",
+            "groups": [
               {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "star"
+                "group": "Cómo Empezar",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Bienvenido",
+                    "path": "banktrack/como-empezar/bienvenido"
+                  },
+                  {
+                    "title": "¿Qué es Banktrack?",
+                    "path": "banktrack/como-empezar/que-es-banktrack"
+                  },
+                  {
+                    "title": "Primeros pasos en Banktrack",
+                    "path": "banktrack/como-empezar/primeros-pasos-en-banktrack"
+                  }
+                ]
               },
               {
-                "title": "Getting Started",
-                "path": "getting-started",
-                "icon": "play"
-              }
-            ]
-          },
-          {
-            "group": "Core Features",
-            "icon": "layers",
-            "pages": [
+                "group": "Paneles Financieros",
+                "icon": "layout-dashboard",
+                "pages": [
+                  {
+                    "title": "Dashboards y paneles personalizados",
+                    "path": "banktrack/paneles-financieros/dashboards-y-paneles-personalizados",
+                    "pages": [
+                      {
+                        "title": "Cómo crear un bloque de presupuesto",
+                        "path": "banktrack/paneles-financieros/dashboards-y-paneles-personalizados/como-crear-un-bloque-de-presupuesto"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Masterclass Paneles Financieros",
+                    "path": "banktrack/masterclass-paneles-financieros"
+                  }
+                ]
+              },
               {
-                "title": "Core Features",
-                "path": "core-features",
-                "icon": "file-text"
-              }
-            ]
-          },
-          {
-            "group": "Integrations",
-            "icon": "plug",
-            "pages": [
+                "group": "Previsiones",
+                "icon": "trending-up",
+                "pages": [
+                  {
+                    "title": "Cómo hacer una previsión a futuro",
+                    "path": "banktrack/previsiones/como-hacer-una-prevision-a-futuro"
+                  },
+                  {
+                    "title": "Cómo crear operaciones",
+                    "path": "banktrack/previsiones/como-crear-operaciones"
+                  }
+                ]
+              },
               {
-                "title": "Integrations",
-                "path": "integrations",
-                "icon": "link"
-              }
-            ]
-          },
-          {
-            "group": "Support",
-            "icon": "help-circle",
-            "pages": [
+                "group": "Transacciones",
+                "icon": "search",
+                "pages": [
+                  {
+                    "title": "Buscador de transacciones",
+                    "path": "banktrack/transacciones/buscador-de-transacciones"
+                  },
+                  {
+                    "title": "Cómo ignorar una transacción",
+                    "path": "banktrack/transacciones/como-ignorar-una-transaccion"
+                  },
+                  {
+                    "title": "Importar transacciones",
+                    "path": "banktrack/transacciones/importar-transacciones"
+                  },
+                  {
+                    "title": "Cómo añadir una transacción de forma manual",
+                    "path": "banktrack/transacciones/como-anadir-una-transaccion-de-forma-manual"
+                  },
+                  {
+                    "title": "Cómo exportar transacciones",
+                    "path": "banktrack/transacciones/como-exportar-transacciones"
+                  }
+                ]
+              },
               {
-                "title": "FAQ",
-                "path": "faq",
-                "icon": "info"
+                "group": "Facturas",
+                "icon": "file-text",
+                "pages": [
+                  {
+                    "title": "Emitir facturas",
+                    "path": "banktrack/facturas/emitir-facturas"
+                  },
+                  {
+                    "title": "Conciliar facturas",
+                    "path": "banktrack/facturas/conciliar-facturas"
+                  },
+                  {
+                    "title": "Enviar facturas a Banktrack",
+                    "path": "banktrack/facturas/enviar-facturas-a-banktrack"
+                  },
+                  {
+                    "title": "Conectar Gmail a Banktrack para subir facturas",
+                    "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
+                  },
+                  {
+                    "title": "Importar facturas",
+                    "path": "banktrack/facturas/importar-facturas"
+                  }
+                ]
+              },
+              {
+                "group": "Reglas Automáticas",
+                "icon": "zap",
+                "pages": [
+                  {
+                    "title": "Crear automatizaciones",
+                    "path": "banktrack/reglas-automaticas/crear-automatizaciones"
+                  }
+                ]
+              },
+              {
+                "group": "Informes",
+                "icon": "bar-chart-2",
+                "pages": [
+                  {
+                    "title": "Crear informes personalizados",
+                    "path": "banktrack/informes/crear-informes-personalizados"
+                  }
+                ]
+              },
+              {
+                "group": "Alertas",
+                "icon": "bell",
+                "pages": [
+                  {
+                    "title": "Crear una alerta personalizada",
+                    "path": "banktrack/alertas/crear-una-alerta-personalizada"
+                  }
+                ]
+              },
+              {
+                "group": "Bancos",
+                "icon": "landmark",
+                "pages": [
+                  {
+                    "title": "Cómo conectar un banco",
+                    "path": "banktrack/bancos/como-conectar-un-banco"
+                  },
+                  {
+                    "title": "Configuración de bancos",
+                    "path": "banktrack/bancos/configuracion-de-bancos"
+                  },
+                  {
+                    "title": "Sincronización bancaria",
+                    "path": "banktrack/bancos/sincronizacion-bancaria"
+                  },
+                  {
+                    "title": "Errores y solución de problemas",
+                    "path": "banktrack/bancos/errores-y-solucion-de-problemas"
+                  }
+                ]
+              },
+              {
+                "group": "Integraciones",
+                "icon": "plug",
+                "pages": [
+                  {
+                    "title": "Cómo conectar un canal",
+                    "path": "banktrack/integraciones/como-conectar-un-canal"
+                  },
+                  {
+                    "title": "Cómo conectar con Holded",
+                    "path": "banktrack/integraciones/como-conectar-con-holded"
+                  }
+                ]
+              },
+              {
+                "group": "Etiquetas",
+                "icon": "tag",
+                "pages": [
+                  {
+                    "title": "Cómo crear una categoría personalizada",
+                    "path": "banktrack/etiquetas/como-crear-una-categoria-personalizada"
+                  },
+                  {
+                    "title": "Cómo categorizar transacciones automáticamente",
+                    "path": "banktrack/etiquetas/como-categorizar-transacciones-automaticamente"
+                  }
+                ]
+              },
+              {
+                "group": "Contactos",
+                "icon": "users",
+                "pages": [
+                  {
+                    "title": "Cómo importar contactos",
+                    "path": "banktrack/contactos/como-importar-contactos"
+                  }
+                ]
+              },
+              {
+                "group": "Ajustes",
+                "icon": "settings",
+                "pages": [
+                  {
+                    "title": "Cómo contratar una suscripción",
+                    "path": "banktrack/ajustes/como-contratar-una-suscripcion"
+                  },
+                  {
+                    "title": "Cómo modificar las preferencias",
+                    "path": "banktrack/ajustes/como-modificar-las-preferencias"
+                  },
+                  {
+                    "title": "Cómo modificar los datos de facturación",
+                    "path": "banktrack/ajustes/como-modificar-los-datos-de-facturacion"
+                  },
+                  {
+                    "title": "Cómo añadir usuarios adicionales",
+                    "path": "banktrack/ajustes/como-anadir-usuarios-adicionales"
+                  },
+                  {
+                    "title": "Cómo añadir un espacio de trabajo",
+                    "path": "banktrack/ajustes/como-anadir-un-espacio-de-trabajo"
+                  },
+                  {
+                    "title": "Cómo gestionar mi suscripción a Banktrack",
+                    "path": "banktrack/ajustes/como-gestionar-mi-suscripcion-a-banktrack"
+                  },
+                  {
+                    "title": "Cómo modificar los datos de mi cuenta",
+                    "path": "banktrack/ajustes/como-modificar-los-datos-de-mi-cuenta"
+                  },
+                  {
+                    "title": "Cómo modificar la contraseña",
+                    "path": "banktrack/ajustes/como-modificar-la-contrasena"
+                  }
+                ]
+              },
+              {
+                "group": "Información de Interés",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Preguntas frecuentes",
+                    "path": "banktrack/informacion-de-interes/preguntas-frecuentes"
+                  },
+                  {
+                    "title": "Seguridad",
+                    "path": "banktrack/informacion-de-interes/seguridad"
+                  },
+                  {
+                    "title": "Privacidad",
+                    "path": "banktrack/informacion-de-interes/privacidad"
+                  },
+                  {
+                    "title": "Planes y precios",
+                    "path": "banktrack/informacion-de-interes/planes-y-precios"
+                  }
+                ]
               }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
+        "language": "English",
+        "icon": "languages",
+        "tabs": [
           {
-            "group": "Endpoints",
-            "icon": "terminal",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
+            "tab": "Documentation",
+            "icon": "book",
+            "groups": [
+              {
+                "group": "How to Start",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Banktrack in 3 minutes",
+                    "path": "banktrack/en/how-to-start/banktrack-in-3-minutes"
+                  }
+                ]
+              },
+              {
+                "group": "Dashboards",
+                "icon": "layout-dashboard",
+                "pages": [
+                  {
+                    "title": "How to create a custom dashboard",
+                    "path": "banktrack/en/dashboards/how-to-create-a-custom-dashboard"
+                  },
+                  {
+                    "title": "How to create a Budget block",
+                    "path": "banktrack/en/dashboards/how-to-create-a-budget-block"
+                  }
+                ]
+              },
+              {
+                "group": "Forecasts",
+                "icon": "trending-up",
+                "pages": [
+                  {
+                    "title": "How to make a future forecast",
+                    "path": "banktrack/en/forecasts/how-to-make-a-future-forecast"
+                  }
+                ]
+              },
+              {
+                "group": "Transactions",
+                "icon": "search",
+                "pages": [
+                  {
+                    "title": "How to use the transaction finder",
+                    "path": "banktrack/en/transactions/how-to-use-the-transaction-finder"
+                  },
+                  {
+                    "title": "How to ignore a transaction",
+                    "path": "banktrack/en/transactions/how-to-ignore-a-transaction"
+                  },
+                  {
+                    "title": "How to import transactions",
+                    "path": "banktrack/en/transactions/how-to-import-transactions"
+                  },
+                  {
+                    "title": "How to add a transaction manually",
+                    "path": "banktrack/en/transactions/how-to-add-a-transaction-manually"
+                  }
+                ]
+              },
+              {
+                "group": "Invoices",
+                "icon": "file-text",
+                "pages": [
+                  {
+                    "title": "How to reconcile invoices",
+                    "path": "banktrack/en/invoices/how-to-reconcile-invoices"
+                  },
+                  {
+                    "title": "How to send invoices to Banktrack",
+                    "path": "banktrack/en/invoices/how-to-send-invoices-to-banktrack"
+                  },
+                  {
+                    "title": "How to import invoices",
+                    "path": "banktrack/en/invoices/how-to-import-invoices"
+                  }
+                ]
+              },
+              {
+                "group": "Automations",
+                "icon": "zap",
+                "pages": [
+                  {
+                    "title": "How to create an automation",
+                    "path": "banktrack/en/automations/how-to-create-an-automation"
+                  }
+                ]
+              },
+              {
+                "group": "Reports",
+                "icon": "bar-chart-2",
+                "pages": [
+                  {
+                    "title": "How to create a custom report",
+                    "path": "banktrack/en/reports/how-to-create-a-custom-report"
+                  }
+                ]
+              },
+              {
+                "group": "Alerts",
+                "icon": "bell",
+                "pages": [
+                  {
+                    "title": "How to create a custom alert",
+                    "path": "banktrack/en/alerts/how-to-create-a-custom-alert"
+                  }
+                ]
+              },
+              {
+                "group": "Banks",
+                "icon": "landmark",
+                "pages": [
+                  {
+                    "title": "How to connect a bank",
+                    "path": "banktrack/en/banks/how-to-connect-a-bank"
+                  },
+                  {
+                    "title": "Types of bank connections",
+                    "path": "banktrack/en/banks/types-of-bank-connections"
+                  },
+                  {
+                    "title": "Bank synchronization",
+                    "path": "banktrack/en/banks/bank-synchronization"
+                  },
+                  {
+                    "title": "Reconnect a bank",
+                    "path": "banktrack/en/banks/reconnect-a-bank"
+                  }
+                ]
+              },
+              {
+                "group": "Integrations",
+                "icon": "plug",
+                "pages": [
+                  {
+                    "title": "How to connect a channel",
+                    "path": "banktrack/en/integrations/how-to-connect-a-channel"
+                  }
+                ]
+              },
+              {
+                "group": "Tags",
+                "icon": "tag",
+                "pages": [
+                  {
+                    "title": "How to create a custom category",
+                    "path": "banktrack/en/tags/how-to-create-a-custom-category"
+                  },
+                  {
+                    "title": "How to categorize transactions automatically",
+                    "path": "banktrack/en/tags/how-to-categorize-transactions-automatically"
+                  }
+                ]
+              },
+              {
+                "group": "Contacts",
+                "icon": "users",
+                "pages": [
+                  {
+                    "title": "How to import contacts",
+                    "path": "banktrack/en/contacts/how-to-import-contacts"
+                  }
+                ]
+              },
+              {
+                "group": "Settings",
+                "icon": "settings",
+                "pages": [
+                  {
+                    "title": "How to subscribe",
+                    "path": "banktrack/en/settings/how-to-subscribe"
+                  },
+                  {
+                    "title": "How to modify preferences",
+                    "path": "banktrack/en/settings/how-to-modify-preferences"
+                  },
+                  {
+                    "title": "How to modify billing information",
+                    "path": "banktrack/en/settings/how-to-modify-billing-information"
+                  },
+                  {
+                    "title": "How to add additional users",
+                    "path": "banktrack/en/settings/how-to-add-additional-users"
+                  },
+                  {
+                    "title": "How to add a workspace",
+                    "path": "banktrack/en/settings/how-to-add-a-workspace"
+                  },
+                  {
+                    "title": "How to manage my Banktrack subscription",
+                    "path": "banktrack/en/settings/how-to-manage-my-banktrack-subscription"
+                  },
+                  {
+                    "title": "How to modify your account information",
+                    "path": "banktrack/en/settings/how-to-modify-your-account-information"
+                  },
+                  {
+                    "title": "How to change your password",
+                    "path": "banktrack/en/settings/how-to-change-your-password"
+                  }
+                ]
+              },
+              {
+                "group": "Information of Interest",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Security",
+                    "path": "banktrack/en/information-of-interest/security"
+                  },
+                  {
+                    "title": "Privacy",
+                    "path": "banktrack/en/information-of-interest/privacy"
+                  },
+                  {
+                    "title": "Plans and pricing",
+                    "path": "banktrack/en/information-of-interest/plans-and-pricing"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

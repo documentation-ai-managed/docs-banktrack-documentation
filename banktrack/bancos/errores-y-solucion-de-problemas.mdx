@@ -1,0 +1,70 @@
+---
+title: "Errores y solución de problemas"
+description: "Soluciona los errores más comunes de sincronización bancaria en Banktrack."
+---
+
+# Errores y solución de problemas
+
+## 🔄 Errores de sincronización bancaria
+
+Si aparece un mensaje de error en la sección de Bancos al intentar sincronizar, puede tratarse de dos tipos de errores:
+
+<Expandable title="🟠 Error temporal">
+  Este error indica que ha habido un problema durante la sincronización, pero **no se ha perdido la conexión** con el banco. Esto puede suceder por diversas razones, como una interrupción breve en los servicios del banco o un pequeño fallo en la sincronización.
+
+  - **Solución:** normalmente, se resuelve solo en los siguientes intentos automáticos. Si necesitas sincronizar de inmediato, puedes pulsar el botón "Reconectar banco" e introducir de nuevo tus credenciales para forzar la reconexión.
+  - **¿Qué hacer si persiste?** Si el error persiste durante varias sincronizaciones automáticas, contáctanos mediante el chat de Banktrack para investigar más a fondo el problema.
+</Expandable>
+
+<Expandable title="🔴 Error definitivo">
+  Este error indica que **la conexión con el banco se ha perdido completamente**, lo que significa que no podemos acceder a las transacciones hasta que la conexión se restablezca. Esto puede ocurrir cuando el banco ha expirado la sesión de conexión o ha hecho cambios en su sistema que requieren una nueva autenticación.
+
+  - **Solución:** pulsa el botón "Reconectar banco" e introduce nuevamente las credenciales de tu banco para restablecer la conexión.
+  - **¿Qué hacer si persiste?** Si el error persiste después de intentar reconectar el banco, revisa si hay actualizaciones en las credenciales o en las políticas del banco. En caso de que continúe el problema, contáctanos mediante el chat de Banktrack para que podamos investigar más a fondo y ayudarte a solucionarlo.
+</Expandable>
+
+![Error temporal](https://3246344877-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEdvwJLySxB0LQPffb5cX%2Fuploads%2Fq5UH5IbFumCbtDXCluFU%2FReconectar%20banco%20-%20Naranja.png?alt=media&token=080015ae-38c2-4e50-9d0e-496044bb2377)
+
+![Error definitivo](https://3246344877-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEdvwJLySxB0LQPffb5cX%2Fuploads%2FqtCr7yOxgsQyrI7Rva20%2FReconectar%20banco%20-%20Rojo.png?alt=media&token=896db81d-d886-4026-8433-4ac846a12e48)
+
+---
+
+## 🔐 Errores de conexión y autenticación
+
+<Expandable title="⚠️ Error de conexión de red - problemas de internet">
+  Este error indica que hay un problema con la conexión a internet, lo que impide que Banktrack se comunique con el banco para obtener los datos. Puede ser por una conexión inestable, por bloqueos de red o por problemas temporales con los servidores.
+
+  - **Solución:**
+    - Verifica tu conexión a internet y asegúrate de que esté funcionando correctamente. Si la conexión está estable, intenta la sincronización nuevamente. Si el problema persiste, espera unos minutos y vuelve a intentarlo.
+    - Desactiva cualquier firewall o VPN que pueda estar bloqueando la conexión.
+  - **¿Qué hacer si persiste?** Contáctanos mediante el chat de Banktrack para investigar más a fondo el problema.
+</Expandable>
+
+<Expandable title="🔐 Credenciales inválidas">
+  Este error indica que las credenciales proporcionadas para acceder al banco no son correctas. Puede ocurrir si has cambiado tu contraseña, si el banco ha actualizado sus requisitos de seguridad o si los datos ingresados no coinciden con los registrados en su sistema.
+
+  - **Solución:**
+    - Verifica que las credenciales (usuario y contraseña) que has ingresado sean correctas.
+    - Si tienes habilitada la autenticación en dos pasos en tu banco, asegúrate de proporcionar todos los datos necesarios (por ejemplo, un código de seguridad enviado por SMS o por la app de autenticación).
+    - Si no recuerdas las credenciales, **restablece la contraseña directamente en la web de tu banco** y luego actualiza los datos en Banktrack.
+  - **¿Qué hacer si persiste?** Si el error persiste tras actualizar las credenciales, verifica que el banco no haya realizado cambios importantes en su plataforma. Si es necesario, contacta con el soporte técnico de Banktrack para recibir ayuda adicional.
+</Expandable>
+
+<Expandable title="📲 Autenticación fallida por OTP; no me llega el código o es incorrecto">
+  Lo primero que debes comprobar es que el código de validación (OTP) esté siendo enviado al número de teléfono o correo asociado a la cuenta bancaria. Posibles causas y soluciones:
+
+  1. **Asegúrate de quién debe recibir el código:** generalmente, el OTP se envía al número registrado por el titular del contrato con el banco. Si no eres el propietario, verifica con la persona responsable.
+  2. **Revisa si el número de teléfono está actualizado:** si has cambiado de número recientemente, el código podría estar llegando al anterior.
+  3. **Verifica la bandeja de entrada del SMS o correo:** comprueba las carpetas de spam o promociones.
+  4. **Comprueba la conexión de tu dispositivo:** asegúrate de que tienes buena cobertura o acceso a internet.
+  5. **Prueba otro canal de autenticación** (si está disponible). Algunos bancos permiten recibir el OTP por SMS, correo electrónico o aplicación de autenticación.
+  6. **Introduce el código exactamente como lo recibiste.** Respeta mayúsculas, números y caracteres especiales.
+
+  **⚠️ Importante:** algunos bancos, como por ejemplo Banco Santander piden un OTP para cada producto conectado (cuentas, tarjetas, préstamos). En estos casos recomendamos hacer sincronizaciones históricas producto a producto y, en caso de querer disponer de un historial de transacciones más extenso, hacerlo a través de un banco manual. [Más información aquí >](/banktrack/transacciones/importar-transacciones)
+
+  👉 Si tras estas comprobaciones sigues sin recibir el código, contacta con tu banco para descartar bloqueos o restricciones. También puedes escribirnos y estaremos encantados de ayudarte.
+</Expandable>
+
+<Callout kind="info">
+  **Un OTP (One-Time Password)** es un código de seguridad único y temporal que se utiliza para verificar la identidad de un usuario durante un proceso de autenticación. Este código, generalmente de entre 6 y 8 dígitos, se envía a través de un canal seguro como un SMS, correo electrónico o mediante una aplicación de autenticación (como Google Authenticator o Authy). El código OTP es válido solo por un corto período de tiempo, lo que ayuda a prevenir accesos no autorizados.
+</Callout>

@@ -1,0 +1,52 @@
+---
+title: "How to import invoices"
+description: "Import collections and payments into Banktrack from a CSV file."
+---
+
+# How to import invoices
+
+To import collections and payments into Banktrack, you can use the template we provide or adjust the format of your file to ensure it works correctly.
+
+## Downloadable template
+
+<Callout kind="tip">
+  Download our template to make sure your CSV file meets the required formats:
+  [View invoice import
+  template](https://docs.google.com/spreadsheets/d/16AJR9se-eLPrG3uU3Ty6a_e7fQJjJTTiUb9pscevkNE/edit?gid=0#gid=0)
+</Callout>
+
+## Accepted column formats
+
+The columns to import must follow this format:
+
+<Callout kind="info">ℹ️ All fields are optional.</Callout>
+
+| Field          | Format                                                                | Example    |
+| -------------- | --------------------------------------------------------------------- | ---------- |
+| Identifier     | text or number used internally to avoid duplicates                    | -          |
+| Invoice type   | `cash_in` (receivable) or `cash_out` (payment)                        | `cash_in`  |
+| Invoice number | text and/or number identifying an invoice                             | INV-2024-001 |
+| Description    | text describing the invoice                                           | Consulting services |
+| Issue date     | format YYYY-MM-DD                                                     | 2024-03-09 |
+| Due date       | format YYYY-MM-DD                                                     | 2024-03-09 |
+| Payment date   | format YYYY-MM-DD                                                     | 2024-03-09 |
+| Amount         | number with no thousand separator and a comma as decimal separator    | 8500,22    |
+| Taxes          | number with no thousand separator and a comma as decimal separator    | 1785,05    |
+| Currency       | ISO code (e.g., `EUR`, `GBP`)                                         | EUR        |
+| Reconciled     | `TRUE` or `FALSE`                                                     | TRUE       |
+
+---
+
+## Examples of accepted and not accepted formats
+
+### Date format
+
+- ✅ **Accepted:** 2024-03-09
+- ❌ **Not accepted:** 9/3/2024 or 09/03/2024 or 09-03-2024 or 9-3-2024
+
+### Amount format
+
+- ✅ **Accepted:** 8500,22
+- ❌ **Not accepted:** 8.500,22 or 8500.22
+
+If you have any questions about importing receivables and payments, you can contact us through the chat in the lower right corner of the screen.

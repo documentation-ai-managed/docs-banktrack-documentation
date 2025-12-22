@@ -1,0 +1,56 @@
+---
+title: "Types of bank connections"
+description: "Learn about the different types of bank connections in Banktrack."
+---
+
+# Types of bank connections
+
+There are two different methods to connect your banks:
+
+- **Direct Access Connection:** Via scraping method.
+- **Open Banking Connection:** Via PSD2 API.
+
+In the following video, we explain **how to connect a bank** in Banktrack, and the **different types of connections**.
+
+<Callout kind="info">
+  ℹ️ Video translation into English in progress
+</Callout>
+
+<Video
+  src="https://www.youtube.com/embed/v5b8ZLSOCkE"
+  title="How to connect a bank in Banktrack"
+/>
+
+<Tabs>
+  <Tab title="Direct Access">
+    The connection is made by entering your credentials directly into Banktrack, which are securely transmitted and stored by our provider (see more details in [Security](/banktrack/en/information-of-interest/security)).
+
+    **Advantages:**
+    - Allows access to all types of products: Current accounts, Credit cards, Investments, Loans, etc.
+    - The information obtained is what the user "sees" in their banking app.
+    - The connection can last more than 90 days.
+    - The balance associated with each bank transaction is retrieved.
+
+    **Disadvantages:**
+    - The connection is often less stable due to changes made by banks in their apps.
+
+    <Callout kind="info">
+      If your bank connection frequently expires, we recommend using an *Open Banking* connection via PSD2 API.
+    </Callout>
+  </Tab>
+  <Tab title="Open Banking (PSD2)">
+    The connection is made by entering your bank login credentials directly on the bank's website.
+
+    **Advantages:**
+    - The connection is more stable since it uses the official web service provided by the bank.
+
+    **Disadvantages:**
+    - The connection expires every 90 days, requiring you to reconnect the bank after this period.
+    - It only allows access to current accounts, without the possibility of viewing other financial products like cards or loans.
+    - The balance associated with each bank transaction is not obtained.
+    - The transaction information may differ from what is shown on the bank's website, as it is the data sent by the bank through its third-party service.
+  </Tab>
+</Tabs>
+
+If you have any questions about which type of connection to use, you can contact us via the chat you'll find in the bottom right corner of the screen.
+

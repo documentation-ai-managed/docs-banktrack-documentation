@@ -1,0 +1,57 @@
+---
+title: "Importar facturas"
+description: "Importa cobros y pagos a Banktrack desde un archivo CSV."
+---
+
+# Importar facturas
+
+Para importar cobros y pagos a Banktrack, puedes utilizar la plantilla que te proporcionamos o ajustar el formato de tu archivo para que funcione correctamente.
+
+## Plantilla descargable
+
+<Callout kind="tip">
+  Descarga nuestra plantilla para asegurarte de que tu archivo CSV cumple con
+  los formatos requeridos: [Ver plantilla de importación de cobros y
+  pagos](https://docs.google.com/spreadsheets/d/16AJR9se-eLPrG3uU3Ty6a_e7fQJjJTTiUb9pscevkNE/edit?gid=0#gid=0).
+</Callout>
+
+---
+
+## Formatos aceptados para las columnas
+
+**Las columnas a importar deben seguir este formato:**
+
+<Callout kind="info">ℹ️ Todos los campos son opcionales.</Callout>
+
+| Campo                | Formato                                                                           | Ejemplo                  |
+| -------------------- | --------------------------------------------------------------------------------- | ------------------------ |
+| Identificador        | texto o número                                                                    | -                        |
+| Tipo de operación    | `sale` (Cobro/venta) o `purchase` (Pago/compra)                                   | `sale`                   |
+| Tipo de factura      | `standard`, `simplified`, `quote`, `standard_corrective`, `simplified_corrective` | `standard`               |
+| Número de factura    | texto y/o número                                                                  | F-2024-001               |
+| Descripción          | texto                                                                             | Servicios de consultoría |
+| Fecha de emisión     | AAAA-MM-DD                                                                        | 2024-03-09               |
+| Fecha de vencimiento | AAAA-MM-DD                                                                        | 2024-03-09               |
+| Fecha de pago        | AAAA-MM-DD                                                                        | 2024-03-09               |
+| Importe              | número sin separador de miles, con coma para céntimos                             | 8500,22                  |
+| Impuestos            | número sin separador de miles, con coma para céntimos                             | 1785,05                  |
+| Moneda               | código ISO                                                                        | EUR, GBP                 |
+| Conciliada           | `TRUE` o `FALSE`                                                                  | TRUE                     |
+| ID del contacto      | ID interna de Banktrack                                                           | -                        |
+| NIF del contacto     | NIF del contacto                                                                  | B12345678                |
+
+---
+
+## Ejemplos de formato admitidos y no admitidos
+
+### Formato de fecha
+
+- ✅ **Admitido:** 2024-03-09
+- ❌ **No admitido:** 9/3/2024 o 09/03/2024 o 09-03-2024 o 9-3-2024
+
+### Formato de importe
+
+- ✅ **Admitido:** 8500,22
+- ❌ **No admitido:** 8.500,22 o 8500.22
+
+Si tienes alguna duda con respecto a importar cobros y pagos puedes contactarnos en el chat que encontrarás en la esquina inferior derecha de la pantalla.

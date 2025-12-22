@@ -1,0 +1,48 @@
+---
+title: "Preguntas frecuentes"
+description: "Respuestas a las preguntas más comunes sobre Banktrack."
+---
+
+# Preguntas frecuentes
+
+<Expandable title="¿Qué conexión bancaria debo debo elegir?">
+  Para cada conexión, hay una pequeña descripción de lo que proporciona: la principal diferencia es que:
+
+  1. Trabajamos con 3 proveedores distintos: Arcopay, GoCardLess y Wealth Reader. Todos ellos autorizados por el Banco de España.
+  2. Existen 2 tipos de conexión:
+     - Acceso directo: devuelve saldo y todo tipo de productos bancarios (cuentas corrientes, tarjetas, préstamos...)
+     - Open Banking (PSD2): devuelve movimientos sin saldo y solo para cuentas corrientes.
+
+  Más información aquí: [Tipos de conexión bancaria](/banktrack/bancos/como-conectar-un-banco)
+</Expandable>
+
+<Expandable title="Sincronización histórica">
+  Por defecto la sincronización con los bancos sólo nos proporciona un par de meses de datos, pero en algunos bancos puedes forzar una "sincronización histórica" siguiendo los pasos que ves aquí:
+
+  [Sincronización bancaria](/banktrack/bancos/sincronizacion-bancaria)
+
+  Esto debería proporcionarte al menos un año de transacciones históricas, dependiendo del banco.
+
+  Sin embargo, lo máximo que proporcionan los bancos es 2 años de histórico. Si necesitas más histórico puedes importarlo a Banktrack siguiendo estos pasos:
+
+  [Importar transacciones](/banktrack/transacciones/importar-transacciones)
+</Expandable>
+
+<Expandable title="¿Cómo cuadrar el saldo de un banco manual?">
+  Tienes que hacer una "**Transacción de regularización**" para cuadrar el saldo del banco manual.
+
+  **Ejemplo:**
+  - Saldo real: 10.000€
+  - Saldo actual en Banktrack: 8.000€
+
+  Para cuadrar el saldo, deberás añadir un ingreso de 2.000€ más y luego ignorarlo.
+  Es una transacción que nos hará variar el saldo pero que no contará como ingreso porque la habremos ignorado.
+</Expandable>
+
+<Expandable title="Categoría 'otros' en dashboards">
+  La categoría "Otros" que ves en los gráficos de Donut es una agrupación del resto de categorías que, por temas de espacio y usabilidad, no entran. Si quieres ver esas transacciones puedes crearte un bloque de tipo "Tabla" desagregado por categorías y ahí podrás ver el detalle de todas.
+</Expandable>
+
+<Expandable title="Me faltan transacciones">
+  Es posible que se haya quedado alguna transacción pendiente de actualizar. Normalmente esto se soluciona cuando se sincronizan los bancos, por lo que si te vuelve a ocurrir simplemente sincronizando los bancos manualmente (o en la próxima sincronización automática cada 6 horas) se solucionará solo. Si no es así, contáctanos compartiéndonos una captura de pantalla desde tu banco con los movimientos faltantes.
+</Expandable>

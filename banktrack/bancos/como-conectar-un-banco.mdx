@@ -1,0 +1,111 @@
+---
+title: "Cómo conectar un banco"
+description: "Aprende a conectar tus bancos a Banktrack para sincronizar automáticamente tus operaciones."
+---
+
+# Cómo conectar un banco
+
+## ⊕ Añadir un nuevo banco
+
+Para crear una nueva conexión bancaria, sigue estos pasos:
+
+<Steps>
+  <Step title="Accede a Bancos">
+    Dirígete a [bancos](https://app.banktrack.com/bancos) y clica en el botón **"Añadir banco".**
+  </Step>
+  <Step title="Selecciona tu banco">
+    **Selecciona tu banco** usando el buscador. Puedes **filtrar por país** usando el desplegable a la izquierda del buscador.
+  </Step>
+  <Step title="Elige el tipo de conexión">
+    **Elige el tipo de conexión:** En algunos casos, verás dos opciones: Open Banking (PSD2) y Acceso directo.
+  </Step>
+  <Step title="Completa la vinculación">
+    **Completa la vinculación:** Sigue las instrucciones que aparecerán en Banktrack o en la web de tu banco.
+  </Step>
+</Steps>
+
+**✅ ¡Eso es todo!** Tus cuentas bancarias ahora están conectadas y Banktrack sincronizará automáticamente tus operaciones. [Más información sobre sincronización aquí >](/banktrack/bancos/sincronizacion-bancaria)
+
+<Callout kind="info">
+  **Recomendación:** Una vez conectado el banco, **vincula sus productos** a informes, alertas, [reglas automáticas](/banktrack/reglas-automaticas/crear-automatizaciones), contactos y recurrencias para aprovechar al máximo la integración. Así como acuérdate de añadirlo en los filtros de dashboards y previsiones.
+</Callout>
+
+---
+
+## ℹ️ Tipos de conexión bancaria
+
+Existen dos métodos diferentes por los que conectar tus bancos:
+
+1. **Conexión Acceso directo:** Mediante método de scraping.
+2. **Conexión Open Banking:** Mediante API PSD2.
+
+En el siguiente vídeo te explicamos **cómo conectar un banco** en Banktrack, y los **distintos tipos de conexión.**
+
+<Video 
+  src="https://www.youtube.com/embed/v5b8ZLSOCkE" 
+  title="Cómo conectar un banco en Banktrack"
+/>
+
+<Tabs>
+  <Tab title="ACCESO DIRECTO">
+    La conexión se realiza introduciendo las credenciales directamente en Banktrack, que son enviadas de forma segura y almacenadas por nuestro proveedor (consulta más detalles en [Seguridad](/banktrack/informacion-de-interes/seguridad)).
+
+    **Ventajas:**
+    - Permite obtener todo tipos de productos: Cuentas corrientes, Tarjetas de crédito, Inversiones, Préstamos, etc.
+    - La información obtenida es la que el usuario "ve" en su app bancaria.
+    - La conexión puede durar más de 90 días.
+    - Se obtiene el saldo asociado a cada transacción bancaria.
+
+    **Desventajas:**
+    - La conexión suele ser más inestable debido a los cambios que realizan los bancos en sus apps.
+  </Tab>
+  <Tab title="OPEN BANKING (PSD2)">
+    La conexión se realiza introduciendo las credenciales de acceso al banco directamente en la web del banco.
+
+    **Ventajas:**
+    - La conexión es más estable ya que se realiza mediante el servicio web oficial que proporciona el banco.
+
+    **Desventajas:**
+    - La conexión caduca cada 90 días, por lo que es necesario reconectar el banco pasado este tiempo.
+    - Solo permite acceder a cuentas corrientes, sin la posibilidad de ver otros productos financieros como tarjetas o préstamos.
+    - No se obtiene el saldo asociado a cada transacción bancaria.
+    - La información de las transacciones puede diferir de la que se presenta en la web del banco, ya que ésta es la enviada por el banco a través de su servicio a terceros.
+  </Tab>
+</Tabs>
+
+### Tabla comparativa entre tipos de conexión bancaria
+
+| TIPO DE CONEXIÓN | OPEN BANKING (PSD2) | ACCESO DIRECTO |
+|------------------|---------------------|----------------|
+| **Método** | Se autentica en la web del banco | Se introducen credenciales en Banktrack |
+| **Estabilidad** | Más estable | Más propensa a cambios del banco |
+| **Renovación** | Expira cada 90 días | Puede durar más |
+| **Productos disponibles** | ⚠️ Solo cuentas corrientes | 👉 Cuentas, tarjetas, préstamos, inversiones |
+| **Saldo en transacciones** | ❌ No disponible | ✅ Disponible |
+| **Datos de transacciones** | Enviados por el banco (pueden diferir) | Lo que ves en tu app bancaria |
+
+---
+
+## ⁉️ Preguntas frecuentes
+
+<Expandable title="¿Quién puede conectar un banco?">
+  Para conectar una cuenta bancaria en Banktrack, es necesario ser **propietario de la cuenta** o contar con **permisos autorizados** para acceder a la información financiera de la empresa.
+
+  Lo ideal es que la conexión la realice el **titular del contrato bancario**, ya que esto garantiza el acceso completo a todas las transacciones y evita posibles restricciones.
+
+  La conexión es 100% segura. Trabajamos con proveedores certificados como Arcopay, Wealth Reader y GoCardless, que cumplen con la normativa europea PSD2.
+
+  👉 **Importante:** en Banktrack nunca almacenamos tus credenciales bancarias ni tenemos acceso para realizar operaciones en tus cuentas. Solo visualizamos la información necesaria para ofrecerte un control claro y seguro de tu tesorería.
+</Expandable>
+
+<Expandable title="¿Qué pasa si mi banco no está en la lista?">
+  Si tu banco no está disponible en la lista, por favor contacta con nuestro equipo de soporte. Verificaremos si este banco está disponible y te ayudaremos a conectarlo.
+</Expandable>
+
+<Expandable title="¿Puedo conectar múltiples bancos?">
+  Sí, puedes conectar tantos bancos como necesites, con limitación en función del plan contratado. Puedes verlo desde ajustes > suscripción. Simplemente repite el proceso de conexión para cada banco.
+</Expandable>
+
+<Expandable title="¿Con qué frecuencia Banktrack sincroniza mis operaciones bancarias?">
+  Banktrack sincroniza automáticamente tus operaciones diariamente. [Tienes más información aquí >](/banktrack/bancos/sincronizacion-bancaria)
+</Expandable>

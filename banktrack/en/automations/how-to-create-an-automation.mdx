@@ -1,0 +1,73 @@
+---
+title: "How to create an automation"
+description: "Create automatic rules to categorize, modify, and manage your transactions."
+---
+
+# How to create an automation
+
+<Callout kind="info">
+  ℹ️ Video translation into English in progress
+</Callout>
+
+<Video
+  src="https://www.youtube.com/embed/t_RbNALwb-c"
+  title="Video Tutorial - How to create an automation in Banktrack"
+/>
+
+To create an automation, the first thing you need to do is go to the [Automations section](https://app.banktrack.com/reglas-automaticas).
+
+Click on the **Add automation** button to create a new automation, and a screen will open where you can configure it.
+
+The first step is to define when the automation will be triggered. You can choose from different triggers:
+
+<Tabs>
+  <Tab title="By description">
+    When the transaction's description contains the specified word, the automation will be executed.
+
+    This is very useful for transactions that always have the same description. For example: "When the transaction description contains Google Ads, tag it as *Advertising*."
+  </Tab>
+  <Tab title="By type">
+    When the transaction is an income or expense with an amount equal to, greater than, or less than the defined amount.
+
+    This is very useful for recurring transactions with the same amount. For example: "When a transaction is an expense of exactly €725, tag it as *Rent*."
+  </Tab>
+  <Tab title="Custom">
+    When you need to specify multiple conditions to trigger the automation, you can use a **Custom Rule.**
+
+    For example, to identify transfers between your own accounts, which may vary from one bank to another, you can create several rules to mark them as not accounted for.
+
+    ![Advanced automation rules](https://content.gitbook.com/content/IhgipbuJxCqyX8vQOfan/blobs/0kgM1cfJYWBkDr3CtAWm/image.png)
+  </Tab>
+</Tabs>
+
+Once the automation trigger is defined, you'll need to specify the action that will be triggered. There are several options to choose from:
+
+<Tabs>
+  <Tab title="Modify the description">
+    When the defined conditions are met, the transaction description will be automatically modified. You can:
+
+    - Add the desired text to the end of the original description.
+    - Add the desired text to the beginning (i.e., before) of the original description.
+    - Completely replace the description with the desired text.
+
+    An example of this action could be for transaction descriptions that are unclear. For example: "Replace Purchase at AMZN with Purchase at AMAZON."
+
+    ![Example of an automated description modification](https://content.gitbook.com/content/IhgipbuJxCqyX8vQOfan/blobs/vBGDOEIZPtH1G7hDsePi/image.png)
+  </Tab>
+  <Tab title="Categorize">
+    This action will change the [category](/banktrack/en/tags/how-to-create-a-custom-category) of transactions that meet the rule. You can select the category to apply from the list of categories and subcategories you have defined in Banktrack.
+  </Tab>
+  <Tab title="Ignore">
+    This action will mark transactions that meet the rule as [Not Accountable](/banktrack/en/transactions/how-to-ignore-a-transaction). This prevents transfers between your own accounts from appearing as both an income and an expense, for example.
+  </Tab>
+</Tabs>
+
+Finally, you'll just need to specify the bank accounts to which you want to apply these automated rules and provide a name to identify the automation.
+
+When you click **Save automation**, a modal window will appear, allowing you to **Preview the automation** before applying it to the transaction history.
+
+This way, you can ensure that the defined actions work as expected. You can skip this step and apply it later using the **🔄 Apply Retrospectively** button whenever you wish.
+
+From now on, the automations will be applied to all new transactions received in Banktrack when syncing with the banks, as long as they meet the defined rules.
+
+If you have any questions regarding automations, you can contact us via the chat you'll find in the bottom right corner of the screen.

@@ -1,0 +1,40 @@
+---
+title: "Cómo importar contactos"
+description: "Importa contactos a Banktrack desde un archivo CSV."
+---
+
+# Cómo importar contactos
+
+Para importar contactos a Banktrack, puedes utilizar la plantilla que te proporcionamos o ajustar el formato de tu archivo para que funcione correctamente.
+
+## Plantilla descargable
+
+<Callout kind="tip">
+  **En este enlace tienes la plantilla descargable:** [Ver plantilla de importación de contactos](https://docs.google.com/spreadsheets/d/126MPJqJbGs8ypYMRs1J_dZIwXEN430lGN57AI8WFWgU/edit?usp=sharing)
+</Callout>
+
+## Formatos aceptados
+
+Ten en cuenta los siguientes formatos aceptados en Banktrack:
+
+| Campo | Formato | Obligatorio |
+|-------|---------|-------------|
+| Nombre | texto | ✅ Sí |
+| Tipo de contacto | `freelancer` (autónomo) o `company` (empresa) | ❌ No |
+| Identificador fiscal | textos y/o números | ❌ No |
+| Correo | textos y/o números | ❌ No |
+| Teléfono | textos y/o números | ❌ No |
+| Dirección | textos y/o números | ❌ No |
+| Código postal | textos y/o números | ❌ No |
+| Ciudad | textos y/o números | ❌ No |
+| Provincia | textos y/o números | ❌ No |
+| País | código ISO (ej: `ESP`, `MEX`) | ❌ No |
+| Conceptos de categorización | textos separados por comas | ❌ No |
+
+<Callout kind="info">
+  Los países deben coincidir exactamente con el [código ISO](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). Por ejemplo: España = `ESP`. México = `MEX`. [En este enlace puedes ver el listado de todos los países](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3).
+</Callout>
+
+<Callout kind="info">
+  Los conceptos de categorización deben ir separados por comas, sin espacio entre medio. Ejemplo: `amazon,amzn,amazonbusiness`
+</Callout>
