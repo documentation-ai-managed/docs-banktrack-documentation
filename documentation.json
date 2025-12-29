@@ -1,6 +1,6 @@
 {
   "name": "Banktrack Documentation",
-  "initialRoute": "banktrack/como-empezar/bienvenido",
+  "initialRoute": "banktrack/introduction",
   "colors": {
     "light": {
       "brand": "#b84abc"
@@ -25,7 +25,7 @@
                 "pages": [
                   {
                     "title": "Bienvenido",
-                    "path": "banktrack/como-empezar/bienvenido"
+                    "path": "banktrack/introduction"
                   },
                   {
                     "title": "¿Qué es Banktrack?",
@@ -289,6 +289,10 @@
                 "group": "How to Start",
                 "icon": "rocket",
                 "pages": [
+                  {
+                    "title": "Introduction",
+                    "path": "banktrack/en/introduction"
+                  },
                   {
                     "title": "Banktrack in 3 minutes",
                     "path": "banktrack/en/how-to-start/banktrack-in-3-minutes"
