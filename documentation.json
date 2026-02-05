@@ -110,6 +110,10 @@
                     "path": "banktrack/facturas/emitir-facturas"
                   },
                   {
+                    "title": "Campos de Verifactu",
+                    "path": "campos-de-verifactu"
+                  },
+                  {
                     "title": "Conciliar facturas",
                     "path": "banktrack/facturas/conciliar-facturas"
                   },

@@ -1,0 +1,406 @@
+---
+title: Campos de emisión de facturas con Verifactu
+description: >-
+  Consulta el significado de los campos que debes rellenar para emitir una
+  factura con Verifactu
+---
+# Datos adicionales para emisión de factura
+
+Al emitir una factura compatible con Verifactu se muestra una pantalla adicional con campos que la Agencia Tributaria exige para calificar correctamente la operación.
+
+Estos campos **no cambian los importes de la factura**, pero sí indican a Hacienda cómo debe interpretarse cada línea (si está sujeta a IVA, si es una exportación, si aplica un régimen especial, etc.).
+
+---
+
+## ¿Cuándo se muestran estos campos?
+
+La pantalla de **Datos adicionales para emisión de factura** aparece justo antes de confirmar la emisión, después de haber rellenado los datos generales de la factura (cliente, conceptos, impuestos, etc.).
+
+En esta pantalla deberás revisar y, en su caso, completar:
+
+- Campos generales de la operación (fecha de operación, tipo de emisión, tipo de identificación).
+
+- Si la factura es simplificada con datos del cliente.
+
+- Para cada línea de factura: **Calificación** y **Régimen** aplicables.
+
+Una vez validados estos datos, podrás emitir definitivamente la factura y generar el registro Verifactu correspondiente.
+
+---
+
+## Campos generales de la operación
+
+## Fecha de operación
+
+**Fecha de operación:**\
+Indica el día en que se realizó la entrega del bien o la prestación del servicio, es decir, el momento en que se produce la operación que origina la factura.
+
+- En muchas facturas de venta coincide con la **fecha de emisión** (por ejemplo, cuando se factura el mismo día que se presta el servicio).
+
+- Si estás facturando servicios o entregas realizadas en una fecha anterior, aquí puedes especificar esa fecha de realización.
+
+**Cuándo usarla**
+
+- **Factura emitida el mismo día del servicio:**\
+  Deja la fecha de operación igual que la fecha de emisión.
+
+- **Servicios prestados en días o meses anteriores:**\
+  Indica la fecha real de prestación (por ejemplo, el último día del mes si facturas servicios mensuales).
+
+- **Facturas rectificativas:**\
+  Utiliza la fecha de la operación original que estás corrigiendo, salvo indicación contraria del asesor fiscal.
+
+> Importante: con Verifactu, la **fecha de emisión** de la factura debe coincidir con el momento real en que la emites; no se permite antedatar facturas.
+
+---
+
+## Tipo de emisión
+
+**Tipo de emisión:**\
+Indica **quién expide la factura** y en qué modalidad se emite.
+
+En el caso más habitual verás:
+
+- **Emisión directa (normal):** la factura la emites tú directamente con tu software de facturación.
+
+En otros contextos, la normativa contempla también la emisión por terceros o la autofacturación, pero en la mayoría de los casos de pymes y autónomos se utiliza únicamente **Emisión directa (normal)**.
+
+**Cuándo usar cada tipo**
+
+- **Emisión directa (normal):**
+
+  - Siempre que tú o tu empresa generáis la factura desde el propio programa.
+
+  - Es la opción por defecto para ventas nacionales, internacionales, suscripciones, servicios profesionales, etc.
+
+Si en el futuro se habilitan otros tipos (por ejemplo, autofactura emitida por el cliente), se indicará claramente en la interfaz con ejemplos específicos de uso.
+
+---
+
+## Tipo de identificación del cliente
+
+**Tipo de identificación:**\
+Determina qué tipo de documento se usa para identificar al destinatario de la factura (cliente).
+
+Ejemplos habituales:
+
+- **NIF Español:**\
+  Para clientes establecidos en España (empresas, autónomos o particulares con NIF/NIE).
+
+- Otros tipos posibles:\
+  NIF-IVA intracomunitario, número de identificación extranjero, pasaporte, etc.
+
+**Cuándo usar cada tipo**
+
+- **NIF Español:**
+
+  - Cliente con domicilio fiscal en España.
+
+  - Necesario para que el cliente pueda deducir el IVA o registrar la factura en su contabilidad.
+
+- **Otros tipos:**
+
+  - Operaciones con clientes de la UE o de fuera de la UE cuando se requiera su número de identificación fiscal específico para justificar la operación (por ejemplo, servicios B2B intracomunitarios).
+
+---
+
+## Factura simplificada con datos del cliente
+
+**Factura simplificada con datos del cliente:**\
+Marca esta casilla cuando emites una **factura simplificada** (importe reducido, típico “ticket”) pero el cliente solicita que en ella aparezcan su **nombre y NIF**, para poder ejercer algún derecho de naturaleza tributaria (como la deducción del IVA).
+
+Según el Real Decreto 1619/2012, las facturas simplificadas:
+
+- Se pueden usar, con carácter general, cuando el importe **no excede de 400 € IVA incluido**, o hasta **3.000 € IVA incluido** en determinados sectores (hostelería, transporte de personas, aparcamientos, etc.).
+
+- No necesitan incluir los datos completos del destinatario, salvo que este los exija para el ejercicio de derechos tributarios.
+
+**Cuándo marcar esta casilla**
+
+- Ticket de venta a un **consumidor final** que no se va a contabilizar:
+
+  - No es necesario marcarla (factura simplificada sin datos del cliente).
+
+- Cliente **autónomo o empresa** que quiere deducir el IVA de un ticket:
+
+  - Marca **Factura simplificada con datos del cliente** para incluir su nombre y NIF.
+
+- Cliente particular que, aun no siendo profesional, necesita la factura con sus datos para una ayuda, subvención u otra gestión fiscal:
+
+  - Marca también la casilla para que consten sus datos.
+
+---
+
+## Campos por línea de factura
+
+En la parte inferior de la pantalla verás cada **línea de factura** con dos campos adicionales:
+
+- **Calificación**
+
+- **Régimen**
+
+Ambos campos se informan **por línea**, pero en la práctica, en la mayoría de facturas todas las líneas comparten la misma combinación (por ejemplo, S1 + 01).
+
+---
+
+## Calificación de la operación
+
+**Calificación:**\
+Indica si la operación está **sujeta o no a IVA**, si está **exenta**, y si existe **inversión del sujeto pasivo**.
+
+Es un campo obligatorio en los sistemas de registro de IVA y Verifactu para que la AEAT pueda interpretar correctamente la tributación de cada factura.
+
+La opción más habitual que verás es:
+
+## S1 – Operación sujeta y no exenta (sin inversión del sujeto pasivo)
+
+- **Qué significa**\
+  La operación **está sujeta a IVA** y **no está exenta**. Tú repercutes el IVA al cliente y lo declaras en tus modelos de IVA.
+
+- **Cuándo usarla**
+
+  - Venta de productos o servicios dentro de España (territorio de aplicación del IVA) con IVA al 21%, 10% o 4%.
+
+  - Suscripciones de software, servicios profesionales, mantenimiento, etc., cuando se factura con IVA normal.
+
+  - Casi todas las ventas estándar a clientes nacionales.
+
+---
+
+A continuación, se resumen las principales calificaciones que suelen estar disponibles en Verifactu:
+
+## S2 – Operación sujeta y no exenta (con inversión del sujeto pasivo)
+
+- **Qué significa**\
+  La operación tiene IVA, pero **no lo repercutes tú**: lo declara el cliente mediante inversión del sujeto pasivo (autorrepercusión).
+
+- **Cuándo usarla** (ejemplos frecuentes)
+
+  - Determinadas operaciones de construcción y rehabilitación inmobiliaria.
+
+  - Entregas de ciertos metales, residuos, chatarra, etc.
+
+  - Otros supuestos del artículo 84 de la Ley del IVA en los que la norma obliga a que el destinatario declare el impuesto.
+
+---
+
+## E1–E6 – Operaciones exentas
+
+Se emplean cuando la operación **está sujeta a IVA pero se encuentra exenta** por alguno de los artículos de la Ley del IVA.
+
+Ejemplos típicos (la denominación exacta puede variar ligeramente según el software):
+
+- **E1 – Exenta por artículo 20 LIVA (operaciones interiores)**
+
+  - Servicios sanitarios, educativos, alquiler de vivienda, ciertos servicios sociales, etc.
+
+- **E2 – Exenta por artículo 21 LIVA (exportaciones)**
+
+  - Exportación de bienes a países terceros (fuera de la UE).
+
+- **E3 – Exenta por artículo 22 LIVA (entregas intracomunitarias)**
+
+  - Entregas de bienes a empresas de otros países de la UE con NIF-IVA válido.
+
+- **E4 – Exenta por artículos 23–24 LIVA (zonas francas, depósitos, etc.)**
+
+- **E5 – Exenta por artículo 25 LIVA (servicios financieros y de seguros)**
+
+- **E6 – Otras exenciones**
+
+  - Cualquier otro supuesto de exención no incluido específicamente en los anteriores.
+
+**Cuándo usar calificaciones E**
+
+- Cuando la línea **no lleva IVA en el importe**, pero la razón es una **exención reconocida en la Ley del IVA**, no porque la operación esté fuera del ámbito del impuesto.
+
+---
+
+## N1 – Operación no sujeta (por su naturaleza)
+
+- **Qué significa**\
+  La operación **no entra en el ámbito del IVA** (no sujeta), por motivos como los recogidos en los artículos 7 y 14 LIVA.
+
+- **Cuándo usarla**
+
+  - Transmisión de un negocio o unidad económica autónoma.
+
+  - Determinadas operaciones realizadas por entes públicos.
+
+  - Supuestos específicos donde la ley indica expresamente que no hay sujeción.
+
+---
+
+## N2 – Operación no sujeta por reglas de localización
+
+- **Qué significa**\
+  La operación no lleva IVA porque, según las **reglas de localización**, el impuesto se declara en otro país.
+
+- **Cuándo usarla**
+
+  - Servicios B2B a clientes establecidos en otro Estado miembro de la UE (el IVA se declara allí).
+
+  - Servicios a empresas fuera de la UE donde el lugar de realización no es España.
+
+  - Servicios electrónicos, de telecomunicaciones o consultoría a clientes no residentes cuando la ley así lo establece.
+
+---
+
+## Régimen
+
+**Régimen:**\
+Indica el **tipo de régimen fiscal** aplicable a la operación según las claves oficiales de la AEAT para el Libro Registro de facturas expedidas y para sistemas como SII o Verifactu.
+
+En la mayoría de casos verás seleccionada por defecto la clave:
+
+## 01 – Operación en régimen general
+
+- **Qué significa**\
+  La operación se encuentra en el **régimen general de IVA**, sin ninguna regla especial.
+
+- **Cuándo usarla**
+
+  - Casi todas las ventas habituales de bienes y servicios dentro de España.
+
+  - Cuando no estás sujeto a ningún régimen especial (REBU, agencias de viaje, criterio de caja, etc.).
+
+---
+
+A continuación se explican las claves de régimen que suelen aparecer en el desplegable:
+
+## 02 – Exportación
+
+- **Qué significa**\
+  Ventas de bienes que salen del territorio aduanero de la UE (exportaciones a países terceros).
+
+- **Cuándo usarla**
+
+  - Envío de mercancías a clientes fuera de la UE, acreditando la salida física de los bienes.
+
+---
+
+## 03 – Régimen especial para bienes usados, objetos de arte, antigüedades y de colección (REBU)
+
+- **Qué significa**\
+  Se aplica el **régimen de bienes usados**: el IVA se calcula sobre el **margen de beneficio** y no se desglosa en la factura.
+
+- **Cuándo usarla**
+
+  - Compraventa de vehículos de segunda mano.
+
+  - Venta de obras de arte, antigüedades u objetos de colección acogidos a REBU.
+
+---
+
+## 04 – Régimen especial del oro de inversión
+
+- **Qué significa**\
+  Régimen específico para entregas, adquisiciones o intermediación de **oro de inversión** (pureza ≥ 995 milésimas).
+
+- **Cuándo usarla**
+
+  - Operaciones profesionales con lingotes o monedas que cumplan los requisitos de oro de inversión.
+
+---
+
+## 05 – Régimen especial de agencias de viajes
+
+- **Qué significa**\
+  La agencia actúa **en nombre propio**, organizando viajes y paquetes turísticos; el IVA se calcula sobre el **margen**.
+
+- **Cuándo usarla**
+
+  - Paquetes turísticos donde compras servicios a proveedores y los revendes al cliente final en tu propio nombre.
+
+---
+
+## 06 – Régimen especial del grupo de entidades en IVA (nivel avanzado)
+
+- **Qué significa**\
+  Régimen de tributación consolidada en IVA para **grupos de entidades**.
+
+- **Cuándo usarla**
+
+  - Solo si formas parte de un grupo de entidades acogido a este régimen y tu asesor fiscal te lo indica expresamente.
+
+---
+
+## 07 – Régimen especial del criterio de caja
+
+- **Qué significa**\
+  El IVA se **devenga al cobro** y no en el momento de la emisión de la factura.
+
+- **Cuándo usarla**
+
+  - Si estás acogido formalmente al **Régimen Especial del Criterio de Caja (RECC)** y tus facturas se emiten bajo ese régimen.
+
+---
+
+## 08 – Operaciones sujetas al IPSI / IGIC
+
+- **Qué significa**\
+  Operaciones realizadas en **Canarias (IGIC)** o **Ceuta/Melilla (IPSI)**, donde no aplica el IVA peninsular.
+
+- **Cuándo usarla**
+
+  - Ventas o servicios cuyo impuesto indirecto es IGIC o IPSI en lugar de IVA.
+
+---
+
+## 09 – Facturación de servicios de agencias de viaje que actúan como mediadoras
+
+- **Qué significa**\
+  La agencia de viajes actúa **en nombre y por cuenta de terceros**, y factura únicamente su **comisión de intermediación**.
+
+- **Cuándo usarla**
+
+  - Comisiones por intermediación en viajes donde el servicio principal lo presta otra empresa (aerolínea, hotel, mayorista, etc.).
+
+---
+
+## 10 – Cobro de honorarios o derechos de propiedad intelectual por cuenta de terceros
+
+- **Qué significa**\
+  Cobros por cuenta de terceros de **honorarios profesionales o derechos de propiedad intelectual/industrial**, realizados por colegios profesionales, asociaciones u otras entidades.
+
+- **Cuándo usarla**
+
+  - Cuando tu entidad cobra en nombre de sus socios o colegiados y luego les liquida esos importes.
+
+---
+
+## Combinaciones habituales de Calificación y Régimen
+
+Aunque existen muchas casuísticas, estas son algunas combinaciones típicas:
+
+- **Venta estándar nacional con IVA**
+
+  - **Calificación:** S1 – Operación sujeta y no exenta
+
+  - **Régimen:** 01 – Operación en régimen general
+
+- **Servicio profesional a empresa de la UE sin IVA (localización en destino)**
+
+  - **Calificación:** N2 – Operación no sujeta por reglas de localización
+
+  - **Régimen:** 01 – Operación en régimen general
+
+- **Exportación de bienes a país tercero**
+
+  - **Calificación:** E2 – Operación exenta por exportación (art. 21 LIVA)
+
+  - **Régimen:** 02 – Exportación
+
+- **Venta de vehículo de segunda mano en REBU**
+
+  - **Calificación:** S1 (normalmente sujeta y no exenta, pero con particularidades en el cálculo del IVA)
+
+  - **Régimen:** 03 – Régimen especial bienes usados
+
+- **Operación con inversión del sujeto pasivo en construcción**
+
+  - **Calificación:** S2 – Sujeta y no exenta con inversión del sujeto pasivo
+
+  - **Régimen:** 01 – Operación en régimen general
+
+Si tienes dudas sobre qué combinación aplicar en un caso concreto, lo más recomendable es consultarlo con tu asesoría fiscal, ya que la elección depende del tipo de operación, del lugar donde se localiza y del régimen al que estés acogido.
