@@ -127,7 +127,93 @@ Según el Real Decreto 1619/2012, las facturas simplificadas:
 
 - Cliente particular que, aun no siendo profesional, necesita la factura con sus datos para una ayuda, subvención u otra gestión fiscal:
 
-  - Marca también la casilla para que consten sus datos.
+* Marca también la casilla para que consten sus datos.​
+
+---
+
+## Facturas rectificativas
+
+## Tipo de rectificativa (solo en facturas rectificativas)
+
+**Tipo de rectificativa:**\
+Se selecciona automáticamente cuando creas una factura rectificativa vinculada a una factura original. Indica la **naturaleza de la corrección** que realizas.
+
+Opciones habituales:
+
+- **Por sustitución (S):**\
+  Emite una **nueva factura completa** con todos los datos correctos, indicando los importes rectificados respecto a la original. Sustituye íntegramente a la factura anterior.​
+
+- **Por diferencias (I):**\
+  Corrige **solo los elementos afectados** (importe, IVA, datos del cliente, etc.). La factura rectificativa especifica únicamente los cambios sin anular totalmente la original.
+
+**Cuándo usar cada tipo**
+
+| **Situación**                            | **Tipo recomendado**                  | **Ejemplo**                                             |
+| ---------------------------------------- | ------------------------------------- | ------------------------------------------------------- |
+| Error en datos del cliente (NIF, nombre) | Por diferencias (I)                   | Cliente indica su NIF correcto después de la emisión.   |
+| Importes o IVA mal calculados            | Por sustitución (S) o diferencias (I) | Dependiendo de si quieres reemitir todo o solo ajustar. |
+| Devolución total o anulación             | Por sustitución (S)                   | Cliente devuelve todo y anulas la factura completa.     |
+| Descuento parcial posterior              | Por diferencias (I)                   | Acuerdas un descuento que no estaba en la original.     |
+
+---
+
+## Motivo de rectificación (solo en facturas rectificativas)
+
+**Motivo de rectificación:**\
+Clave obligatoria que indica el **motivo legal** por el que emites la rectificativa, según RD 1619/2012 y normativa Verifactu. Se informa en el campo **Tipo de factura rectificativa** con las claves R1-R4.​​
+
+## R1 – Corrección de datos u errores (Art. 6, 7.2 y 7.3 RD 1619/2012)
+
+- **Qué significa**\
+  Errores en datos del emisor, destinatario o conceptos facturados (sin afectar la base imponible o cuota).​
+
+- **Cuándo usarla**
+
+  - NIF erróneo, dirección incorrecta, concepto mal descrito.
+
+  - Errores administrativos que no modifican importes.
+
+## R2 – Rectificativa por impago (Art. 80.4 LIVA)
+
+- **Qué significa**\
+  Deudas **incobrables** o impagadas después de intentos de cobro.
+
+- **Cuándo usarla**
+
+  - Cliente no paga tras requerimientos fehacientes (burofax, etc.).
+
+  - Debes acreditar los requisitos del art. 80.4 LIVA (plazos, documentación).
+
+## R3 – Rectificativa por concurso de acreedores
+
+- **Qué significa**\
+  Cliente declarado en **concurso de acreedores** (quiebra).
+
+- **Cuándo usarla**
+
+  - Tu crédito queda sin satisfacer por el procedimiento concursal.
+
+## R4 – Otros motivos (Art. 80 LIVA)
+
+- **Qué significa**\
+  Errores fundados en derecho, causas del art. 80.1, 2 y 6 LIVA, o resto de supuestos legales.​
+
+- **Cuándo usarla**
+
+  - Modificaciones en precio, devoluciones parciales, ajustes fiscales complejos.
+
+## Resto
+
+- **Qué significa**\
+  Cualquier otro motivo no encuadrado en los anteriores.
+
+- **Cuándo usarla**
+
+  - Casos excepcionales; consulta siempre con asesor fiscal.
+
+**Nota importante:** Para rectificativas de **facturas simplificadas**, usa **R5** independientemente del motivo.​
+
+> **Referencia a la original: Siempre indica el número de serie y fecha de la factura que rectificas. Verifactu requiere esta vinculación para validar el registro.​**
 
 ---
 
