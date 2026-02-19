@@ -106,6 +106,10 @@
                 "icon": "file-text",
                 "pages": [
                   {
+                    "title": "Tipos de impuestos",
+                    "path": "tipos-de-impuestos"
+                  },
+                  {
                     "title": "Emitir facturas",
                     "path": "banktrack/facturas/emitir-facturas"
                   },
