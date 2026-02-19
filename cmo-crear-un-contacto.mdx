@@ -1,0 +1,310 @@
+---
+title: Cómo crear un contacto
+---
+<Image src="https://blob-cdn.documentation.ai/org-54c75dd1-b435-4e90-af26-bd7d8846081b/doc-3ced55c8-092e-4386-b871-aab18b35003e/1771517727042-4c74pcp0r06-pasted-image-1771517724435.png?q=85&fm=auto&auto=compress%2Cformat" width="2920" height="1442" alt="" />
+
+## 1. Acceso a la sección de contactos
+
+1. En el menú lateral izquierdo, entra en **Contactos**.
+
+2. Desde esta vista verás el **listado completo de contactos** (empresas, autónomos y particulares) con su nombre, tipo y otra información relevante.
+
+3. En la parte superior derecha encontrarás el botón **“Crear contacto”**.
+
+Además del alta manual, desde la flecha junto a **Crear contacto** puedes:
+
+- **Importar contactos** desde un archivo **Excel o CSV**.
+
+- **Copiar contactos a otros espacios de trabajo** si gestionas varias compañías dentro de Bantrack.
+
+---
+
+## 2. Crear o editar un contacto
+
+Al pulsar **Crear contacto** (o al editar uno existente), se abre el **formulario de contacto**.\
+El formulario está dividido en tres pestañas:
+
+1. **General**
+
+2. **Datos de facturación**
+
+3. **Valores por defecto**
+
+Es recomendable completar la mayor cantidad de información posible para mejorar:
+
+- La calidad de los datos en las facturas emitidas.
+
+- La identificación automática de contactos al escanear facturas.
+
+- La categorización y conciliación de las transacciones bancarias.
+
+---
+
+## 3. Pestaña “General”
+
+Aquí defines la información básica y el comportamiento automático del contacto.
+
+### 3.1. Tipo y subtipo de contacto
+
+- **Tipo**
+
+  - **Empresa**
+
+  - **Autónomo**
+
+  - **Particular**
+
+- **Subtipo** (según el tipo que selecciones):
+
+  - **Cliente**
+
+  - **Proveedor**
+
+  - **Empleado**
+
+  - **Inversor**
+
+  - **Socio**
+
+  - **Entidad pública**
+
+  - **Institución financiera**
+
+Esta clasificación te permitirá filtrar y localizar fácilmente los contactos, además de facilitar análisis posteriores.
+
+### 3.2. Datos básicos
+
+- **Nombre**\
+  Introduce el **nombre fiscal** del contacto.
+
+  - Es el nombre que aparecerá tanto en las **facturas emitidas** como en las **facturas escaneadas** asociadas a este contacto.
+
+- **Página web** (opcional)\
+  Campo informativo para tener localizada la web del contacto.
+
+- **Nota interna** (opcional)
+
+  - Espacio para anotar información relevante de uso interno:
+
+    - Cuenta contable asociada (por ejemplo, “Cuenta contable – 670”).
+
+    - Condiciones especiales, acuerdos, recordatorios, etc.
+
+### 3.3. Asignar etiquetas a facturas y transacciones
+
+Bloque: **“Asignar etiquetas a facturas y transacciones”**
+
+- Permite que las **etiquetas** que definas se apliquen **automáticamente**:
+
+  - A todas las **facturas** asociadas a este contacto.
+
+  - A todas las **transacciones** asociadas a este contacto.
+
+Funcionamiento:
+
+1. Indica una o varias **etiquetas** (por ejemplo: “Software y suscripciones”, “Marketing”, “Viajes”, etc.).
+
+2. Cuando asocies una factura o transacción a este contacto, Bantrack:
+
+   - Aplicará de forma automática las etiquetas definidas en el contacto.
+
+Ventaja:
+
+- Ahorra tiempo en la **categorización**.
+
+- Asegura **consistencia** en la clasificación de gastos e ingresos.
+
+### 3.4. Asignar contacto a transacciones automáticamente
+
+Bloque: **“Asignar contacto a transacciones automáticamente”**
+
+- Permite que Bantrack vincule **de forma automática** este contacto a determinadas transacciones bancarias a partir de **palabras clave**.
+
+Configuración:
+
+1. Introduce una o varias **palabras clave** o **keywords** que suelan aparecer en el concepto del banco para este contacto.
+
+   - Ejemplos:
+
+     - Para Adobe: `adobe`
+
+     - Para Amazon: `amzn, amazon`
+
+2. Escribe varias palabras separadas por **comas**.
+
+Funcionamiento:
+
+- Cada vez que Bantrack detecte alguna de esas palabras en la descripción de una **transacción bancaria**:
+
+  - Asignará **automáticamente el contacto** configurado.
+
+  - Si el contacto tiene **etiquetas asociadas**, también se aplicarán automáticamente a esa transacción.
+
+Beneficios:
+
+- Reduce el trabajo manual de asignar contacto y etiquetas.
+
+- Mejora la velocidad y precisión de la **conciliación bancaria**.
+
+---
+
+## 4. Pestaña “Datos de facturación”
+
+En esta pestaña se recogen todos los datos fiscales y de contacto necesarios para facturación y escaneado de facturas.
+
+### 4.1. Documento de identificación
+
+- **Número de documento**
+
+- **Tipo de documento**, que puede ser:
+
+  - NIF / CIF (España)
+
+  - NIF intracomunitario (VAT / VIES)
+
+  - Pasaporte
+
+  - Documento de identidad extranjero
+
+  - Certificado de residencia
+
+  - Otro documento de identidad
+
+  - No registrado en el censo
+
+Completar correctamente esta información permite:
+
+- Emitir facturas con los **datos fiscales correctos**.
+
+- Mejorar el **reconocimiento del contacto** al utilizar el escáner de facturas.
+
+### 4.2. Dirección y datos de contacto
+
+Campos habituales:
+
+- **Dirección**
+
+- **Código postal**
+
+- **Ciudad**
+
+- **Provincia**
+
+- **País**
+
+- **Email**
+
+- **Teléfono**
+
+Cuantos más datos rellenes:
+
+- Más completa será la información que aparecerá en las facturas.
+
+- Más fácil será identificar al contacto en el escáner de facturas y mantener una base de datos ordenada.
+
+---
+
+## 5. Pestaña “Valores por defecto”
+
+Aquí defines la configuración que Bantrack utilizará por defecto al **emitir facturas** o **escanear documentos** vinculados a este contacto.
+
+### 5.1. Cuentas de cobro y pago
+
+- **Cuenta de cobro**
+
+  - Se utiliza principalmente cuando el contacto es un **cliente**.
+
+  - Define la cuenta contable donde se registrarán los **cobros** de este contacto.
+
+- **Cuenta de pago**
+
+  - Se utiliza cuando el contacto es un **proveedor**.
+
+  - Define la cuenta contable donde se registrarán los **pagos** a este contacto.
+
+Esto facilita que, al trabajar con facturas de ese contacto, se rellenen automáticamente las **cuentas contables correctas**.
+
+### 5.2. Impuestos de venta y de compra
+
+- **Impuestos de venta**
+
+  - Se aplican cuando **vendes** a este contacto (facturas emitidas).
+
+  - Puedes definir, por ejemplo, que siempre se use **IVA 21%** para este cliente.
+
+  - Al crear una factura y seleccionar el contacto, el **tipo de IVA se rellenará por defecto**.
+
+- **Impuestos de compra**
+
+  - Se aplican cuando **compras** a este contacto (facturas recibidas / escaneadas).
+
+  - Muy útil cuando trabajas con proveedores que:
+
+    - Siempre tienen el mismo tipo de IVA.
+
+    - Tienen **IVA 0%** (por ejemplo, operaciones intracomunitarias de servicios, exentas, etc.).
+
+Funcionamiento con el escáner:
+
+- Si el escáner **no detecta impuestos** en una factura de este contacto, pero el **total coincide con el subtotal**, Bantrack:
+
+  - Utilizará el **impuesto por defecto** configurado en el contacto.
+
+  - Ejemplo: si el impuesto por defecto es un **0% IVA intra de servicios**, se aplicará ese tipo automáticamente.
+
+### 5.3. Otros valores por defecto
+
+- **Idioma**
+
+  - Idioma preferido para la comunicación y/o documentación de este contacto.
+
+- **Moneda**
+
+  - Moneda habitual con la que operas con este contacto (por ejemplo, EUR, USD, etc.).
+
+- **Fecha estimada de vencimiento de las facturas**
+
+  - Permite definir un **plazo estándar de cobro o pago** para este contacto (por ejemplo, 30 días, 60 días…).
+
+- **Día de pago estimado del mes**
+
+  - Útil para proveedores a los que pagas en un día fijo cada mes (por ejemplo, día 15 o último día del mes).
+
+  - Ayuda a estimar la tesorería futura y a planificar los pagos.
+
+---
+
+## 6. Guardar y uso posterior del contacto
+
+1. Una vez completadas las tres pestañas (**General**, **Datos de facturación** y **Valores por defecto**), pulsa **Guardar**.
+
+2. El contacto se añadirá al **listado de contactos** y quedará disponible para:
+
+   - **Emitir facturas** (como cliente).
+
+   - **Registrar y escanear facturas de compra** (como proveedor).
+
+   - **Asociar transacciones bancarias**, manualmente o de forma automática mediante palabras clave.
+
+   - **Aplicar etiquetas y cuentas contables por defecto**, facilitando la clasificación y el análisis.
+
+---
+
+## 7. Recomendaciones de uso
+
+- **Rellenar siempre los datos fiscales y de contacto** al crear un nuevo contacto. De este modo evitas tener que editarlos más tarde y reduces errores en facturación.
+
+- **Definir etiquetas y palabras clave** desde el principio para:
+
+  - Automatizar la clasificación de gastos e ingresos.
+
+  - Reducir el tiempo dedicado a la conciliación bancaria.
+
+- **Utilizar los impuestos por defecto** en contactos recurrentes (especialmente los de IVA 0% o intracomunitarios) para evitar errores al escanear y contabilizar facturas.
+
+- **Revisar periódicamente la ficha de los contactos principales** (clientes grandes, proveedores clave) para asegurarte de que:
+
+  - Las cuentas contables asignadas siguen siendo correctas.
+
+  - Los impuestos, idioma, moneda y condiciones de pago se mantienen actualizados.
+

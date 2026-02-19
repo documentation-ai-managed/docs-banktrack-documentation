@@ -216,6 +216,10 @@
                 "icon": "users",
                 "pages": [
                   {
+                    "title": "Cómo crear un contacto",
+                    "path": "cmo-crear-un-contacto"
+                  },
+                  {
                     "title": "Cómo importar contactos",
                     "path": "banktrack/contactos/como-importar-contactos"
                   }
