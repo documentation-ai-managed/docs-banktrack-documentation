@@ -1,11 +1,12 @@
 ---
-title: "Crear automatizaciones"
-description: "Crea reglas automáticas para categorizar, modificar y gestionar tus transacciones."
+title: Crear automatizaciones
+description: >-
+  Crea reglas automáticas para categorizar, modificar y gestionar tus
+  transacciones.
 ---
-
 <Video src="https://www.youtube.com/embed/ICvA17NyqdQ" render-type="iframe" width="672" height="378" controls="true" allow-full-screen="true" style="width: 672px; height: auto; cursor: pointer;" />
 
-Para crear una automatización lo primero que debes hacer es dirigirte a la sección de [Reglas automáticas](https://app.banktrack.com/reglas-automaticas).
+Para crear una automatización lo primero que debes hacer es dirigirte a la sección de [Reglas automáticas](https://app.banktrack.com/reglas-automaticas). Estas reglas automáticas sirven exclusivamente para modificar transacciones, por el momento no se pueden aplicar a facturas.
 
 Pulsa en el botón **Añadir automatización** para crear una nueva automatización y se abrirá una pantalla donde podrás configurarla.
 
@@ -17,15 +18,17 @@ Lo primero es definir cuándo se ejecutará la automatización. Puedes elegir en
 
     Es muy útil para aquellas transacciones que tienen un concepto siempre igual. Por ejemplo: "Cuando el concepto de la transacción contenga *Google Ads*, etiquétala con *Publicidad*."
   </Tab>
+
   <Tab title="Por tipo">
     Cuando la transacción sea de tipo ingreso o gasto, con un importe igual, superior o inferior a la cantidad definida.
 
     Es muy útil para transacciones recurrentes con el mismo importe. Por ejemplo: "Cuando una transacción sea un *gasto* de importe igual a *725€*, etiquétala con *Alquiler local*."
   </Tab>
+
   <Tab title="Personalizado">
     Cuando sea necesario indicar varias condiciones para ejecutar la automatización podemos recurrir a una **Regla personalizada**. Por ejemplo, para identificar los traspasos entre cuentas propias, que pueden variar de un banco a otro, es posible crear varias reglas para que los marque como no contabilizados.
 
-    ![Reglas de automatización avanzada](https://blob-cdn.documentation.ai/org-54c75dd1-b435-4e90-af26-bd7d8846081b/doc-3ced55c8-092e-4386-b871-aab18b35003e/1767001069494-jm0s23ahze-image.png?q=85&fm=auto&auto=compress%2Cformat)
+
   </Tab>
 </Tabs>
 
@@ -36,28 +39,36 @@ Una vez definido el disparador de la automatización, será necesario definir la
     Cuando se cumplan las condiciones que hayamos definido se modificará automáticamente el concepto de la transacción pudiendo:
 
     - Agregar al final del concepto original el texto deseado.
+
     - Agregar al inicio del concepto original (es decir, delante) el texto deseado.
+
     - Reemplazar el concepto por completo por la descripción deseada.
 
     Un ejemplo de esta acción puede ser con conceptos de transacciones que no se entiendan bien, por ejemplo: "Reemplaza *Compra en AMZN* por *Compra AMAZON*."
 
-    ![Ejemplo en el que se modifica la descripción de forma automatizada](https://blob-cdn.documentation.ai/org-54c75dd1-b435-4e90-af26-bd7d8846081b/doc-3ced55c8-092e-4386-b871-aab18b35003e/1767001087980-4bw35ibugme-image.png?q=85&fm=auto&auto=compress%2Cformat)
+
   </Tab>
+
   <Tab title="Modificar la descripción">
     Cuando se cumplan las condiciones que hayamos definido se modificará automáticamente la descripción de la transacción pudiendo:
 
     - Agregar al final de la descripción original el texto deseado.
+
     - Agregar al inicio de la descripción original (es decir, delante) el texto deseado.
+
     - Reemplazar la descripción por completo por la descripción deseada.
 
-    ![Modificar descripción](https://blob-cdn.documentation.ai/org-54c75dd1-b435-4e90-af26-bd7d8846081b/doc-3ced55c8-092e-4386-b871-aab18b35003e/1767001202470-psne1reebyk-CleanShot-2025-08-13-at-11-07-14-2x.png?q=85&fm=auto&auto=compress%2Cformat)
+
   </Tab>
+
   <Tab title="Categorizar">
     Esta acción modificará la [categoría](/banktrack/etiquetas/como-crear-una-categoria-personalizada) a las transacciones que cumplan con la regla. En el desplegable se puede seleccionar la categoría a aplicar del listado de categorías y subcategorías que hayamos definido en Banktrack.
   </Tab>
+
   <Tab title="Ignorar">
     Esta acción marcará como [No contable](/banktrack/transacciones/como-ignorar-una-transaccion) las transacciones que cumplan con la regla. Esto evita que los traspasos entre cuentas propias aparezcan como un ingreso y un gasto, por ejemplo.
   </Tab>
+
   <Tab title="Asociar un contacto">
     Si se cumplen las condiciones de la regla automática puedes asociar un contacto (cliente o proveedor) a tus transacciones para organizar estas en base a tus contactos.
   </Tab>
