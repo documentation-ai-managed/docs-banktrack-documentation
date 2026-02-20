@@ -1,14 +1,291 @@
 ---
-title: "Masterclass Paneles Financieros"
-description: "Masterclass sobre paneles financieros en Banktrack - Novedades, recomendaciones y casos de uso."
+title: Masterclass Paneles Financieros
+description: >-
+  Masterclass sobre paneles financieros en Banktrack - Novedades,
+  recomendaciones y casos de uso.
 ---
-
 <Video src="https://www.youtube.com/embed/81v0UGVPm9g" render-type="iframe" width="672" height="378" controls="true" allow-full-screen="true" style="width: 672px; height: auto; cursor: pointer;" />
 
 En esta masterclass repasamos:
 
 - Novedades en los paneles financieros de Banktrack
+
 - Recomendaciones para crear tus propios paneles financieros
+
 - 5 paneles financieros más usados en Banktrack
 
-Si tienes alguna duda con respecto a los paneles financieros puedes contactarnos en el chat que encontrarás en la esquina inferior derecha de la pantalla.
+### Dashboards financieros en Banktrack
+
+Los **dashboards** de Banktrack te permiten visualizar y analizar tu tesorería en tiempo real: cobros, pagos, saldos, deuda, proyectos, locales, empresas, etc. Son paneles totalmente personalizables que sustituyen al Excel manual y se actualizan automáticamente con la información de tus bancos y tus facturas.
+
+Con ellos puedes responder preguntas como:
+
+- ¿Cómo está evolucionando mi flujo de caja mes a mes?
+- ¿Cuál es mi saldo total y mi deuda repartida por bancos?
+- ¿De dónde vienen mis cobros (empresa, proyecto, vía de ingreso)?
+- ¿Qué local, proyecto o empresa está funcionando mejor o peor?
+
+***
+
+### Requisitos previos: prepara tus datos
+
+Antes de crear dashboards potentes, es importante tener bien organizada la información.
+
+1. **Conecta tus bancos**
+   - Sincroniza todas tus **cuentas y tarjetas** desde Banktrack.
+   - Las transacciones de todos tus bancos se agruparán en un único buscador.
+
+2. **Configura etiquetas y taxonomías**
+   - En el menú lateral, ve a **Etiquetas**.
+   - Define **taxonomías** (conjuntos de etiquetas) según tu negocio, por ejemplo:
+     - **Categorías**: ventas, proveedores, RRHH, marketing, software, etc.
+     - **Ubicaciones**: local Madrid, local Barcelona, local Sevilla…
+     - **Proyectos**: Proyecto Pepsi, Club deportivo, Clínica dental…
+     - **Empresas** (si trabajas con un grupo/holding): Empresa 1, Empresa 2, Empresa 3.
+     - **Departamentos**: operaciones, marketing, comercial, etc.
+     - **Empleados/comerciales**: para comisiones y seguimiento individual.
+
+   Cada transacción puede tener **varias etiquetas** de distintas taxonomías (por ejemplo: categoría = ventas, ubicación = Madrid, proyecto = Pepsi).
+
+3. **Activa reglas automáticas de categorización**
+   - Define reglas del tipo:
+     - “Si el concepto contiene ‘Stripe’ → etiqueta ‘Ventas – Stripe’”.
+     - “Si el concepto contiene ‘Meta Ads’ → proyecto ‘Gimnasio X’ y categoría ‘Marketing’”.
+   - Las reglas se aplican sobre el **histórico** y sobre las nuevas transacciones, evitando que tengas que hacerlo a mano en Excel.
+
+Con bancos conectados y transacciones etiquetadas, los dashboards podrán mostrar información muy detallada sin trabajo manual adicional.
+
+***
+
+### Conceptos clave de los dashboards
+
+En la sección **Dashboards** puedes crear uno o varios paneles personalizados.
+
+Cada dashboard se compone de:
+
+- **Bloques**: cada bloque es un elemento visual:
+  - Gráfico de barras o líneas (evolución en el tiempo).
+  - Gráfico tipo donut (reparto por categoría, proyecto, empresa, etc.).
+  - Tabla dinámica (tipo Excel, interactiva).
+  - Bloque de texto (KPI numérico o texto explicativo).
+  - Bloque de saldos y productos bancarios.
+  - Bloque de presupuesto (barras con porcentaje consumido). 
+- **Filtros** (qué datos se muestran):
+  - Cuentas o productos bancarios.
+  - Categorías y etiquetas.
+  - Empresas, proyectos, ubicaciones, empleados.
+  - Periodo de tiempo (mes, año, últimos X meses…).
+  - Opcionalmente, estado de facturas cuando se integran en el dashboard.
+- **Ajustes** (cómo se muestran):
+  - **Variable**:
+    - Cobros, pagos, saldo inicial, saldo final.
+    - Resultado neto (cobros − pagos) usando “Transacciones”.
+  - **Operación**:
+    - **Suma** (volumen total).
+    - **Media** (por ejemplo, ticket medio).
+    - **Mínimo / máximo**.
+    - **Conteo** (número de transacciones).
+  - **Transacciones ignoradas**:
+    - Puedes excluir traspasos internos entre cuentas para que no distorsionen tus resultados.
+  - **Agrupación / expansión**:
+    - Por etiqueta (taxonomía de categorías, proyectos, empresas, ubicaciones, etc.).
+    - Por producto bancario (cuentas, préstamos).
+    - Por contacto.
+
+Todos los bloques de un dashboard son **interactivos**: al hacer clic en una barra, porción de donut o celda de una tabla, ves el detalle de transacciones correspondientes y puedes editar categorías, añadir facturas, etc.
+
+***
+
+### Crear tu primer dashboard: Flujo de caja
+
+El **dashboard de flujo de caja** es el más utilizado y el mejor punto de partida. Reproduce el típico Excel de cobros/pagos y saldo por meses, pero actualizado en tiempo real.
+
+1. **Crear el dashboard**
+   - Ve a **Dashboards** → **Añadir dashboard**.
+   - Elige la plantilla **“Flujo de caja”**.
+   - Selecciona las cuentas corrientes que quieres analizar (por ejemplo, tus cuentas operativas principales).
+
+2. **Gráfico de cobros y pagos**
+   - Verás un gráfico con barras de **cobros** y **pagos** por mes, y la evolución del **saldo**.
+   - Desde los filtros puedes:
+     - Ajustar el periodo (por ejemplo, últimos 7 meses).
+     - Incluir o excluir determinadas cuentas.
+   - Al hacer clic en una barra de un mes concreto, aparecen las transacciones de ese mes, donde puedes:
+     - Cambiar categorías/etiquetas.
+     - Asociar o crear facturas.
+
+3. **Tabla dinámica por categorías**
+   - Debajo del gráfico, la tabla muestra:
+     - Cobros y pagos agrupados por categorías (ventas por Stripe, por TPV, por transferencia, etc.).
+     - La distribución mes a mes.
+   - En los **ajustes** de la tabla:
+     - Selecciona las filas que quieras (cobros, pagos, resultado neto).
+     - Elige **“Transacciones”** para mostrar el resultado neto (cobros − pagos).
+     - Expande por **etiqueta** y muestra todas o una taxonomía específica, según te interese.
+
+Este dashboard sustituye al Excel manual y te permite ver de un vistazo si tu negocio está generando caja y cómo se reparte por tipo de ingreso y de gasto.
+
+***
+
+### Dashboard de saldos y deuda
+
+El **dashboard de saldos** te da una visión única de todos tus bancos y productos financieros sin tener que entrar a cada entidad.
+
+Elementos recomendados:
+
+1. **Bloque de texto: saldo total cuentas corrientes**
+   - Filtros:
+     - Solo productos de tipo **cuenta corriente**.
+   - Ajustes:
+     - Variable: **Saldo actual**.
+   - Usa el título del bloque para dejar claro qué estás mostrando (por ejemplo, “Saldo actual total – cuentas corrientes”).
+
+2. **Bloque de texto: deuda total (préstamos)**
+   - Filtros:
+     - Solo productos de tipo **préstamo / financiación**.
+   - Ajustes:
+     - Variable: **Saldo actual** (deuda pendiente).
+   - Permite ver tu deuda agregada en todas las entidades y, al hacer clic, el detalle por producto bancario.
+
+3. **Gráfico donut: distribución de saldos por banco o cuenta**
+   - Tipo de bloque: pagos/cobros por etiqueta en modo **donut**.
+   - Filtros:
+     - Solo cuentas corrientes.
+   - Ajustes:
+     - Variable: **Saldo actual**.
+     - Agrupar por **producto bancario** para ver cuánto dinero tienes en cada cuenta o banco.
+
+4. **Gráfico de líneas: evolución de la deuda**
+   - Filtros:
+     - Solo productos de tipo préstamo.
+   - Ajustes:
+     - Variable: **Saldo actual**.
+   - Muestra cómo va bajando (o subiendo) tu deuda a lo largo del tiempo.
+
+5. **Tabla de saldos por producto y mes**
+   - Filtros:
+     - Productos seleccionados (cuentas, préstamos, etc.).
+   - Ajustes:
+     - Filas: **Saldo**.
+     - Expandir por **producto bancario**.
+   - Verás cada cuenta o préstamo como fila y el saldo mes a mes, con la posibilidad de hacer clic en cada celda para ver el detalle.
+
+***
+
+### Dashboard de cobros (replicable a pagos)
+
+El **dashboard de cobros** se centra en el detalle de tus ingresos: por empresa, proyecto, vía de ingreso, ticket medio, etc. Puede replicarse fácilmente para **pagos** cambiando los filtros a “pagos”.
+
+Bloques habituales:
+
+1. **KPI de cobros totales**
+   - Bloque de texto con:
+     - Variable: **Cobros** (suma).
+     - Filtros: el periodo que quieras (año, mes, último trimestre…).
+   - Útil como métrica principal del dashboard.
+
+2. **Cobros por empresa**
+   - Gráfico donut.
+   - Filtros:
+     - Transacciones etiquetadas con la taxonomía **Empresas**.
+   - Ajustes:
+     - Variable: **Cobros** (suma, no ignoradas).
+     - Agrupar por etiqueta.
+     - Mostrar solo la taxonomía “Empresas”.
+   - Permite ver qué porcentaje de tus cobros procede de cada empresa del grupo.
+
+3. **Cobros por proyecto**
+   - Igual que el anterior, pero filtrando y mostrando la taxonomía **Proyectos**.
+   - Te ayuda a evitar depender de un solo proyecto o cliente y a ver la distribución de ingresos.
+
+4. **Cobros por vía de ingreso (categorías)**
+   - Gráfico donut:
+     - Filtros: categorías de **ventas** (TPV, transferencia, Stripe, efectivo…).
+     - Ajustes: cobros (suma), agrupado por taxonomía **Categorías**.
+   - Muestra el reparto del volumen total por método de pago.
+
+5. **Número de transacciones por vía de ingreso**
+   - Mismo bloque, mismos filtros que el anterior, pero:
+     - Ajustes: **Operación = conteo** en lugar de suma.
+   - Así ves el **número de ventas** por vía de ingreso.
+
+6. **Ticket medio por vía de ingreso**
+   - De nuevo, mismo bloque y filtros, pero:
+     - Ajustes: **Operación = media**.
+   - El resultado es el **importe medio** de cada venta según el método de pago (por ejemplo, ticket medio más alto en transferencias que en TPV).
+
+7. **Tablas de evolución**
+   - Tablas que muestran:
+     - Volumen de cobros por vía de ingreso mes a mes.
+     - Evolución del ticket medio por vía de ingreso o por proyecto.
+   - Permiten detectar anomalías (subidas o bajadas repentinas de volumen o de ticket medio) y entrar al detalle.
+
+***
+
+### Dashboard por locales, ubicaciones o unidades de negocio
+
+Si tienes varios locales, delegaciones o unidades de negocio (por ejemplo, una cadena de restaurantes), puedes crear un dashboard para comparar su rendimiento.
+
+Ejemplo de enfoque:
+
+1. **Configura una taxonomía de ubicaciones**
+   - Etiquetas como: “Local Madrid”, “Local Barcelona”, “Local Sevilla”, etc.
+
+2. **Crea un dashboard “Locales”**
+   - Filtra todas las transacciones que lleven la taxonomía **Ubicaciones**.
+   - Añade bloques como:
+     - Cobros y pagos por local (donut o barras).
+     - Resultado neto por local.
+     - Evolución mensual de cobros/pagos por local.
+     - Tablas desglosadas por ubicación.
+
+3. **Comparar dos locales en paralelo**
+   - En el mismo dashboard, puedes:
+     - Reservar la columna izquierda para “Local Madrid”.
+     - Reservar la columna derecha para “Local Barcelona”.
+   - Cada bloque se filtra por una ubicación diferente, permitiendo comparar de un vistazo ingresos, gastos, márgenes, etc.
+
+Esta misma lógica se puede aplicar a **proyectos**, **empresas del grupo**, **departamentos** o **empleados** (por ejemplo, comisiones por comercial).
+
+***
+
+### Dashboards con facturas y presupuestos
+
+Además de transacciones bancarias, los dashboards pueden incorporar información de **facturas** y **presupuestos**.
+
+- **Dashboards de facturas**
+  - Permiten ver:
+    - Facturas **pendientes**, **vencidas** o **cobradas/pagadas**.
+    - Distribución por contacto/cliente/proveedor.
+  - Útiles para controlar morosidad y facturas atrasadas.
+
+- **Bloques de presupuesto**
+  - Definen un **límite** por categoría (por ejemplo, marketing, alquileres, software).
+  - Muestran una barra con el porcentaje consumido del presupuesto.
+  - Ayudan a controlar el gasto frente a lo planificado.
+
+***
+
+### Buenas prácticas y recomendaciones
+
+- **Empieza por lo básico**:
+  - Crea primero el dashboard de **flujo de caja**.
+  - Después, añade el de **saldos**.
+  - Luego ve creando dashboards específicos (cobros, pagos, locales, proyectos…).
+- **Aprovecha las taxonomías**:
+  - Piensa en cómo quieres analizar tu negocio (por empresa, local, proyecto, departamento, vía de ingreso…) y crea etiquetas acordes.
+- **Usa reglas automáticas siempre que puedas**:
+  - Cuantas más reglas configures, menos trabajo manual tendrás en el futuro.
+- **Combina volumen, número de transacciones y medias**:
+  - Volumen (suma) + conteo + media te dan una visión completa de:
+    - Total ingresado.
+    - Número de operaciones.
+    - Ticket medio.
+- **Juega con los periodos**:
+  - Cambia el periodo del dashboard (año, trimestre, último mes) para ver tendencias y comparativas rápidas.
+
+***
+
+### Si necesitas ayuda
+
+Si quieres crear un dashboard concreto o tienes dudas con la configuración de filtros, taxonomías o bloques, puedes escribir al equipo de soporte usando el **chat dentro de Banktrack**. También puedes revisar las masterclasses y tutoriales disponibles para ver ejemplos reales de configuración de dashboards.

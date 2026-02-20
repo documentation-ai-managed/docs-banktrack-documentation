@@ -106,10 +106,6 @@
                 "icon": "file-text",
                 "pages": [
                   {
-                    "title": "Tipos de impuestos",
-                    "path": "tipos-de-impuestos"
-                  },
-                  {
                     "title": "Emitir facturas",
                     "path": "banktrack/facturas/emitir-facturas"
                   },
@@ -122,6 +118,10 @@
                     "path": "banktrack/facturas/conciliar-facturas"
                   },
                   {
+                    "title": "Importar facturas",
+                    "path": "banktrack/facturas/importar-facturas"
+                  },
+                  {
                     "title": "Enviar facturas a Banktrack",
                     "path": "banktrack/facturas/enviar-facturas-a-banktrack"
                   },
@@ -130,8 +130,8 @@
                     "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
                   },
                   {
-                    "title": "Importar facturas",
-                    "path": "banktrack/facturas/importar-facturas"
+                    "title": "Tipos de impuestos",
+                    "path": "tipos-de-impuestos"
                   }
                 ]
               },
