@@ -546,10 +546,6 @@
   "favicon": "https://blob-cdn.documentation.ai/org-54c75dd1-b435-4e90-af26-bd7d8846081b/doc-3ced55c8-092e-4386-b871-aab18b35003e/1768393640653-vzfil4htf0i-icon_2000px.png?q=85&fm=auto&auto=compress%2Cformat",
   "navbar": {
     "actions": {
-      "primary": {
-        "title": "Empezar",
-        "link": "https://app.banktrack.com/registrarse"
-      },
       "links": [
         {
           "title": "Iniciar sesión",
