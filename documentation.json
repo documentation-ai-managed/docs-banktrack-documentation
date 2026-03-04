@@ -106,6 +106,10 @@
                 "icon": "file-text",
                 "pages": [
                   {
+                    "title": "Emitir facturas",
+                    "path": "banktrack/facturas/emitir-facturas"
+                  },
+                  {
                     "group": "Verifactu",
                     "pages": [
                       {
@@ -121,10 +125,6 @@
                         "path": "campos-de-verifactu"
                       }
                     ]
-                  },
-                  {
-                    "title": "Emitir facturas",
-                    "path": "banktrack/facturas/emitir-facturas"
                   },
                   {
                     "title": "Conciliar facturas",
