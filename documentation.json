@@ -106,6 +106,22 @@
                 "icon": "file-text",
                 "pages": [
                   {
+                    "title": "Escáner de facturas",
+                    "path": "banktrack/facturas/enviar-facturas-a-banktrack"
+                  },
+                  {
+                    "title": "Importar facturas (Excel o CSV)",
+                    "path": "banktrack/facturas/importar-facturas"
+                  },
+                  {
+                    "title": "Conectar Gmail para subir facturas",
+                    "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
+                  },
+                  {
+                    "title": "Conciliar facturas",
+                    "path": "banktrack/facturas/conciliar-facturas"
+                  },
+                  {
                     "title": "Emitir facturas",
                     "path": "banktrack/facturas/emitir-facturas"
                   },
@@ -125,22 +141,6 @@
                         "path": "campos-de-verifactu"
                       }
                     ]
-                  },
-                  {
-                    "title": "Conciliar facturas",
-                    "path": "banktrack/facturas/conciliar-facturas"
-                  },
-                  {
-                    "title": "Importar facturas",
-                    "path": "banktrack/facturas/importar-facturas"
-                  },
-                  {
-                    "title": "Enviar facturas a Banktrack",
-                    "path": "banktrack/facturas/enviar-facturas-a-banktrack"
-                  },
-                  {
-                    "title": "Conectar Gmail a Banktrack para subir facturas",
-                    "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
                   },
                   {
                     "title": "Tipos de impuestos",
