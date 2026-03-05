@@ -106,24 +106,24 @@
                 "icon": "file-text",
                 "pages": [
                   {
-                    "title": "Escáner de facturas",
+                    "title": "Escáner para subir facturas",
                     "path": "banktrack/facturas/enviar-facturas-a-banktrack"
-                  },
-                  {
-                    "title": "Importar facturas (Excel o CSV)",
-                    "path": "banktrack/facturas/importar-facturas"
                   },
                   {
                     "title": "Conectar Gmail para subir facturas",
                     "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
                   },
                   {
-                    "title": "Conciliar facturas",
-                    "path": "banktrack/facturas/conciliar-facturas"
+                    "title": "Importar facturas (Excel o CSV)",
+                    "path": "banktrack/facturas/importar-facturas"
                   },
                   {
                     "title": "Emitir facturas",
                     "path": "banktrack/facturas/emitir-facturas"
+                  },
+                  {
+                    "title": "Conciliar facturas",
+                    "path": "banktrack/facturas/conciliar-facturas"
                   },
                   {
                     "group": "Verifactu",
@@ -137,14 +137,14 @@
                         "path": "configurar-verifactu-en-banktrack"
                       },
                       {
+                        "title": "Tipos de impuestos",
+                        "path": "tipos-de-impuestos"
+                      },
+                      {
                         "title": "Campos de Verifactu",
                         "path": "campos-de-verifactu"
                       }
                     ]
-                  },
-                  {
-                    "title": "Tipos de impuestos",
-                    "path": "tipos-de-impuestos"
                   }
                 ]
               },
