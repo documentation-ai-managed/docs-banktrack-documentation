@@ -44,3 +44,367 @@ description: "Respuestas a las preguntas más comunes sobre Banktrack."
 <Expandable title="Me faltan transacciones">
   Es posible que se haya quedado alguna transacción pendiente de actualizar. Normalmente esto se soluciona cuando se sincronizan los bancos, por lo que si te vuelve a ocurrir simplemente sincronizando los bancos manualmente (o en la próxima sincronización automática cada 6 horas) se solucionará solo. Si no es así, contáctanos compartiéndonos una captura de pantalla desde tu banco con los movimientos faltantes.
 </Expandable>
+
+
+## Conexión y sincronización bancaria
+
+<Expandable title="¿Qué conexión bancaria debo elegir?">
+  Para cada conexión, hay una pequeña descripción de lo que proporciona: la principal diferencia es que:
+
+  1. Trabajamos con 3 proveedores distintos: Arcopay, GoCardLess y Wealth Reader. Todos ellos autorizados por el Banco de España.
+  2. Existen 2 tipos de conexión:
+      - Acceso directo: devuelve saldo y todo tipo de productos bancarios (cuentas corrientes, tarjetas, préstamos...)
+      - Open Banking (PSD2): devuelve movimientos sin saldo y solo para cuentas corrientes.
+
+  Más información aquí: [Tipos de conexión bancaria](/banktrack/bancos/como-conectar-un-banco)
+</Expandable>
+
+<Expandable title="¿Con qué frecuencia se sincronizan los movimientos?">
+  La sincronización automática se realiza aproximadamente cada 6 horas (4 veces al día). Además, puedes forzar una sincronización manual desde el panel de bancos en cualquier momento.
+
+  Más información aquí: [Sincronización bancaria](/banktrack/bancos/sincronizacion-bancaria)
+</Expandable>
+
+<Expandable title="Mi banco no sincroniza o muestra un error, ¿qué hago?">
+  Los errores de sincronización suelen deberse a cambios introducidos por el propio banco. Banktrack trabaja con proveedores de conexión bancaria para resolverlos. Según el tipo de error:
+
+  - **Error temporal (naranja):** suele resolverse solo en la siguiente sincronización automática. Espera unas horas.
+  - **Error permanente (rojo):** puede requerir reconectar el banco. Ve a la configuración del banco y pulsa en reconectar.
+  - **Sincronización en horario restringido:** algunos bancos solo permiten la sincronización en determinadas franjas horarias (por ejemplo, de 00:00 a 07:00). Intenta forzar la sincronización en ese horario.
+
+  Si el problema persiste varios días, contacta con soporte. En muchos casos el proveedor ya está trabajando con el banco para solucionarlo.
+
+  Más información aquí: [Errores y solución de problemas](/banktrack/bancos/errores-y-solucion-de-problemas)
+</Expandable>
+
+<Expandable title="Sincronización histórica">
+  Por defecto la sincronización con los bancos sólo nos proporciona un par de meses de datos, pero en algunos bancos puedes forzar una "sincronización histórica" siguiendo los pasos que ves aquí:
+
+  [Sincronización bancaria](/banktrack/bancos/sincronizacion-bancaria)
+
+  Esto debería proporcionarte al menos un año de transacciones históricas, dependiendo del banco.
+
+  Sin embargo, lo máximo que proporcionan los bancos es 2 años de histórico. Si necesitas más histórico puedes importarlo a Banktrack siguiendo estos pasos:
+
+  [Importar transacciones](/banktrack/transacciones/importar-transacciones)
+</Expandable>
+
+<Expandable title="Tengo verificación en dos pasos activada en mi banco y da error">
+  Si tu banco solicita un código de verificación cada vez que se sincroniza, te recomendamos dejarlo en sincronización manual, ya que la sincronización automática no podrá completar el paso de verificación y dará error repetidamente.
+</Expandable>
+
+## Facturas
+
+<Expandable title="¿Cómo subo facturas recibidas a Banktrack?">
+  Tienes varias opciones:
+
+  - **Escáner de facturas:** sube PDFs o imágenes desde la sección Facturas y el OCR las procesa automáticamente.
+  - **Conexión con Gmail:** conecta tu cuenta de Gmail para que las facturas recibidas por email se importen automáticamente.
+  - **Importación masiva:** importa facturas desde un archivo Excel o CSV.
+
+  Más información aquí: [Escáner para subir facturas](/banktrack/facturas/enviar-facturas-a-banktrack)
+</Expandable>
+
+<Expandable title="¿Cómo emito facturas desde Banktrack?">
+  Accede a Facturas en el menú lateral y pulsa Nueva factura. Rellena los datos del cliente, conceptos, importes e impuestos. Puedes emitir facturas ordinarias, proformas y presupuestos.
+
+  Más información aquí: [Emitir facturas](/banktrack/facturas/emitir-facturas)
+</Expandable>
+
+<Expandable title="¿Cuándo aparece una factura como PAGADO?">
+  Una factura aparece como pagada cuando se ha marcado manualmente el check de pagado o cuando se le ha asociado una transacción bancaria (conciliación). No se marca automáticamente.
+</Expandable>
+
+<Expandable title="¿Cómo concilio una factura con un movimiento bancario?">
+  La factura debe estar validada previamente (fechas, importes e impuestos correctos). Después, desde la sección de conciliación, busca la transacción bancaria correspondiente y vincúlala. Asegúrate de que:
+
+  - El importe y la fecha coincidan.
+  - La transacción no esté ya conciliada con otra factura.
+  - La factura no esté ya marcada como pagada manualmente (si lo está, quita el check antes de conciliar).
+
+  Más información aquí: [Conciliar facturas](/banktrack/facturas/conciliar-facturas)
+</Expandable>
+
+<Expandable title="Al duplicar una proforma para crear una factura ordinaria, los importes no se actualizan">
+  Al duplicar una proforma, es fundamental revisar y validar manualmente todos los importes antes de guardar la nueva factura, ya que el sistema puede mantener los datos originales. Si persiste el problema, guárdala primero como borrador, revisa los importes y después emítela.
+
+  Ten en cuenta también que la serie de numeración no se conserva al duplicar: deberás introducirla de nuevo.
+</Expandable>
+
+<Expandable title="¿Puedo crear plantillas o automatizar facturas recurrentes?">
+  Actualmente Banktrack no permite automatizar el envío periódico de facturas. Sin embargo, puedes guardar una factura como borrador y reutilizarla como base para futuras facturas duplicándola.
+</Expandable>
+
+<Expandable title="¿Cuántos documentos puedo escanear con mi plan?">
+  Puedes consultarlo en **Configuración > Ajustes > Suscripción**, donde se muestra el detalle de documentos incluidos en tu plan y los límites asociados.
+</Expandable>
+
+<Expandable title="Los campos de las facturas tienen un límite de caracteres, ¿qué puedo hacer?">
+  Efectivamente, los campos tienen un límite máximo de caracteres y no es posible ampliarlo. Las soluciones habituales son abreviar los textos o dividir la información entre varios apartados de la factura.
+</Expandable>
+
+## Verifactu
+
+<Expandable title="¿Qué es Verifactu y cómo funciona en Banktrack?">
+  Verifactu es el sistema de facturación electrónica exigido por la normativa española. Banktrack está integrado con Verifactu para que las facturas emitidas cumplan con los requisitos de la AEAT.
+
+  Más información aquí: [Qué es y cómo funciona](/verifactu-que-es-y-como-funciona)
+</Expandable>
+
+<Expandable title="¿Cómo configuro Verifactu en Banktrack?">
+  Más información aquí: [Configurar Verifactu en Banktrack](/configurar-verifactu-en-banktrack)
+</Expandable>
+
+<Expandable title="Mi factura ha sido rechazada por Verifactu, ¿qué hago?">
+  Los rechazos suelen estar relacionados con errores en los datos fiscales. Revisa lo siguiente:
+
+  - **Acuerdo firmado:** descarga el PDF del acuerdo, fírmalo y vuélvelo a subir.
+  - **NIF/CIF:** verifica que el tipo de identificación sea correcto. Si el cliente tiene NIE, selecciona "NIF español" (que incluye DNI y NIE) en lugar de "DNI extranjero".
+  - **Régimen y calificación:** asegúrate de que los campos de régimen fiscal y calificación de la operación estén correctamente rellenados.
+</Expandable>
+
+<Expandable title="¿Cómo selecciono la clasificación S2 (Inversión del Sujeto Pasivo)?">
+  En el desplegable de tipos de IVA, selecciona la opción **"IVA (0% - Inv. Suj. Pasivo)"** o la variante que indique "inversión del sujeto pasivo".
+
+  Más información aquí: [Tipos de impuestos](/tipos-de-impuestos)
+</Expandable>
+
+<Expandable title="En facturas exentas de IVA, la casilla de régimen aparece en blanco">
+  Cuando el IVA está en modo exento, el campo de régimen no se rellena automáticamente y debes completarlo manualmente. Consulta con tu gestoría si el régimen exento es correcto para tu caso. Actualmente no es posible establecer un régimen por defecto automáticamente para todas las facturas.
+</Expandable>
+
+<Expandable title="¿Puedo personalizar la plantilla de las facturas?">
+  Puedes añadir el logotipo de tu empresa desde **Facturas > Configuración de facturas > Valores por defecto**. El resto de la plantilla es estándar para cumplir con los requisitos de Verifactu.
+</Expandable>
+
+<Expandable title="¿Es compatible con TicketBAI (País Vasco)?">
+  La compatibilidad con TicketBAI está en desarrollo. Consulta con soporte para conocer el estado actual.
+</Expandable>
+
+## Categorías, etiquetas y reglas automáticas
+
+<Expandable title="¿Cómo creo categorías personalizadas para mis transacciones?">
+  Desde la sección Etiquetas del menú lateral, puedes crear tus propias categorías de ingresos y gastos para clasificar las transacciones como necesites.
+
+  Más información aquí: [Cómo crear una categoría personalizada](/banktrack/etiquetas/como-crear-una-categoria-personalizada)
+</Expandable>
+
+<Expandable title="¿Cómo automatizo la categorización de transacciones?">
+  Puedes crear reglas automáticas que asignen categorías, etiquetas, contactos o marquen como "no contable" según condiciones como el concepto, importe, tipo (ingreso/gasto) o cuenta bancaria.
+
+  Más información aquí: [Crear automatizaciones](/banktrack/reglas-automaticas/crear-automatizaciones)
+</Expandable>
+
+<Expandable title="Mis reglas automáticas no se aplican retroactivamente, ¿por qué?">
+  Las reglas se pueden aplicar retrospectivamente con el botón 🔄 **Aplicar retrospectivamente**. Sin embargo, solo se aplican a transacciones que coincidan exactamente con las condiciones configuradas y que no hayan sido ya categorizadas o procesadas por otra regla.
+
+  Revisa lo siguiente:
+
+  - Que el tipo de condición sea correcto (por ejemplo, "por concepto" y "contiene").
+  - Que el texto de la condición coincida exactamente con el concepto de las transacciones.
+  - Que las transacciones no estén ya categorizadas manualmente.
+</Expandable>
+
+<Expandable title="¿Cómo hago para que una cuenta bancaria no compute como ingreso/gasto?">
+  Útil por ejemplo para cuentas fiduciarias. Tienes dos opciones:
+
+  1. **Ocultar la cuenta:** desde la configuración del banco, oculta la cuenta. No se verán sus movimientos en ningún sitio.
+  2. **Marcar transacciones como "No contable":** crea una regla automática de tipo personalizado para esa cuenta que marque todas sus transacciones (ingresos y gastos) como "No contable". Así verás los movimientos pero no afectarán a los totales. Para configurarla: tipo personalizado → condición: la cuenta del banco → acción: marcar como "No contable" para ingresos O gastos.
+
+  Más información aquí: [Crear automatizaciones](/banktrack/reglas-automaticas/crear-automatizaciones)
+</Expandable>
+
+## Escenarios y previsiones de tesorería
+
+<Expandable title="¿Cómo hago previsiones de tesorería?">
+  Desde la sección Escenarios, puedes planificar tu flujo de caja futuro. Puedes crear operaciones (pagos o cobros recurrentes o puntuales) asociadas a contactos, y estas se reflejarán en el calendario y en la previsión de caja.
+
+  Más información aquí: [Cómo hacer una previsión a futuro](/banktrack/previsiones/como-hacer-una-prevision-a-futuro)
+</Expandable>
+
+<Expandable title="¿Cómo añado pagos programados al calendario sin tener factura?">
+  Utiliza Operaciones: crea un contacto (por ejemplo, el banco o prestamista) y asócialo con los pagos, ya sean puntuales o recurrentes. Estos aparecerán automáticamente en el calendario.
+
+  Más información aquí: [Cómo crear operaciones](/banktrack/previsiones/como-crear-operaciones)
+</Expandable>
+
+<Expandable title="Quiero prever un gasto mensual genérico sin contacto específico, ¿cómo lo hago?">
+  Para previsiones de gasto generales (por ejemplo, "viajes") donde no hay un contacto concreto, es más recomendable usar los **Objetivos**: haz clic en la celda correspondiente del mes en Escenarios, selecciona "Objetivo" e introduce el importe directamente. También puedes poner "Calculado" para crear fórmulas basadas en datos históricos.
+</Expandable>
+
+<Expandable title="En Escenarios, el mes actual me aparece a 0 € o no muestra las operaciones">
+  En el mes actual, Escenarios toma el valor de las transacciones reales (no de las operaciones). Esto es normal. Para ver las operaciones pendientes, haz clic en la celda correspondiente del mes.
+
+  Si los meses anteriores también aparecen a 0, revisa la fecha de inicio de sincronización del banco en su configuración.
+</Expandable>
+
+<Expandable title="El calendario muestra importes que no entiendo o cifras duplicadas">
+  Los importes del calendario pueden incluir cargos duplicados si tienes activado el producto de tarjeta de crédito, ya que pueden aparecer tanto los movimientos individuales como el cargo global de fin de mes. Revisa la configuración de tus productos bancarios.
+</Expandable>
+
+## Transacciones
+
+<Expandable title="¿Cómo importo transacciones manualmente?">
+  Puedes importar transacciones mediante un archivo CSV siguiendo la plantilla proporcionada por Banktrack, o añadirlas una a una de forma manual creando un banco manual.
+
+  - [Importar transacciones](/banktrack/transacciones/importar-transacciones)
+  - [Cómo añadir una transacción de forma manual](/banktrack/transacciones/como-anadir-una-transaccion-de-forma-manual)
+</Expandable>
+
+<Expandable title="¿Cómo ignoro una transacción?">
+  Desde el buscador de transacciones, selecciona la transacción y márcala como "ignorada". También puedes hacerlo en bloque seleccionando varias transacciones a la vez, o crear una regla automática para ignorar automáticamente ciertas transacciones.
+
+  Más información aquí: [Cómo ignorar una transacción](/banktrack/transacciones/como-ignorar-una-transaccion)
+</Expandable>
+
+<Expandable title="¿Cómo exporto transacciones?">
+  Desde la sección de transacciones, utiliza el botón Exportar para descargar tus movimientos.
+
+  Más información aquí: [Cómo exportar transacciones](/banktrack/transacciones/como-exportar-transacciones)
+</Expandable>
+
+<Expandable title="¿Cómo registro ingresos en efectivo?">
+  Crea un banco manual y añade las transacciones de efectivo manualmente. No es necesario emitir facturas para ello.
+
+  Más información aquí: [Cómo añadir una transacción de forma manual](/banktrack/transacciones/como-anadir-una-transaccion-de-forma-manual)
+</Expandable>
+
+## Paneles financieros (Dashboards) e informes
+
+<Expandable title="¿Qué diferencia hay entre un informe y un dashboard?">
+  - **Dashboard:** es un panel visual en tiempo real, personalizable con gráficos, tablas, listas de saldos, presupuestos, etc. Se consulta directamente en la plataforma.
+  - **Informe:** es un documento que se genera y envía automáticamente (por email u otros canales) con la periodicidad que elijas: diaria, semanal o mensual.
+</Expandable>
+
+<Expandable title="¿Cómo creo un dashboard personalizado?">
+  Accede a Dashboards en el menú lateral, elige uno predefinido o crea uno en blanco, y añade los bloques que necesites: gráficos de ingresos y gastos, evoluciones, presupuestos, listas de saldos, tablas, etc.
+
+  Más información aquí: [Dashboards y paneles personalizados](/banktrack/paneles-financieros/dashboards-y-paneles-personalizados)
+</Expandable>
+
+<Expandable title="¿Cómo creo un informe personalizado?">
+  Desde Informes > Añadir informe, configura el nombre, la periodicidad (diaria, semanal, mensual), la hora de envío y los bloques de contenido (listas, tablas, gráficos).
+
+  Más información aquí: [Crear informes personalizados](/banktrack/informes/crear-informes-personalizados)
+</Expandable>
+
+<Expandable title="¿Cómo visualizo el balance de cobros menos pagos en un gráfico?">
+  En los gráficos, la variable **"Transacciones"** muestra el resultado neto (cobros menos pagos). Selecciona esa variable al configurar un gráfico de línea o barras. En las tablas también puedes incluirla como columna.
+</Expandable>
+
+<Expandable title="¿Se puede calcular el IVA desde las transacciones bancarias?">
+  Banktrack gestiona el IVA a través del módulo de Facturas, no directamente desde las transacciones bancarias. Si no usas el módulo de facturación, una alternativa es etiquetar los gastos con etiquetas como "Gastos con IVA" y luego visualizar el balance por etiqueta en los dashboards.
+</Expandable>
+
+## Usuarios, espacios de trabajo y accesos
+
+<Expandable title="¿Cómo añado usuarios a mi cuenta?">
+  Desde **Configuración > Usuarios**, puedes invitar a otros usuarios a tu espacio de trabajo proporcionando su email. El número de usuarios disponibles depende de tu plan.
+
+  Más información aquí: [Cómo añadir usuarios adicionales](/banktrack/ajustes/como-anadir-usuarios-adicionales)
+</Expandable>
+
+<Expandable title="¿Qué son los espacios de trabajo?">
+  Los espacios de trabajo sirven para separar empresas o proyectos en paneles completamente independientes, cada uno con sus propios bancos, usuarios, categorías y dashboards. Desde una sola cuenta puedes acceder a diferentes espacios de trabajo sin necesidad de crear cuentas separadas.
+
+  Más información aquí: [Cómo añadir un espacio de trabajo](/banktrack/ajustes/como-anadir-un-espacio-de-trabajo)
+</Expandable>
+
+<Expandable title="Un usuario invitado no puede acceder o no le aparece la invitación">
+  Si el usuario invitado ya tenía una cuenta previa en Banktrack, puede haber un conflicto. En ese caso, que recargue la página tras recibir la invitación. Si sigue sin funcionar, elimina la invitación y vuelve a enviarla. También verifica que estés añadiendo al usuario al espacio de trabajo correcto desde la sección Espacios de trabajo.
+</Expandable>
+
+## Suscripción, facturación y baja
+
+<Expandable title="¿Cómo gestiono mi suscripción?">
+  Accede a **Configuración > Ajustes > Suscripción** para ver tu plan actual, documentos incluidos, métodos de pago y facturas emitidas por Banktrack.
+
+  Más información aquí: [Cómo gestionar mi suscripción a Banktrack](/banktrack/ajustes/como-gestionar-mi-suscripcion-a-banktrack)
+</Expandable>
+
+<Expandable title="¿Cómo cambio mi método de pago?">
+  Accede a **Configuración > Ajustes > Suscripción** desde [app.banktrack.com](https://app.banktrack.com). Allí encontrarás la opción para gestionar tu método de pago a través de Stripe.
+</Expandable>
+
+<Expandable title="¿Cómo veo y descargo las facturas de mi suscripción?">
+  En **Configuración > Ajustes > Suscripción > Ver Facturas** puedes ver y descargar todas las facturas emitidas por Banktrack.
+</Expandable>
+
+<Expandable title="¿Cómo me doy de baja?">
+  Para cancelar tu suscripción, contacta con soporte a través del chat o email. El equipo procesará la baja.
+</Expandable>
+
+<Expandable title="¿Dónde consulto los precios?">
+  Los precios y planes están disponibles en [banktrack.com/precios](https://banktrack.com/precios) y en la documentación:
+
+  [Planes y precios](/banktrack/informacion-de-interes/planes-y-precios)
+</Expandable>
+
+## Contactos
+
+<Expandable title="¿Cómo creo un contacto (cliente o proveedor)?">
+  Desde la sección Contactos del menú lateral, pulsa en añadir contacto y rellena los datos. Puedes también importar contactos en masa desde un archivo.
+
+  - [Cómo crear un contacto](/cmo-crear-un-contacto)
+  - [Cómo importar contactos](/banktrack/contactos/como-importar-contactos)
+</Expandable>
+
+<Expandable title="Al emitir factura, me dice que el NIF del cliente es incorrecto">
+  Revisa en el contacto que el tipo de identificación sea correcto. Si el cliente tiene NIE, selecciona **"NIF español"** (que incluye tanto DNI como NIE) en lugar de "DNI extranjero". Asegúrate también de que la fecha de operación sea correcta. A veces, recargar la página y recargar el borrador soluciona errores temporales relacionados con la validación de la AEAT.
+</Expandable>
+
+## Integraciones
+
+<Expandable title="¿Se integra Banktrack con mi ERP?">
+  No existe integración directa entre Banktrack y ERPs personalizados. Sin embargo, puedes exportar los datos de conciliación desde Banktrack con todo el detalle necesario para importarlos manualmente en tu ERP.
+</Expandable>
+
+<Expandable title="¿Hay integración con Holded?">
+  Sí, puedes conectar Holded con Banktrack para sincronizar contactos, facturas y etiquetas.
+
+  Más información aquí: [Cómo conectar con Holded](/banktrack/integraciones/como-conectar-con-holded)
+</Expandable>
+
+<Expandable title="¿Hay integración con Odoo?">
+  Sí, se sincronizan automáticamente facturas y contactos para que puedas hacer previsiones de tesorería en Banktrack.
+</Expandable>
+
+<Expandable title="¿Tiene Banktrack una API pública?">
+  La API está planificada pero actualmente no está disponible. Por el momento, la alternativa es exportar datos manualmente o utilizar las integraciones existentes.
+</Expandable>
+
+<Expandable title="¿Puedo conectar Stripe para añadir enlaces de pago en facturas?">
+  Actualmente no existe integración con Stripe ni con plataformas similares para añadir enlaces de pago directamente en las facturas emitidas. El método de pago se indica como texto informativo en la factura.
+</Expandable>
+
+## Alertas y notificaciones
+
+<Expandable title="¿Cómo creo una alerta personalizada?">
+  Desde la sección Alertas del menú lateral, pulsa Añadir alerta y configura las condiciones: por tipo de transacción (ingreso/gasto con un importe determinado), cargo duplicado, saldo, o personalizada. Las alertas se envían por los canales que configures (email, Telegram, WhatsApp, etc.).
+
+  Más información aquí: [Crear una alerta personalizada](/banktrack/alertas/crear-una-alerta-personalizada)
+</Expandable>
+
+<Expandable title="¿Puedo recibir notificaciones por canales como WhatsApp o Telegram?">
+  Sí, Banktrack permite conectar canales de comunicación como WhatsApp, email y Telegram para recibir alertas e informes.
+
+  Más información aquí: [Cómo conectar un canal](/banktrack/integraciones/como-conectar-un-canal)
+</Expandable>
+
+## Aplicación móvil
+
+<Expandable title="¿Banktrack tiene app móvil?">
+  Actualmente no existe una app nativa para móviles. Sin embargo, la web es completamente responsive y se adapta a cualquier dispositivo. Se recomienda crear un acceso directo desde el navegador a [app.banktrack.com](https://app.banktrack.com) en la pantalla de inicio de tu dispositivo para tener un acceso rápido similar a una app.
+</Expandable>
+
+## Formación y recursos
+
+<Expandable title="¿Hay cursos o tutoriales para aprender a usar Banktrack?">
+  Sí, tienes disponibles:
+
+  - **Documentación completa:** [docs.banktrack.com](https://docs.banktrack.com)
+  - **Webinar de formación en vídeo:** [Ver webinar en YouTube](https://youtu.be/x0CvevNsGZA)
+  - **Masterclass de Paneles Financieros:** [Masterclass Paneles Financieros](/banktrack/masterclass-paneles-financieros)
+  - **Videollamadas personalizadas:** puedes solicitar una demostración o sesión de soporte a través del chat.
+</Expandable>
+
