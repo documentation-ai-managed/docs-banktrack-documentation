@@ -29,15 +29,18 @@
                 "pages": [
                   {
                     "title": "Bienvenido",
-                    "path": "banktrack/introduction"
+                    "path": "banktrack/introduction",
+                    "icon": "lucide-star"
                   },
                   {
                     "title": "¿Qué es Banktrack?",
-                    "path": "banktrack/como-empezar/que-es-banktrack"
+                    "path": "banktrack/como-empezar/que-es-banktrack",
+                    "icon": "lucide-message-circle-question"
                   },
                   {
                     "title": "Primeros pasos en Banktrack",
-                    "path": "banktrack/como-empezar/primeros-pasos-en-banktrack"
+                    "path": "banktrack/como-empezar/primeros-pasos-en-banktrack",
+                    "icon": "lucide-step-forward"
                   }
                 ]
               },
@@ -53,25 +56,29 @@
                         "title": "Cómo crear un bloque de presupuesto",
                         "path": "banktrack/paneles-financieros/dashboards-y-paneles-personalizados/como-crear-un-bloque-de-presupuesto"
                       }
-                    ]
+                    ],
+                    "icon": "chart-column-stacked"
                   },
                   {
                     "title": "Masterclass Paneles Financieros",
-                    "path": "banktrack/masterclass-paneles-financieros"
+                    "path": "banktrack/masterclass-paneles-financieros",
+                    "icon": "book-heart-icon"
                   }
                 ]
               },
               {
-                "group": "Previsiones",
+                "group": "Escenarios",
                 "icon": "trending-up",
                 "pages": [
                   {
                     "title": "Cómo hacer una previsión a futuro",
-                    "path": "banktrack/previsiones/como-hacer-una-prevision-a-futuro"
+                    "path": "banktrack/previsiones/como-hacer-una-prevision-a-futuro",
+                    "icon": "lucide-remove-formatting"
                   },
                   {
-                    "title": "Cómo crear operaciones",
-                    "path": "banktrack/previsiones/como-crear-operaciones"
+                    "title": "Operaciones puntuales y recurrentes",
+                    "path": "banktrack/previsiones/como-crear-operaciones",
+                    "icon": "newspaper"
                   }
                 ]
               },
@@ -81,23 +88,28 @@
                 "pages": [
                   {
                     "title": "Buscador de transacciones",
-                    "path": "banktrack/transacciones/buscador-de-transacciones"
+                    "path": "banktrack/transacciones/buscador-de-transacciones",
+                    "icon": "lucide-search"
                   },
                   {
-                    "title": "Cómo ignorar una transacción",
-                    "path": "banktrack/transacciones/como-ignorar-una-transaccion"
+                    "title": "Ignorar transacciones",
+                    "path": "banktrack/transacciones/como-ignorar-una-transaccion",
+                    "icon": "eye-off"
                   },
                   {
                     "title": "Importar transacciones",
-                    "path": "banktrack/transacciones/importar-transacciones"
+                    "path": "banktrack/transacciones/importar-transacciones",
+                    "icon": "cloud-upload"
                   },
                   {
-                    "title": "Cómo añadir una transacción de forma manual",
-                    "path": "banktrack/transacciones/como-anadir-una-transaccion-de-forma-manual"
+                    "title": "Añadir transacciones manualmente",
+                    "path": "banktrack/transacciones/como-anadir-una-transaccion-de-forma-manual",
+                    "icon": "git-pull-request-create"
                   },
                   {
-                    "title": "Cómo exportar transacciones",
-                    "path": "banktrack/transacciones/como-exportar-transacciones"
+                    "title": "Exportar transacciones",
+                    "path": "banktrack/transacciones/como-exportar-transacciones",
+                    "icon": "download-icon"
                   }
                 ]
               },
@@ -107,23 +119,28 @@
                 "pages": [
                   {
                     "title": "Escáner para subir facturas",
-                    "path": "banktrack/facturas/enviar-facturas-a-banktrack"
+                    "path": "banktrack/facturas/enviar-facturas-a-banktrack",
+                    "icon": "lucide-scan-text"
                   },
                   {
                     "title": "Conectar Gmail para subir facturas",
-                    "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas"
+                    "path": "banktrack/facturas/conectar-gmail-a-banktrack-para-subir-facturas",
+                    "icon": "lucide-folder-symlink"
                   },
                   {
                     "title": "Importar facturas (Excel o CSV)",
-                    "path": "banktrack/facturas/importar-facturas"
+                    "path": "banktrack/facturas/importar-facturas",
+                    "icon": "cloud-upload-icon"
                   },
                   {
                     "title": "Emitir facturas",
-                    "path": "banktrack/facturas/emitir-facturas"
+                    "path": "banktrack/facturas/emitir-facturas",
+                    "icon": "lucide-send"
                   },
                   {
                     "title": "Conciliar facturas",
-                    "path": "banktrack/facturas/conciliar-facturas"
+                    "path": "banktrack/facturas/conciliar-facturas",
+                    "icon": "link"
                   },
                   {
                     "group": "Verifactu",
@@ -144,7 +161,8 @@
                         "title": "Campos de Verifactu",
                         "path": "campos-de-verifactu"
                       }
-                    ]
+                    ],
+                    "icon": "book-open-check-icon"
                   }
                 ]
               },
@@ -153,8 +171,9 @@
                 "icon": "zap",
                 "pages": [
                   {
-                    "title": "Crear automatizaciones",
-                    "path": "banktrack/reglas-automaticas/crear-automatizaciones"
+                    "title": "Automatizaciones sobre transacciones",
+                    "path": "banktrack/reglas-automaticas/crear-automatizaciones",
+                    "icon": "lucide-stars"
                   }
                 ]
               },
@@ -163,8 +182,9 @@
                 "icon": "bar-chart-2",
                 "pages": [
                   {
-                    "title": "Crear informes personalizados",
-                    "path": "banktrack/informes/crear-informes-personalizados"
+                    "title": "Programar informes personalizados",
+                    "path": "banktrack/informes/crear-informes-personalizados",
+                    "icon": "lucide-mailbox"
                   }
                 ]
               },
@@ -173,8 +193,9 @@
                 "icon": "bell",
                 "pages": [
                   {
-                    "title": "Crear una alerta personalizada",
-                    "path": "banktrack/alertas/crear-una-alerta-personalizada"
+                    "title": "Programar alertas personalizadas",
+                    "path": "banktrack/alertas/crear-una-alerta-personalizada",
+                    "icon": "bell-ring"
                   }
                 ]
               },
@@ -184,19 +205,23 @@
                 "pages": [
                   {
                     "title": "Cómo conectar un banco",
-                    "path": "banktrack/bancos/como-conectar-un-banco"
+                    "path": "banktrack/bancos/como-conectar-un-banco",
+                    "icon": "banknote-arrow-up"
                   },
                   {
                     "title": "Configuración de bancos",
-                    "path": "banktrack/bancos/configuracion-de-bancos"
+                    "path": "banktrack/bancos/configuracion-de-bancos",
+                    "icon": "settings"
                   },
                   {
                     "title": "Sincronización bancaria",
-                    "path": "banktrack/bancos/sincronizacion-bancaria"
+                    "path": "banktrack/bancos/sincronizacion-bancaria",
+                    "icon": "git-compare-arrows"
                   },
                   {
                     "title": "Errores y solución de problemas",
-                    "path": "banktrack/bancos/errores-y-solucion-de-problemas"
+                    "path": "banktrack/bancos/errores-y-solucion-de-problemas",
+                    "icon": "alert-circle"
                   }
                 ]
               },
@@ -206,11 +231,13 @@
                 "pages": [
                   {
                     "title": "Cómo conectar un canal",
-                    "path": "banktrack/integraciones/como-conectar-un-canal"
+                    "path": "banktrack/integraciones/como-conectar-un-canal",
+                    "icon": "link2"
                   },
                   {
                     "title": "Cómo conectar con Holded",
-                    "path": "banktrack/integraciones/como-conectar-con-holded"
+                    "path": "banktrack/integraciones/como-conectar-con-holded",
+                    "icon": "link2"
                   }
                 ]
               },
@@ -219,12 +246,14 @@
                 "icon": "tag",
                 "pages": [
                   {
-                    "title": "Cómo crear una categoría personalizada",
-                    "path": "banktrack/etiquetas/como-crear-una-categoria-personalizada"
+                    "title": "Etiquetas personalizadas",
+                    "path": "banktrack/etiquetas/como-crear-una-categoria-personalizada",
+                    "icon": "tags-icon"
                   },
                   {
-                    "title": "Cómo categorizar transacciones automáticamente",
-                    "path": "banktrack/etiquetas/como-categorizar-transacciones-automaticamente"
+                    "title": "Etiquetar transacciones automáticamente",
+                    "path": "banktrack/etiquetas/como-categorizar-transacciones-automaticamente",
+                    "icon": "lucide-stars"
                   }
                 ]
               },
@@ -233,12 +262,14 @@
                 "icon": "users",
                 "pages": [
                   {
-                    "title": "Cómo crear un contacto",
-                    "path": "cmo-crear-un-contacto"
+                    "title": "Edición de contacto",
+                    "path": "como-crear-un-contacto",
+                    "icon": "lucide-person-standing"
                   },
                   {
-                    "title": "Cómo importar contactos",
-                    "path": "banktrack/contactos/como-importar-contactos"
+                    "title": "Importar contactos",
+                    "path": "banktrack/contactos/como-importar-contactos",
+                    "icon": "cloud-upload-icon"
                   }
                 ]
               },
@@ -286,19 +317,23 @@
                 "pages": [
                   {
                     "title": "Preguntas frecuentes",
-                    "path": "banktrack/informacion-de-interes/preguntas-frecuentes"
+                    "path": "banktrack/informacion-de-interes/preguntas-frecuentes",
+                    "icon": "circle-question-mark-icon"
                   },
                   {
                     "title": "Seguridad",
-                    "path": "banktrack/informacion-de-interes/seguridad"
+                    "path": "banktrack/informacion-de-interes/seguridad",
+                    "icon": "book-lock-icon"
                   },
                   {
                     "title": "Privacidad",
-                    "path": "banktrack/informacion-de-interes/privacidad"
+                    "path": "banktrack/informacion-de-interes/privacidad",
+                    "icon": "eye-off"
                   },
                   {
                     "title": "Planes y precios",
-                    "path": "banktrack/informacion-de-interes/planes-y-precios"
+                    "path": "banktrack/informacion-de-interes/planes-y-precios",
+                    "icon": "dollar-sign"
                   }
                 ]
               }
