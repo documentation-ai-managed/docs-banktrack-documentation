@@ -43,7 +43,7 @@
               },
               {
                 "group": "Paneles Financieros",
-                "icon": "layout-dashboard",
+                "icon": "align-end-horizontal",
                 "pages": [
                   {
                     "title": "Dashboards y paneles personalizados",
