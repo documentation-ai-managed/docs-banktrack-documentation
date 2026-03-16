@@ -146,6 +146,10 @@
                     "group": "Verifactu",
                     "pages": [
                       {
+                        "title": "Tipos de impuestos Verifactu",
+                        "path": "tipos-de-impuestos-verifactu"
+                      },
+                      {
                         "title": "Qué es y cómo funciona",
                         "path": "verifactu-que-es-y-como-funciona"
                       },
