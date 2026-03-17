@@ -20,8 +20,8 @@
         "icon": "languages",
         "dropdowns": [
           {
-            "dropdown": "Test dropdown",
-            "icon": "activity-square",
+            "dropdown": "Documentación",
+            "icon": "book-a",
             "tabs": [
               {
                 "tab": "Documentación",
@@ -208,9 +208,9 @@
                     "icon": "landmark",
                     "pages": [
                       {
-                        "title": "Cómo conectar un banco",
+                        "title": "Conectar bancos",
                         "path": "banktrack/bancos/como-conectar-un-banco",
-                        "icon": "banknote-arrow-up"
+                        "icon": "folder-sync"
                       },
                       {
                         "title": "Configuración de bancos",
@@ -234,12 +234,12 @@
                     "icon": "plug",
                     "pages": [
                       {
-                        "title": "Cómo conectar un canal",
+                        "title": "Conectar con mensajería",
                         "path": "banktrack/integraciones/como-conectar-un-canal",
                         "icon": "link2"
                       },
                       {
-                        "title": "Cómo conectar con Holded",
+                        "title": "Conectar con Holded",
                         "path": "banktrack/integraciones/como-conectar-con-holded",
                         "icon": "link2"
                       }
