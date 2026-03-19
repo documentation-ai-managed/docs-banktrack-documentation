@@ -159,11 +159,7 @@
                           },
                           {
                             "title": "Tipos de impuestos",
-                            "path": "tipos-de-impuestos"
-                          },
-                          {
-                            "title": "Tipos de impuestos Verifactu",
-                            "path": "tipos-de-impuestos-verifactu"
+                            "path": "tipos-impuestos"
                           },
                           {
                             "title": "Campos de Verifactu",
