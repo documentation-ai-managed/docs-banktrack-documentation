@@ -3,163 +3,250 @@ title: Tipos de impuestos
 description: Guía completa de todos los tipos de impuestos disponibles en Banktrack al emitir o registrar facturas (IVA, IGIC, IPSI, IRPF y VAT OSS).
 ---
 
-## Guía de tipos de impuestos en Banktrack (IVA, IGIC, IPSI e IRPF)
+## Guía de tipos de impuestos en Banktrack
 
-Esta guía explica qué significa cada tipo de impuesto que aparece en Banktrack al emitir o registrar facturas, cuándo debes elegir uno u otro y se incluyen ejemplos prácticos.
-
----
-
-## 1. Cómo funcionan los impuestos en Banktrack
-
-Al crear o registrar una factura en Banktrack verás un campo de **"Impuestos"** donde puedes seleccionar uno o varios tipos de impuestos, organizados en estos grupos:
-
-- **IVA**
-- **IVA + REC** (recargo de equivalencia)
-- **IGIC** (Canarias)
-- **IPSI Ceuta**
-- **IPSI Melilla**
-- **Retención (IRPF)**
-- **VAT OSS** (ventas a consumidores finales de la UE)
-
-Banktrack utiliza lo que selecciones para:
-
-- Calcular correctamente los totales de la factura.
-- Clasificar las facturas según su tipo de impuesto (para informes, conciliación y para facilitar el trabajo a tu asesoría).
-- Generar los registros de facturación en formato Verifactu con el código de tipo de operación correcto.
-- Diferenciar operaciones interiores, intracomunitarias, exportaciones, exentas, no sujetas, etc.
-
-Cuando escaneas una factura, Banktrack puede reconocer la base imponible, el tipo de impuesto y el importe; aun así, es recomendable revisar que el tipo de impuesto asignado coincide con lo que realmente corresponde según la operación.
+Esta guía explica qué tipo de impuesto debes seleccionar en Banktrack al emitir o registrar una factura, cuándo aplica cada uno y por qué. Si tienes dudas sobre un caso concreto, consúltalo siempre con tu asesoría fiscal.
 
 ---
 
-## 2. Grupo IVA (operaciones en Península y Baleares)
+## 1. ¿Qué impuesto me corresponde?
 
-### 2.1. Qué es el IVA y en qué territorio aplica
+Antes de cualquier cosa, identifica el territorio desde el que operas. El impuesto cambia según la ubicación:
 
-El **IVA (Impuesto sobre el Valor Añadido)** es el impuesto general sobre el consumo en España, aplicable en la **Península y Baleares** (no se aplica en Canarias, Ceuta ni Melilla, donde existen IGIC e IPSI).
+| Territorio | Impuesto que aplica |
+|---|---|
+| Península y Baleares | **IVA** |
+| Canarias | **IGIC** (no IVA) |
+| Ceuta | **IPSI Ceuta** (no IVA) |
+| Melilla | **IPSI Melilla** (no IVA) |
+| Ventas a particulares de la UE (>10.000 €/año) | **VAT OSS** del país del cliente |
 
-En términos generales:
+Las **retenciones de IRPF** se combinan con cualquiera de los anteriores cuando la normativa lo exige (facturas de profesionales autónomos, alquileres, etc.).
 
-- Se repercute IVA en las **ventas** (facturas emitidas).
-- Se soporta IVA en las **compras** (facturas de proveedores).
-- Se liquida trimestralmente a través del **Modelo 303**, compensando IVA repercutido menos soportado.
+---
 
-### 2.2. Tipos de IVA porcentuales en Banktrack
+## 2. IVA — Península y Baleares
 
-<Expandable title="IVA (21%) – Tipo general">
+El **IVA (Impuesto sobre el Valor Añadido)** es el impuesto general sobre el consumo en España. Se repercute en las ventas (facturas emitidas), se soporta en las compras y se liquida trimestralmente en el **Modelo 303**.
+
+### Tipos estándar (los más habituales)
+
+| Tipo en Banktrack | % | Para qué sirve | Ejemplos |
+|---|---|---|---|
+| IVA – Tipo general | **21%** | La mayoría de servicios y productos sin tipo especial | Consultoría, diseño, software, electrónica, ropa, muebles |
+| IVA – Arrendamiento de local | **21%** | Alquiler de local a empresa o profesional (con opción de sujeción) | Oficinas, naves, locales comerciales |
+| IVA – Tipo reducido | **10%** | Determinados bienes y servicios específicos | Hostelería, restaurantes, alojamiento turístico, algunos alimentos |
+| IVA – Tipo superreducido | **4%** | Bienes de primera necesidad | Pan, leche, frutas, libros no publicitarios, medicamentos |
+| IVA – Tipos temporales | **7,5% / 5% / 2%** | Solo cuando la AEAT lo indica expresamente | Ciertos alimentos o suministros en periodos específicos |
+| IVA – Tipo cero sujeto | **0%** | Casos muy concretos sujetos al impuesto pero al 0% | Sector sanitario en supuestos específicos |
+
+> 💡 Si vendes servicios profesionales (consultoría, diseño, programación...) o productos estándar en España, el tipo es siempre **IVA (21%)**.
+
+<Expandable title="IVA (21%) – Tipo general · Verifactu S1 · Modelo 303, casillas 07/08/09">
 
 `Verifactu: S1` · `Régimen: 01` · `Modelo 303, casillas 07 (base) / 08 (tipo) / 09 (cuota)`
 
-IVA general aplicado a la mayoría de bienes y servicios que no tienen tipo reducido. También se aplica a ventas a consumidores finales de países de la UE si la facturación está por debajo de 10.000 € anuales y no estás dado de alta en el sistema OSS.
+IVA general aplicado a la mayoría de bienes y servicios que no tienen tipo reducido. También aplica a ventas B2C a países de la UE cuando la facturación es inferior a 10.000 € anuales y no estás dado de alta en OSS.
 
 **Selecciona este tipo cuando:**
-- Vendes servicios profesionales estándar (consultoría, diseño, programación, marketing, asesoría, etc.) a clientes en Península/Baleares.
-- Vendes productos "normales" (electrónica, ropa, muebles, etc.) en territorio IVA.
-- Facturas a consumidores finales de la UE por debajo del umbral de 10.000 € anuales sin estar en OSS.
+- Vendes servicios profesionales estándar (consultoría, diseño, programación, marketing, asesoría) a clientes en Península/Baleares.
+- Vendes productos normales (electrónica, ropa, muebles, etc.) en territorio IVA.
+- Facturas a consumidores finales de la UE por debajo del umbral de 10.000 € sin estar en OSS.
 
 </Expandable>
 
-<Expandable title="IVA (21%) – Arrendamiento de local">
+<Expandable title="IVA (21%) – Arrendamiento de local · Verifactu S1 · Modelo 303, casillas 07/08/09">
 
 `Verifactu: S1` · `Modelo 303, casillas 07 (base) / 08 (tipo) / 09 (cuota)`
 
-El arrendamiento de inmuebles en general está exento de IVA, pero cuando se trata de locales utilizados en actividades empresariales o profesionales, el arrendador puede optar por aplicar IVA. Esto le permite repercutir IVA al arrendatario y deducirse el IVA soportado en gastos relacionados con el inmueble.
+El arrendamiento de inmuebles en general está exento de IVA, pero cuando se trata de locales destinados a actividad empresarial o profesional, el arrendador puede optar por la sujeción al IVA. Esto le permite repercutir IVA al arrendatario y deducirse el IVA soportado en gastos del inmueble.
 
 **Selecciona este tipo cuando:**
-- Eres propietario de un local alquilado a una empresa o profesional y has optado por la sujeción al IVA.
-- Combínalo con la retención **IRPF (19%) – Arrendamientos inmuebles**.
+- Eres propietario de un local alquilado a una empresa o profesional y has optado por la sujeción.
+- Combínalo siempre con la retención **IRPF (19%) – Arrendamientos inmuebles**.
 
 </Expandable>
 
-<Expandable title="IVA (10%) – Tipo reducido">
+<Expandable title="IVA (10%) – Tipo reducido · Verifactu S1 · Modelo 303, casillas 04/05/06">
 
 `Verifactu: S1` · `Régimen: 01` · `Modelo 303, casillas 04 (base) / 05 (tipo) / 06 (cuota)`
 
-Se aplica a determinados bienes y servicios: hostelería, restauración y alojamiento turístico, transporte de viajeros, parte de la alimentación (no de primera necesidad), algunos servicios culturales, etc. También aplica a ventas B2C a la UE por debajo de 10.000 € anuales si no estás en OSS.
+Se aplica a determinados bienes y servicios: hostelería, restauración y alojamiento turístico, transporte de viajeros, alimentación no de primera necesidad, algunos servicios culturales y deportivos, etc.
 
 **Selecciona este tipo cuando:**
 - Facturas servicios de hostelería, restauración o alojamiento turístico sujetos al 10%.
-- Vendes productos alimentarios que tributan al 10%.
+- Vendes productos alimentarios que tributan al 10% (no los de primera necesidad).
 
 </Expandable>
 
-<Expandable title="IVA (4%) – Tipo superreducido">
+<Expandable title="IVA (4%) – Tipo superreducido · Verifactu S1 · Modelo 303, casillas 01/02/03">
 
 `Verifactu: S1` · `Régimen: 01` · `Modelo 303, casillas 01 (base) / 02 (tipo) / 03 (cuota)`
 
-Se aplica a bienes de primera necesidad: determinados alimentos básicos (pan, leche, huevos, frutas, verduras), libros no publicitarios, periódicos y revistas, medicamentos de uso humano, sillas de ruedas, prótesis, etc.
+Se aplica a bienes de primera necesidad: alimentos básicos (pan, leche, huevos, frutas, verduras), libros no publicitarios, periódicos y revistas, medicamentos de uso humano, sillas de ruedas, prótesis, etc.
 
 **Selecciona este tipo cuando:**
-- Tu actividad encaja claramente en los supuestos de IVA superreducido (venta de libros físicos no publicitarios, pan común, leche, etc.).
+- Tu actividad encaja claramente en los supuestos de IVA superreducido (libros físicos no publicitarios, pan, leche, medicamentos, etc.).
 
 </Expandable>
 
-<Expandable title="IVA (7,5%), IVA (5%) y IVA (2%) – Tipos temporales">
+<Expandable title="IVA – Tipos temporales (7,5% / 5% / 2%) · Verifactu S1 · Modelo 303">
 
 `Verifactu: S1` · `Modelo 303`
 
-Tipos reducidos temporales aprobados en periodos específicos para determinados productos (ciertos alimentos en periodos inflacionistas, electricidad, etc.).
+Tipos aprobados en periodos específicos para determinados productos (ciertos alimentos en periodos inflacionistas, electricidad, etc.). Banktrack los incluye para que puedas reflejarlos correctamente.
 
 **Selecciona estos tipos solo cuando:**
-- Tu asesoría o la AEAT te hayan indicado expresamente que un producto/servicio concreto tributa a ese tipo temporal.
-- Tus facturas de proveedor llegan ya con ese tipo y quieres reflejarlo de forma fiel.
+- Tu asesoría o la AEAT te indiquen expresamente que un producto/servicio tributa a ese tipo temporal.
+- Tus facturas de proveedor llegan con ese tipo y quieres registrarlo fielmente.
 
 </Expandable>
 
-<Expandable title="IVA (0%) – Tipo cero sujeto">
+<Expandable title="IVA (0%) – Tipo cero sujeto · Verifactu S1 · Modelo 303, casillas 150-152">
 
 `Verifactu: S1` · `Modelo 303, casillas 150-152`
 
-Operaciones **sujetas a IVA pero gravadas al 0%** (muy específicas, como determinadas operaciones en el sector sanitario). No confundir con las operaciones exentas o no sujetas.
+Operaciones **sujetas al IVA pero gravadas al 0%**. Son casos muy específicos (determinadas operaciones en el sector sanitario). No confundir con las operaciones exentas o no sujetas.
 
 **Selecciona este tipo cuando:**
-- La ley establece expresamente que esa operación está sujeta al impuesto pero con tipo de gravamen 0%, y tu asesoría te lo ha confirmado.
+- La ley establece expresamente el tipo de gravamen 0% y tu asesoría te lo ha confirmado.
 
 </Expandable>
 
-### 2.3. IVA 0%: Exento, No sujeto, Intracomunitario, Exportación e Inversión del sujeto pasivo
+---
 
-En Banktrack verás varias variantes de IVA al 0% que marcan **distinta naturaleza jurídica** de la operación. El porcentaje es 0, pero el significado contable, fiscal y el código Verifactu son muy distintos.
+### Operaciones especiales (IVA al 0%)
 
-<Expandable title="Inversión del sujeto pasivo">
+Para ventas al extranjero, operaciones con empresas de la UE o situaciones donde no se repercute IVA. El porcentaje es 0%, pero el motivo jurídico —y el código Verifactu— es distinto en cada caso.
+
+| Tipo en Banktrack | Código | Cuándo se usa |
+|---|---|---|
+| Inversión del sujeto pasivo | **S2** | El cliente (no tú) declara e ingresa el IVA. Ej: servicios a empresas extranjeras, ciertas subcontratas en construcción |
+| IVA exento (sin derecho a deducción) | **E1** | Tu actividad está exenta por ley: sanidad, enseñanza, seguros, alquiler de vivienda |
+| IVA exento (exportaciones) | **E2** | Ventas de productos a países fuera de la UE |
+| IVA exento (operaciones asimiladas) | **E3** | Ventas destinadas a buques, aeronaves, organismos diplomáticos |
+| IVA exento (zonas francas / aduanas) | **E4** | Bienes en áreas aduaneras especiales o con despacho aduanero oficial |
+| Entrega EU (bienes) | **E5** | Venta de productos físicos a empresa de otro país de la UE (ambas con NIF-IVA intracomunitario VIES) |
+| Entrega EU (operación triangular) | **E5** | Igual, pero los bienes van directamente del proveedor al cliente final sin pasar físicamente por el intermediario |
+| IVA exento (otros) | **E6** | Otros supuestos de exención no recogidos arriba |
+| No sujeto (art. 7, 14 u otros) | **N1** | Suplidos, indemnizaciones, subvenciones no vinculadas a ventas |
+| No sujeto (por reglas de localización) | **N2** | Servicios a consumidores de Canarias u otros territorios fuera del ámbito del IVA español |
+| Servicios EU (B2B) → No sujeto | **N2** | Servicios a empresas de otro país de la UE; el cliente declara el IVA en su país |
+
+> 💡 **Diferencia clave:** "No sujeto" = la operación no entra en el IVA. "Exento" = entra en el IVA pero la ley dice que no se grava. Son conceptos distintos y no son intercambiables.
+
+<Expandable title="Inversión del sujeto pasivo · Verifactu S2 · Modelo 303, casillas 12/13">
 
 `Verifactu: S2` · `Modelo 303, casillas 12 (base) / 13 (cuota)`
 
 Se aplica cuando la ley determina que el receptor de la factura (y no el emisor) asume la obligación de declarar e ingresar el IVA. Ejemplos típicos:
 
-- Servicios recibidos de proveedores extranjeros (empresas de otro país de la UE o fuera de la UE).
-- Facturas desde la Península a Canarias en determinadas operaciones.
-- Determinadas ejecuciones de obra, cesiones de terrenos, entregas de chatarra y determinados residuos.
+- Servicios recibidos de proveedores de otro país de la UE o de fuera de la UE.
+- Facturas desde la Península hacia Canarias en determinadas operaciones.
+- Determinadas ejecuciones de obra, cesiones de terrenos, entregas de chatarra y residuos.
 
 **Selecciona este tipo cuando:**
-- Emites una factura sin repercutir IVA pero tu cliente debe autorepercutírselo.
-- Tu asesoría te ha indicado explícitamente que la operación va con "inversión del sujeto pasivo".
+- Emites una factura sin repercutir IVA, pero tu cliente debe autorepercutírselo.
+- Tu asesoría te ha confirmado explícitamente que la operación lleva "inversión del sujeto pasivo".
 
 </Expandable>
 
-<Expandable title="No sujeto (art. 7, 14 u otros)">
+<Expandable title="IVA exento (sin derecho a deducción) · Verifactu E1 · Modelo 303">
+
+`Verifactu: E1` · `Modelo 303 (sin cuota; puede afectar a la prorrata)`
+
+Exención de IVA donde el sujeto **no repercute IVA pero tampoco puede deducir** el IVA soportado en las compras relacionadas. Puede afectar al cálculo de la prorrata. Ejemplos: servicios sanitarios, enseñanza reglada, servicios financieros y de seguros, alquiler de vivienda.
+
+**Selecciona este tipo cuando:**
+- Tu actividad aparece como exenta en la Ley del IVA y tu asesor/asesora te lo ha confirmado.
+- La factura no lleva IVA y debe registrarse como exenta (no como no sujeta).
+
+</Expandable>
+
+<Expandable title="IVA exento (exportaciones) · Verifactu E2 · Régimen 02 · Modelo 303, casilla 59">
+
+`Verifactu: E2` · `Régimen: 02` · `Modelo 303, casilla 59`
+
+Exención por la entrega de bienes que **salen físicamente del territorio de la UE** hacia un país tercero.
+
+**Selecciona este tipo cuando:**
+- Vendes productos a un cliente fuera de la UE y los bienes salen físicamente del territorio europeo.
+- También aplica cuando envías mercancía desde Península/Baleares a Canarias, Ceuta o Melilla (a efectos del IVA peninsular se trata como exportación).
+
+</Expandable>
+
+<Expandable title="IVA exento (operaciones asimiladas a exportaciones) · Verifactu E3 · Régimen 02 · Modelo 303, casilla 59">
+
+`Verifactu: E3` · `Régimen: 02` · `Modelo 303, casilla 59`
+
+La operación sí está sujeta al IVA pero la ley establece que no se grava porque los bienes se destinan a actividades internacionales: navegación marítima o aérea, diplomacia, organismos internacionales, etc.
+
+**Selecciona este tipo cuando:**
+- Tu asesoría confirma que la operación está asimilada a una exportación (buques, aeronaves, organismos diplomáticos).
+
+</Expandable>
+
+<Expandable title="IVA exento (zonas francas y aduanas) · Verifactu E4 · Régimen 02 · Modelo 303, casilla 59">
+
+`Verifactu: E4` · `Régimen: 02` · `Modelo 303, casilla 59`
+
+Incluye dos supuestos:
+- **Zonas francas:** bienes introducidos en áreas aduaneras especiales considerados, a efectos de IVA, como si hubieran salido del territorio fiscal aunque físicamente sigan en la UE.
+- **Aduanas:** la exención se fundamenta en la constancia de exportación ante la autoridad aduanera.
+
+</Expandable>
+
+<Expandable title="Entrega EU (bienes) · Verifactu E5 · Modelo 303, casilla 59">
+
+`Verifactu: E5` · `Modelo 303, casilla 59`
+
+La operación está sujeta al IVA pero la ley establece que no se grava por la entrega de bienes a otro país miembro de la UE. El cliente debe tener número de IVA intracomunitario VIES (no NIF español).
+
+**Selecciona este tipo cuando:**
+- Vendes productos físicos desde Península/Baleares a una empresa de otro país de la UE, ambas registradas en el ROI (Registro de Operadores Intracomunitarios).
+- Recuerda declarar también en el **Modelo 349**.
+
+</Expandable>
+
+<Expandable title="Entrega EU (operación triangular) · Verifactu E5 · Modelo 303, casilla 59">
+
+`Verifactu: E5` · `Modelo 303, casilla 59`
+
+Entrega intracomunitaria donde los bienes van directamente del Estado miembro del proveedor al Estado miembro del cliente final, pero la factura pasa a través de un intermediario. El cliente no puede tener NIF español; debe tener número VIES.
+
+</Expandable>
+
+<Expandable title="IVA exento (otros) · Verifactu E6 · Modelo 303, casilla 60">
+
+`Verifactu: E6` · `Modelo 303, casilla 60`
+
+La operación sí está sujeta al IVA pero la ley establece que no se grava por motivos distintos a los grupos anteriores (E1–E5).
+
+**Selecciona este tipo cuando:**
+- Tu asesoría confirma que aplica una exención que no encaja en ninguna de las variantes anteriores.
+
+</Expandable>
+
+<Expandable title="No sujeto (art. 7, 14 u otros) · Verifactu N1 · Modelo 303">
 
 `Verifactu: N1` · `Modelo 303 (no se declara como IVA devengado)`
 
-Operaciones que **no entran en el ámbito de aplicación del IVA** por diversos artículos legales (art. 7, 14, etc.): suplidos, indemnizaciones por daños, ciertas subvenciones no vinculadas a operaciones gravadas, aportaciones de socios sin contraprestación, etc.
+Operaciones que no entran en el ámbito de aplicación del IVA por artículos legales específicos (art. 7, 14, etc.): suplidos, indemnizaciones por daños, ciertas subvenciones no vinculadas a operaciones gravadas, aportaciones de socios sin contraprestación, etc.
 
 **Selecciona este tipo cuando:**
-- Registras una factura que refleja un cobro/pago ajeno a una operación gravada y tu asesoría te indica que es no sujeta por estos artículos.
+- La factura refleja un cobro o pago ajeno a una operación gravada y tu asesoría te indica que es no sujeta por estos artículos.
 
 </Expandable>
 
-<Expandable title="No sujeto (por reglas de localización)">
+<Expandable title="No sujeto (por reglas de localización) · Verifactu N2 · Modelo 303">
 
 `Verifactu: N2` · `Modelo 303 (no se declara como IVA devengado)`
 
-Operaciones que no entran en el ámbito del IVA porque el **lugar de realización del hecho imponible se considera fuera de España** según las reglas de localización. Se aplica sobre todo en servicios. Ejemplo: servicios prestados desde la Península a consumidores de Canarias.
-
-**Selecciona este tipo cuando:**
-- Prestas servicios a clientes en territorios donde el IVA español no aplica y las reglas de localización determinan que el hecho imponible está fuera de España.
+La operación no entra en el ámbito del IVA porque el lugar de realización del hecho imponible se considera fuera de España según las reglas de localización. Se aplica principalmente en servicios. Ejemplo: servicios prestados desde la Península a consumidores de Canarias.
 
 </Expandable>
 
-<Expandable title="Servicios EU (B2B) → No sujeto">
+<Expandable title="Servicios EU (B2B) → No sujeto · Verifactu N2 · Modelo 303">
 
 `Verifactu: N2` · `Modelo 303 (no se declara en devengado)`
 
@@ -170,561 +257,342 @@ No se aplica IVA en ningún país por la prestación de servicios entre empresas
 
 </Expandable>
 
-<Expandable title="IVA exento (sin derecho a deducción)">
+---
 
-`Verifactu: E1` · `Modelo 303 (sin cuota, puede afectar a prorrata)`
+## 3. IVA + Recargo de equivalencia
 
-Exención de IVA donde el sujeto **no repercute IVA pero tampoco puede deducir** el IVA soportado en las compras relacionadas. Puede afectar al cálculo de la prorrata. Ejemplos: servicios sanitarios, enseñanza reglada, determinados servicios financieros y de seguros, alquiler de vivienda.
+Solo para proveedores que venden a **comerciantes minoristas** acogidos a este régimen especial (tiendas que venden al consumidor final y no presentan Modelo 303). El proveedor añade el recargo en la factura e ingresa ese importe en Hacienda.
 
-**Selecciona este tipo cuando:**
-- Tu actividad aparece como exenta en la Ley del IVA y tu asesor/asesora te lo ha confirmado.
-- La factura no lleva IVA y debe quedar registrada como operación exenta (no como no sujeta).
+| Tipo en Banktrack | IVA | Recargo | Código |
+|---|---|---|---|
+| IVA (21%) + Recargo (5,2%) | 21% | 5,2% | S1 / Régimen 18 |
+| IVA (21%) + Recargo (1,75%) | 21% | 1,75% *(transitorio)* | S1 / Régimen 18 |
+| IVA (10%) + Recargo (1,4%) | 10% | 1,4% | S1 / Régimen 18 |
+| IVA (4%) + Recargo (0,5%) | 4% | 0,5% | S1 / Régimen 18 |
 
-</Expandable>
+**Ejemplo con IVA 21% + Recargo 5,2%:**
+Base 1.000 € + IVA 210 € + Recargo 52 € = **Total factura: 1.262 €**
 
-<Expandable title="IVA exento (exportaciones)">
+<Expandable title="¿Cuándo aplica el recargo de equivalencia?">
 
-`Verifactu: E2` · `Régimen: 02` · `Modelo 303, casilla 59`
+El recargo de equivalencia es un régimen especial de IVA para comerciantes minoristas autónomos que venden productos sin transformarlos al consumidor final. Estos comerciantes no presentan declaraciones de IVA (Modelo 303); en su lugar, es el proveedor quien añade el recargo en la factura e ingresa ese importe directamente en Hacienda.
 
-Exención por la **entrega de bienes que salen físicamente del territorio de la UE** hacia un país tercero.
-
-**Selecciona este tipo cuando:**
-- Vendes bienes a un cliente fuera de la UE y los bienes salen físicamente del territorio de la UE.
-
-</Expandable>
-
-<Expandable title="IVA exento (exportaciones de operaciones asimiladas)">
-
-`Verifactu: E3` · `Régimen: 02` · `Modelo 303, casilla 59`
-
-La operación sí está sujeta al IVA pero la ley establece que no se grava porque los bienes se destinan a actividades internacionales: navegación, aviación, diplomacia, organismos internacionales, etc.
-
-**Selecciona este tipo cuando:**
-- Tu asesoría confirma que la operación está asimilada a una exportación (buques, aeronaves, organismos diplomáticos, etc.).
-
-</Expandable>
-
-<Expandable title="IVA exento (zonas francas y aduanas)">
-
-`Verifactu: E4` · `Régimen: 02` · `Modelo 303, casilla 59`
-
-Incluye dos supuestos:
-- **Zonas francas:** bienes introducidos en áreas aduaneras especiales que se consideran, a efectos de IVA, como si hubieran salido del territorio fiscal aunque físicamente sigan en la UE.
-- **Aduanas:** la operación pasa por el despacho aduanero oficial y la exención se fundamenta en la constancia de exportación ante la autoridad aduanera.
-
-</Expandable>
-
-<Expandable title="Entrega EU (bienes)">
-
-`Verifactu: E5` · `Modelo 303, casilla 59`
-
-La operación sí está sujeta al IVA pero la ley establece que no se grava por la **entrega de bienes a otro país miembro de la UE**. El cliente debe tener número de IVA intracomunitario (VIES), no NIF español.
-
-**Selecciona este tipo cuando:**
-- Vendes bienes desde Península/Baleares a un cliente empresa de otro país de la UE, ambos registrados en el ROI.
-- Declara también en el **Modelo 349**.
-
-</Expandable>
-
-<Expandable title="Entrega EU (bienes – Operación triangular)">
-
-`Verifactu: E5` · `Modelo 303, casilla 59`
-
-Entrega intracomunitaria donde los bienes van directamente del proveedor al cliente final en otro estado miembro, pero la factura pasa a través de un intermediario. El cliente no puede tener NIF español; debe tener número VIES.
-
-</Expandable>
-
-<Expandable title="IVA Exento (Otros)">
-
-`Verifactu: E6` · `Modelo 303, casilla 60`
-
-La operación sí está sujeta al IVA pero la ley establece que no se grava por motivos distintos a los recogidos en los grupos anteriores.
-
-**Selecciona este tipo cuando:**
-- Tu asesoría confirma que aplica una exención que no encaja en ninguna de las variantes anteriores (E1–E5).
+Banktrack calcula IVA y recargo por separado en la factura. El comprador (el minorista) lo recibe como dos conceptos distintos dentro del total.
 
 </Expandable>
 
 ---
 
-## 3. Grupo IVA + REC (recargo de equivalencia)
+## 4. IGIC — Canarias
 
-El **recargo de equivalencia** es un régimen especial aplicable a comerciantes minoristas que venden a consumidor final y no presentan Modelo 303. El proveedor que les vende añade el recargo en la factura e ingresa ese importe en Hacienda.
+El **IGIC (Impuesto General Indirecto Canario)** es el impuesto sobre el consumo aplicable **solo en Canarias**. Es equivalente al IVA pero con tipos y normativa propios. Si tu operación se localiza en Canarias, usa IGIC en lugar de IVA.
 
-<Expandable title="IVA (21%) + Recargo de equivalencia (5,2%)">
+| Tipo en Banktrack | % | Cuándo se usa |
+|---|---|---|
+| IGIC (7%) | **7%** | La mayoría de operaciones estándar en Canarias |
+| IGIC (3%) | **3%** | Bienes muy esenciales: alimentos básicos, medicamentos, prensa |
+| IGIC (9,5%) | **9,5%** | Productos y servicios esenciales según normativa canaria |
+| IGIC (13,5%) | **13,5%** | Productos específicos según normativa canaria |
+| IGIC (15%) | **15%** | Bienes y servicios de consumo habitual según normativa canaria |
+| IGIC (20%) | **20%** | Tipo general; mayoría de bienes y servicios |
+| IGIC (0%) – Tipo cero sujeto | **0%** | Casos específicos sujetos al impuesto pero al 0% |
+| IGIC – Exento / No sujeto / Exportación / Inv. sujeto pasivo | **0%** | Equivalentes canarios a las variantes de IVA al 0% |
 
-`Verifactu: S1` · `Régimen: 18`
+> 💡 Para la mayoría de operaciones estándar en Canarias, el tipo a usar es **IGIC (7%)**.
 
-Para productos gravados al 21% (electrónica, ropa estándar, etc.) cuando el cliente es un minorista en régimen de recargo de equivalencia.
-
-**Ejemplo:** Base 1.000 € · IVA 21%: 210 € · Recargo 5,2%: 52 € · **Total: 1.262 €**
-
-</Expandable>
-
-<Expandable title="IVA (21%) + Recargo de equivalencia (1,75%)">
-
-`Verifactu: S1` · `Régimen: 18`
-
-Tipo de recargo transitorio aprobado en determinados periodos para productos gravados al 21%.
-
-</Expandable>
-
-<Expandable title="IVA (10%) + Recargo de equivalencia (1,4%)">
-
-`Verifactu: S1` · `Régimen: 18`
-
-Para productos gravados al 10% cuando el cliente es un minorista en régimen de recargo de equivalencia.
-
-</Expandable>
-
-<Expandable title="IVA (4%) + Recargo de equivalencia (0,5%)">
-
-`Verifactu: S1` · `Régimen: 18`
-
-Para productos gravados al 4% cuando el cliente es un minorista en régimen de recargo de equivalencia.
-
-</Expandable>
-
----
-
-## 4. Grupo IGIC (Canarias)
-
-El **IGIC (Impuesto General Indirecto Canario)** es el impuesto sobre el consumo aplicable **solo en Canarias**, equivalente al IVA pero con tipos distintos y normativa propia. Si tu operación se localiza en Canarias, no aplica IVA sino IGIC.
-
-<Expandable title="IGIC (20%) – Tipo general">
+<Expandable title="IGIC (7%) – El tipo más habitual en Canarias · Verifactu S1 · Régimen 01">
 
 `Verifactu: S1` · `Régimen: 01`
 
-Tipo general aplicable a la mayoría de bienes y servicios en Canarias.
+Tipo superreducido del IGIC, aplicable a productos de primera necesidad y la mayoría de servicios básicos en Canarias. A diferencia del IVA peninsular donde el tipo general es el 21%, en Canarias el tipo más habitual para operaciones cotidianas es el 7%.
+
+**Selecciona IGIC (7%) para la mayoría de bienes y servicios estándar cuando la operación está localizada en Canarias.**
 
 </Expandable>
 
-<Expandable title="IGIC (15%)">
+<Expandable title="IGIC – Tipos incrementados (9,5% / 13,5% / 15% / 20%) · Verifactu S1 · Régimen 01">
 
 `Verifactu: S1` · `Régimen: 01`
 
-Tipo reducido para determinados bienes y servicios de consumo habitual que no estén sujetos al tipo general.
-
-</Expandable>
-
-<Expandable title="IGIC (13,5%)">
-
-`Verifactu: S1` · `Régimen: 01`
-
-Tipo intermedio aplicable a ciertos productos específicos con un gravamen superior al reducido pero inferior al general.
-
-</Expandable>
-
-<Expandable title="IGIC (9,5%)">
-
-`Verifactu: S1` · `Régimen: 01`
-
-Tipo reducido para productos y servicios esenciales, incluyendo algunos bienes de consumo diario o culturales.
-
-</Expandable>
-
-<Expandable title="IGIC (7%)">
-
-`Verifactu: S1` · `Régimen: 01`
-
-Tipo superreducido, generalmente aplicable a productos de primera necesidad o determinados servicios básicos. **Es el tipo más habitual para operaciones estándar en Canarias.**
-
-</Expandable>
-
-<Expandable title="IGIC (3%) – Tipo mínimo">
-
-`Verifactu: S1` · `Régimen: 01`
-
-Tipo mínimo destinado a bienes muy esenciales: alimentos básicos, medicamentos o prensa.
-
-</Expandable>
-
-<Expandable title="IGIC (0%) – Tipo cero sujeto">
-
-`Verifactu: S1` · `Régimen: 01`
-
-Tipo para casos específicos en el que no está exento de IGIC pero se aplica un 0%. Uso muy excepcional; confirma con tu asesoría.
+Se usan cuando la normativa canaria indica expresamente que el producto o servicio tributa a ese tipo específico. Consulta con tu asesoría qué tipo corresponde a tu actividad concreta en Canarias.
 
 </Expandable>
 
 <Expandable title="IGIC (0%) – Exento, No sujeto, Exportación e Inversión del sujeto pasivo">
 
-Equivalentes canarios de las variantes IVA al 0%, con el mismo significado jurídico pero dentro del ámbito del IGIC:
+Equivalentes canarios a las variantes de IVA al 0%, con el mismo significado jurídico pero dentro del ámbito del IGIC:
 
 - **Exento:** operaciones exentas de IGIC (ciertas actividades sanitarias o educativas en Canarias).
-- **No sujeto:** operaciones fuera del ámbito IGIC.
+- **No sujeto:** operaciones fuera del ámbito del IGIC.
 - **Exportación:** ventas desde Canarias al resto de España peninsular/Baleares o al extranjero, tratadas como exportación a efectos canarios.
-- **Inversión del sujeto pasivo:** cuando el destinatario en Canarias debe autorepercutirse el impuesto.
+- **Inversión del sujeto pasivo:** cuando el destinatario en Canarias debe autorepercutirse el impuesto (p. ej., proveedor no establecido en Canarias).
 
 </Expandable>
 
 ---
 
-## 5. Grupo IPSI Ceuta
+## 5. IPSI — Ceuta y Melilla
 
-El **IPSI (Impuesto sobre la Producción, los Servicios y la Importación)** grava el consumo en **Ceuta**, gestionado por la ciudad autónoma. Sus tipos se fijan en las Ordenanzas locales.
+El **IPSI (Impuesto sobre la Producción, los Servicios y la Importación)** grava el consumo en **Ceuta y Melilla**, gestionado por cada ciudad autónoma. Sus tipos se fijan en las Ordenanzas locales.
 
-<Expandable title="IPSI Ceuta (10%) – Tipo general">
+| Tipo | Ceuta | Melilla | Cuándo se usa |
+|---|---|---|---|
+| Tipo general | IPSI Ceuta (10%) | IPSI Melilla (10%) | Mayoría de bienes y servicios |
+| Tipo reducido | IPSI Ceuta (8%) | IPSI Melilla (8%) | Bienes y servicios habituales |
+| Tipo intermedio | IPSI Ceuta (4%) | IPSI Melilla (4%) | Productos y servicios específicos |
+| Tipo reducido básico | IPSI Ceuta (2%) | IPSI Melilla (2%) | Bienes esenciales o servicios básicos |
+| Tipo superreducido | IPSI Ceuta (1%) | IPSI Melilla (1%) | Productos muy esenciales (alimentos básicos, sanitarios) |
+| Tipo mínimo | IPSI Ceuta (0,5%) | IPSI Melilla (0,5%) | Productos esenciales con finalidad social o económica |
 
-`Verifactu: S1`
+Todos los tipos IPSI tienen `Verifactu: S1`. Consulta la Ordenanza local para determinar el tipo que corresponde a cada producto o servicio.
 
-Tipo general aplicable a la mayoría de bienes y servicios producidos, importados o prestados en Ceuta.
+<Expandable title="¿Cuándo aplica el IPSI y cuándo se usa el IVA de exportación?">
 
-</Expandable>
+El IPSI lo aplica la empresa o autónomo **establecido en Ceuta o Melilla** en sus operaciones locales.
 
-<Expandable title="IPSI Ceuta (8%)">
-
-`Verifactu: S1` · Tipo reducido para determinados bienes y servicios de consumo habitual.
-
-</Expandable>
-
-<Expandable title="IPSI Ceuta (4%)">
-
-`Verifactu: S1` · Tipo intermedio para ciertos productos y servicios con gravamen menor.
-
-</Expandable>
-
-<Expandable title="IPSI Ceuta (2%)">
-
-`Verifactu: S1` · Tipo reducido para bienes esenciales o servicios básicos en Ceuta.
-
-</Expandable>
-
-<Expandable title="IPSI Ceuta (1%)">
-
-`Verifactu: S1` · Tipo superreducido para productos muy esenciales (alimentos básicos, productos sanitarios).
-
-</Expandable>
-
-<Expandable title="IPSI Ceuta (0,5%)">
-
-`Verifactu: S1` · Tipo mínimo para productos esenciales con finalidad social o económica.
+Si eres una empresa de la Península que **envía mercancía a Ceuta o Melilla**, a efectos del IVA peninsular esa venta se trata como una **exportación** (IVA exento, código E2). El cliente en Ceuta o Melilla será quien liquide el IPSI correspondiente en su territorio.
 
 </Expandable>
 
 ---
 
-## 6. Grupo IPSI Melilla
+## 6. Retenciones IRPF
 
-El **IPSI** grava el consumo en **Melilla**, con la misma estructura que el de Ceuta pero con los tipos fijados por las Ordenanzas de Melilla.
+Las retenciones **no son un impuesto sobre el consumo**: son un anticipo del impuesto sobre la renta que se descuenta de la factura o nómina. Se declaran trimestralmente en el **Modelo 111** (actividades económicas) o **Modelo 115** (alquileres), y en los resúmenes anuales **Modelo 190** y **Modelo 180**.
 
-<Expandable title="IPSI Melilla (10%) – Tipo general">
+> ⚠️ Las retenciones **no tienen código Verifactu**. Los registros Verifactu corresponden únicamente a IVA, IGIC e IPSI.
 
-`Verifactu: S1` · Tipo general sobre la mayoría de bienes, servicios e importaciones en Melilla.
+### Retenciones profesionales (Modelo 111 / 190)
 
-</Expandable>
+| Tipo en Banktrack | % | Cuándo se usa |
+|---|---|---|
+| IRPF – Carácter general | **15%** | Profesionales autónomos con más de 3 años de actividad |
+| IRPF – Inicio de actividad | **7%** | Profesionales en los 3 primeros años de actividad |
+| IRPF – Determinadas actividades | **7%** | Actividades específicas con tipo reducido según normativa AEAT |
+| IRPF – Obras literarias / obras de arte | **15%** | Ingresos por cesión de derechos de obras artísticas o literarias |
+| IRPF – Cursos, conferencias, seminarios | **15%** | Ingresos por formación, ponencias, impartición de cursos |
+| IRPF – Propiedad intelectual | **19%** | Explotación de obras protegidas (libros, música, software) |
+| IRPF – Propiedad industrial | **19%** | Licencias de patentes, marcas y derechos de propiedad industrial |
+| IRPF – Asistencia técnica | **19%** | Pagos por asesoría o asistencia técnica de personas físicas |
+| IRPF – Arrendamientos bienes muebles | **19%** | Alquiler de vehículos, maquinaria, equipamiento |
+| IRPF – Otros rendimientos | **19%** | Otros ingresos profesionales sin categoría específica |
+| IRPF – Derechos de imagen | **24%** | Cesión o explotación de derechos de imagen (deportistas, artistas) |
+| IRPF – Administradores (general) | **35%** | Retribución a administradores de sociedades (regla general) |
+| IRPF – Administradores (reducido) | **19%** | Administradores en sociedades con facturación < 100.000 € |
 
-<Expandable title="IPSI Melilla (8%)">
+### Retenciones de arrendamientos (Modelo 115 / 180)
 
-`Verifactu: S1` · Tipo reducido para bienes y servicios habituales.
+| Tipo en Banktrack | % | Cuándo se usa |
+|---|---|---|
+| IRPF – Arrendamientos inmuebles | **19%** | Alquiler de locales, oficinas o naves a empresas |
+| IRPF – Subarrendamientos inmuebles | **19%** | Subarrendamiento de inmuebles |
 
-</Expandable>
+### Retenciones en estimación objetiva — módulos (Modelo 111 / 190)
 
-<Expandable title="IPSI Melilla (4%)">
+| Tipo en Banktrack | % | Cuándo se usa |
+|---|---|---|
+| IRPF – Agrícolas y ganaderas | **2%** | Actividades agrícolas o ganaderas en módulos |
+| IRPF – Forestales | **2%** | Explotaciones forestales en módulos |
+| IRPF – Estimación objetiva | **1%** | Actividades en módulos (régimen general) |
+| IRPF – Engorde porcino y avicultura | **1%** | Explotaciones ganaderas de porcino y aves en módulos |
 
-`Verifactu: S1` · Tipo intermedio para algunos productos y servicios específicos.
+### Ejemplos de cálculo
 
-</Expandable>
+| Situación | Base | IVA | IRPF | Total |
+|---|---|---|---|---|
+| Profesional >3 años | 1.000 € | +210 € (21%) | −150 € (15%) | **1.060 €** |
+| Profesional inicio actividad | 1.000 € | +210 € (21%) | −70 € (7%) | **1.140 €** |
+| Alquiler de local | 1.000 € | +210 € (21%) | −190 € (19%) | **1.020 €** |
 
-<Expandable title="IPSI Melilla (2%)">
-
-`Verifactu: S1` · Tipo reducido sobre bienes de primera necesidad o servicios básicos.
-
-</Expandable>
-
-<Expandable title="IPSI Melilla (1%)">
-
-`Verifactu: S1` · Tipo superreducido para productos esenciales o de uso cotidiano.
-
-</Expandable>
-
-<Expandable title="IPSI Melilla (0,5%)">
-
-`Verifactu: S1` · Tipo mínimo para productos esenciales con finalidad social o económica.
-
-</Expandable>
-
----
-
-## 7. Grupo Retención (IRPF)
-
-Las **retenciones de IRPF** son un anticipo del impuesto sobre la renta, no un impuesto sobre el consumo. Se declaran en el **Modelo 111** (trimestral, actividades económicas y trabajo) o **Modelo 115** (trimestral, arrendamientos), y en los resúmenes anuales **Modelo 190** y **Modelo 180** respectivamente.
-
-> ⚠️ Las retenciones **no tienen código Verifactu**. Los registros Verifactu corresponden únicamente a los impuestos indirectos (IVA, IGIC, IPSI).
-
-<Expandable title="IRPF (35%) – Administradores">
+<Expandable title="IRPF (15%) – Profesionales, carácter general · Modelos 111 / 190">
 
 `Modelos: 111 / 190`
 
-Retención general sobre los ingresos percibidos por **administradores de sociedades** por sus funciones directivas.
+Tipo estándar para profesionales autónomos que llevan **más de 3 años** ejerciendo su actividad profesional. Es el tipo que aparecerá en la mayoría de facturas de servicios entre profesionales y empresas españolas.
+
+**Selecciona este tipo cuando:**
+- Emites facturas de servicios profesionales a empresas o autónomos españoles y llevas más de 3 años de actividad.
 
 </Expandable>
 
-<Expandable title="IRPF (24%) – Derechos de imagen">
+<Expandable title="IRPF (7%) – Inicio de actividad · Modelos 111 / 190">
 
 `Modelos: 111 / 190`
 
-Agrupa tres tipos con el mismo porcentaje:
-- **Cesión derechos de imagen:** retención sobre pagos por cesión de imagen de personas físicas (deportistas, artistas).
+Retención reducida aplicable durante los **tres primeros años** de actividad económica profesional, siempre que no se haya ejercido actividad profesional el año anterior y se cumplan los requisitos reglamentarios.
+
+**Selecciona este tipo cuando:**
+- Estás en tus primeros años como profesional autónomo y cumples los requisitos para el tipo reducido.
+- Puedes indicarlo en la propia factura con una mención del tipo "Retención reducida por inicio de actividad (art. 86.1 RIRPF)".
+
+</Expandable>
+
+<Expandable title="IRPF (19%) – Arrendamientos inmuebles · Modelos 115 / 180">
+
+`Modelos: 115 / 180`
+
+Retención aplicable a **alquileres de inmuebles urbanos** destinados a actividad económica (locales, oficinas, naves industriales). La practica el **arrendatario** (quien paga el alquiler) e ingresa a la AEAT mediante el Modelo 115 trimestral.
+
+**Selecciona este tipo cuando:**
+- Eres propietario de un local comercial o nave alquilada a una empresa.
+- Combínalo con **IVA (21%) – Arrendamiento de local**.
+
+</Expandable>
+
+<Expandable title="IRPF (35% y 19%) – Administradores · Modelos 111 / 190">
+
+`Modelos: 111 / 190`
+
+- **35%:** retención general sobre retribuciones a administradores de sociedades por funciones directivas.
+- **19%:** tipo reducido para administradores en sociedades con cifra de negocios inferior a 100.000 € o en determinados supuestos de entidades de nueva creación.
+
+Consulta con tu asesoría qué tipo corresponde según las circunstancias de la sociedad.
+
+</Expandable>
+
+<Expandable title="IRPF (24%) – Derechos de imagen · Modelos 111 / 190">
+
+`Modelos: 111 / 190`
+
+Agrupa tres supuestos relacionados con la imagen de personas físicas:
+- **Cesión derechos de imagen:** pagos por ceder derechos de imagen (deportistas, artistas).
 - **Rentas derechos de imagen:** gravamen sobre rentas derivadas del uso de la imagen (publicidad, contratos mediáticos).
 - **Rendimientos derechos de imagen:** retención sobre rendimientos por explotación de derechos de imagen, similares a royalties.
 
 </Expandable>
 
-<Expandable title="IRPF (19%) – Administradores">
+<Expandable title="IRPF – Estimación objetiva (1% y 2%) · Modelos 111 / 190">
 
 `Modelos: 111 / 190`
 
-Retención reducida para administradores de sociedades con cifra de negocios inferior a 100.000 € o en determinados supuestos de entidades de nueva creación (cuando no corresponde el tipo del 35%).
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Arrendamientos inmuebles">
-
-`Modelos: 115 / 180`
-
-Retención aplicable a **alquileres de inmuebles urbanos** destinados a actividad económica (locales, oficinas, naves). La practica el arrendatario e ingresa a la AEAT mediante el Modelo 115.
-
-**Ejemplo:** Base 1.000 € · IVA 21%: 210 € · IRPF 19%: −190 € · **Total a pagar: 1.020 €**
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Subarrendamientos inmuebles">
-
-`Modelos: 115 / 180`
-
-Retención sobre las ganancias obtenidas por subarrendar un inmueble, distinta del arrendamiento principal.
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Propiedad intelectual">
-
-`Modelos: 111 / 190`
-
-Retención sobre ingresos derivados de la explotación de obras protegidas por propiedad intelectual (libros, música, software).
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Propiedad industrial">
-
-`Modelos: 111 / 190`
-
-Gravamen sobre ingresos por licencias o cesión de patentes, marcas y otros derechos de propiedad industrial.
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Asistencia técnica">
-
-`Modelos: 111 / 190`
-
-Retención sobre pagos por servicios de asesoría o asistencia técnica profesional prestada por personas físicas.
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Arrendamientos bienes muebles">
-
-`Modelos: 111 / 190`
-
-Gravamen sobre los ingresos obtenidos por el alquiler de bienes muebles (vehículos, maquinaria, equipamiento).
-
-</Expandable>
-
-<Expandable title="IRPF (19%) – Otros rendimientos">
-
-`Modelos: 111 / 190`
-
-Retención aplicable a ingresos no clasificados específicamente en otras categorías, generalmente por servicios o actividades profesionales sin categoría propia.
-
-</Expandable>
-
-<Expandable title="IRPF (15%) – Carácter general (profesionales)">
-
-`Modelos: 111 / 190`
-
-Tipo estándar para profesionales autónomos una vez superado el periodo inicial de tres años de actividad.
-
-**Ejemplo:** Base 1.000 € · IVA 21%: 210 € · IRPF 15%: −150 € · **Total factura: 1.060 €**
-
-</Expandable>
-
-<Expandable title="IRPF (15%) – Obras literarias, obras de arte">
-
-`Modelos: 111 / 190`
-
-Retención sobre ingresos por venta o cesión de derechos de obras literarias, artísticas o similares.
-
-</Expandable>
-
-<Expandable title="IRPF (15%) – Cursos, conferencias, seminarios">
-
-`Modelos: 111 / 190`
-
-Retención sobre ingresos por actividades de formación, conferencias, seminarios o impartición de cursos.
-
-</Expandable>
-
-<Expandable title="IRPF (7%) – Inicio de actividad">
-
-`Modelos: 111 / 190`
-
-Retención reducida aplicable durante los **tres primeros años** de actividad económica profesional, siempre que no se haya ejercido actividad profesional el año anterior.
-
-**Ejemplo:** Base 1.000 € · IVA 21%: 210 € · IRPF 7%: −70 € · **Total a cobrar: 1.140 €**
-
-</Expandable>
-
-<Expandable title="IRPF (7%) – Determinadas actividades">
-
-`Modelos: 111 / 190`
-
-Retención especial para actividades profesionales o económicas específicas con menor riesgo fiscal, conforme al cuadro oficial de retenciones de la AEAT.
-
-</Expandable>
-
-<Expandable title="IRPF (2%) – Agrícolas y ganaderas">
-
-`Modelos: 111 / 190`
-
-Retención sobre ingresos derivados de actividades agrícolas o ganaderas en régimen de estimación objetiva.
-
-</Expandable>
-
-<Expandable title="IRPF (2%) – Forestales">
-
-`Modelos: 111 / 190`
-
-Retención sobre rendimientos de explotaciones forestales (venta de madera o productos silvícolas) en régimen de estimación objetiva.
-
-</Expandable>
-
-<Expandable title="IRPF (1%) – Estimación objetiva">
-
-`Modelos: 111 / 190`
-
-Retención mínima para contribuyentes acogidos al régimen de estimación objetiva (módulos) de determinadas actividades económicas.
-
-</Expandable>
-
-<Expandable title="IRPF (1%) – Engorde porcino y avicultura">
-
-`Modelos: 111 / 190`
-
-Retención específica sobre los ingresos de explotaciones ganaderas de porcino y aves en régimen de estimación objetiva.
+Para contribuyentes acogidos al régimen de estimación objetiva (módulos):
+
+- **2% – Agrícolas y ganaderas:** actividades agrícolas o ganaderas en módulos (salvo porcino y avicultura).
+- **2% – Forestales:** explotaciones forestales (venta de madera o productos silvícolas).
+- **1% – Estimación objetiva:** actividades generales en módulos.
+- **1% – Engorde porcino y avicultura:** explotaciones ganaderas de porcino y aves.
 
 </Expandable>
 
 ---
 
-## 8. Grupo VAT OSS (ventas B2C a la UE)
+## 7. VAT OSS — Ventas B2C a la UE
 
-El sistema **OSS (One Stop Shop)** permite a empresas españolas que superan los **10.000 € anuales** en ventas a consumidores finales de otros estados miembros de la UE cobrar el IVA del país de destino y declararlo de forma centralizada a través del **Modelo 369**.
+El sistema **OSS (One Stop Shop)** permite a empresas españolas cobrar el IVA del país del cliente final cuando las ventas a consumidores de otros estados miembros de la UE superan los **10.000 € anuales**. Se declara de forma centralizada a través del **Modelo 369**.
 
-> ℹ️ Si facturas a una **empresa** (B2B) de otro país de la UE, usa **"Servicios EU (B2B) → No sujeto"** o **"Entrega EU (bienes)"**, no los tipos VAT OSS.
+| Tipo en Banktrack | % | País del cliente | Código |
+|---|---|---|---|
+| VAT Irlanda | **23%** | Irlanda | N2 / Régimen 17 |
+| VAT Alemania | **19%** | Alemania | N2 / Régimen 17 |
+| VAT Países Bajos | **21%** | Países Bajos | N2 / Régimen 17 |
 
-<Expandable title="VAT Irlanda (23%)">
+> ℹ️ Si facturas a una **empresa** (B2B) de la UE, no uses tipos VAT OSS. Usa **"Servicios EU (B2B) → No sujeto"** o **"Entrega EU (bienes)"** según corresponda.
 
-`Verifactu: N2` · `Régimen: 17` · `Modelo 369`
-
-Para cobrar desde España a consumidores finales en Irlanda mediante el sistema OSS (obligatorio si superas 10.000 € anuales en ventas B2C a la UE).
-
-</Expandable>
-
-<Expandable title="VAT Alemania (19%)">
+<Expandable title="¿Cuándo estoy obligado a usar el sistema OSS? · Verifactu N2 · Régimen 17 · Modelo 369">
 
 `Verifactu: N2` · `Régimen: 17` · `Modelo 369`
 
-Para cobrar desde España a consumidores finales en Alemania mediante el sistema OSS.
+Cuando la **suma total** de tus ventas a consumidores finales (particulares, no empresas) de todos los países de la UE supera los **10.000 € en el año natural**. Por debajo de ese umbral, puedes seguir aplicando IVA español como si fuera una venta nacional.
 
-</Expandable>
+Una vez superado el umbral:
+1. Date de alta en el sistema OSS a través de la Sede Electrónica de la AEAT.
+2. En Banktrack, selecciona el tipo VAT del país del cliente en lugar del IVA español.
+3. Declara y paga trimestralmente a través del **Modelo 369**.
 
-<Expandable title="VAT Países Bajos (21%)">
-
-`Verifactu: N2` · `Régimen: 17` · `Modelo 369`
-
-Para cobrar desde España a consumidores finales en los Países Bajos mediante el sistema OSS.
+Si te das de alta en OSS voluntariamente antes de superar el umbral, debes aplicar el VAT del país de destino desde la primera venta.
 
 </Expandable>
 
 ---
 
-## 9. Ejemplos prácticos de selección en Banktrack
+## 8. Ejemplos prácticos rápidos
 
-<Expandable title="Consultoría a empresa española">
+| Situación | Impuesto | Retención |
+|---|---|---|
+| Consultoría a empresa española (>3 años actividad) | IVA (21%) | IRPF (15%) |
+| Consultoría a empresa española (1er año actividad) | IVA (21%) | IRPF (7%) |
+| Alquiler de local u oficina a empresa | IVA (21%) – Arrendamiento de local | IRPF (19%) – Arrendamientos |
+| Servicios a empresa francesa (B2B intracomunitario) | Servicios EU (B2B) → No sujeto `N2` | — |
+| Venta de productos a empresa alemana (B2B) | Entrega EU (bienes) `E5` + Modelo 349 | — |
+| Venta a particular en Irlanda (OSS activo, >10.000 €/año) | VAT Irlanda (23%) `N2` + Modelo 369 | — |
+| Actividad médica o sanitaria exenta | IVA exento (sin derecho a deducción) `E1` | — |
+| Venta de productos a cliente fuera de la UE | IVA exento (exportaciones) `E2` | — |
+| Envío de mercancía desde Península a Melilla | IVA exento (exportaciones) `E2` | — |
+| Venta de producto estándar en Canarias | IGIC (7%) | — |
+| Consultoría desde Canarias a empresa española | IGIC (7%) | IRPF (15%) |
 
-- **Cliente:** empresa en Madrid · **Concepto:** consultoría de marketing · **Profesional con más de 3 años de actividad**
+<Expandable title="Consultoría a empresa española (ejemplo completo)">
 
-En Banktrack:
-- Impuesto: **IVA (21%)**
-- Retención: **IRPF (15%)**
+- **Cliente:** empresa en Madrid
+- **Concepto:** consultoría de marketing, 1.000 € de honorarios
+- **Profesional con más de 3 años de actividad**
 
-</Expandable>
+| Concepto | Importe |
+|---|---|
+| Base imponible | 1.000,00 € |
+| + IVA (21%) | 210,00 € |
+| − IRPF (15%) | −150,00 € |
+| **Total a cobrar** | **1.060,00 €** |
 
-<Expandable title="Venta de bienes a empresa en Alemania (entrega intracomunitaria)">
-
-- **Cliente:** empresa con NIF-IVA alemán · **Concepto:** material de oficina desde Barcelona · **Ambas partes en el ROI**
-
-En Banktrack:
-- Impuesto: **Entrega EU (bienes)** `E5`
-- Sin retención IRPF · Declarar también en **Modelo 349**
-
-</Expandable>
-
-<Expandable title="Prestación de servicios a empresa de Francia (B2B intracomunitario)">
-
-- **Cliente:** empresa francesa con NIF-IVA válido · **Concepto:** servicio digital; el cliente se autorepercute en Francia
-
-En Banktrack:
-- Impuesto: **Servicios EU (B2B) → No sujeto** `N2`
-
-</Expandable>
-
-<Expandable title="Factura de alquiler de local">
-
-- Eres propietario de un local alquilado a una empresa
-
-En Banktrack:
-- Impuesto: **IVA (21%) – Arrendamiento de local** `S1`
-- Retención: **IRPF (19%) – Arrendamientos inmuebles**
+En Banktrack: selecciona **IVA (21%)** como impuesto y **IRPF (15%)** como retención.
 
 </Expandable>
 
-<Expandable title="Venta desde Canarias a particular en Canarias">
+<Expandable title="Alquiler de local a empresa (ejemplo completo)">
 
-- Empresa en Canarias vende producto estándar a un particular canario
+- **Propietario:** empresa o particular con local alquilado a una empresa
+- **Renta mensual:** 1.000 € + IVA, con retención de IRPF
 
-En Banktrack:
-- Impuesto: **IGIC (7%)** `S1`
-- Sin IVA, sin IPSI
+| Concepto | Importe |
+|---|---|
+| Base imponible | 1.000,00 € |
+| + IVA (21%) – Arrendamiento de local | 210,00 € |
+| − IRPF (19%) – Arrendamientos inmuebles | −190,00 € |
+| **Total a pagar** | **1.020,00 €** |
 
-</Expandable>
-
-<Expandable title="Venta de mercancía desde Península a Melilla">
-
-- Los bienes salen de territorio IVA → se trata como exportación; el cliente en Melilla liquidará IPSI
-
-En Banktrack:
-- Impuesto: **IVA exento (exportaciones)** `E2`
+En Banktrack: selecciona **IVA (21%) – Arrendamiento de local** e **IRPF (19%) – Arrendamientos inmuebles**.
 
 </Expandable>
 
-<Expandable title="Venta B2C a consumidor en Irlanda (por encima del umbral OSS)">
+<Expandable title="Prestación de servicios a empresa francesa (ejemplo completo)">
 
-- **Cliente:** particular en Irlanda · Facturación B2C UE superior a 10.000 € anuales · Dado de alta en OSS
+- **Cliente:** empresa francesa con NIF-IVA intracomunitario válido
+- **Concepto:** servicio de desarrollo software; operación B2B, el cliente declara el IVA en Francia
 
-En Banktrack:
-- Impuesto: **VAT Irlanda 23%** `N2 / Régimen 17`
-- Declarar en **Modelo 369**
+| Concepto | Importe |
+|---|---|
+| Base imponible | 1.000,00 € |
+| IVA | 0,00 € (no sujeto en España) |
+| IRPF | — (no aplica a clientes extranjeros) |
+| **Total a cobrar** | **1.000,00 €** |
+
+En Banktrack: selecciona **Servicios EU (B2B) → No sujeto** `N2`. La factura debe incluir el NIF-IVA del cliente.
+
+</Expandable>
+
+<Expandable title="Venta de productos a empresa alemana (ejemplo completo)">
+
+- **Cliente:** empresa alemana con NIF-IVA intracomunitario válido
+- **Concepto:** venta de material de oficina desde Barcelona; ambas partes en el ROI
+
+| Concepto | Importe |
+|---|---|
+| Base imponible | 1.000,00 € |
+| IVA | 0,00 € (entrega intracomunitaria exenta) |
+| **Total a cobrar** | **1.000,00 €** |
+
+En Banktrack: selecciona **Entrega EU (bienes)** `E5`. Declara también en el **Modelo 349**.
 
 </Expandable>
 
 ---
 
-## 10. Recomendaciones finales
+## 9. Recomendaciones finales
 
-- **Define primero tu mapa de operaciones:** ¿Solo Península/Baleares? → IVA. ¿Clientes en Canarias, Ceuta o Melilla? → IGIC e IPSI. ¿Vendes a la UE o fuera? → tipos intracomunitarios, exportación e inversión del sujeto pasivo. ¿B2C UE por encima de 10.000 €? → VAT OSS.
-- **Coordina siempre con tu asesoría fiscal.** Muchos tipos (exento, no sujeto, inversión del sujeto pasivo, exportación asimilada) dependen de casuísticas concretas.
+- **Identifica primero tu territorio:** ¿Península/Baleares? → IVA. ¿Canarias? → IGIC. ¿Ceuta o Melilla? → IPSI. ¿Vendes a la UE o fuera? → tipos intracomunitarios, exportación o inversión del sujeto pasivo. ¿B2C UE >10.000 €? → VAT OSS.
+- **Coordina siempre con tu asesoría fiscal.** Muchos tipos (exento, no sujeto, inversión del sujeto pasivo, exportación asimilada) dependen de casuísticas concretas. Asegúrate de que el criterio en Banktrack coincide con el de tus declaraciones oficiales.
 - **Revisa las facturas escaneadas.** Aunque Banktrack detecte automáticamente importes y porcentajes, comprueba que el tipo seleccionado refleja la naturaleza real de la operación.
-- **Sé consistente.** Usa siempre el mismo tipo Banktrack para la misma casuística para que tus informes y la revisión de tu asesoría sean más sencillos.
+- **Sé consistente.** Usa siempre el mismo tipo para la misma casuística. Así tus informes y la revisión de tu asesoría serán mucho más sencillos.
 
 ---
 
@@ -732,26 +600,67 @@ En Banktrack:
 
 <Expandable title="¿Qué diferencia hay entre una operación no sujeta y una exenta?">
 
-En las operaciones **no sujetas** la operación no entra en el ámbito de aplicación del impuesto. En las **exentas**, sí entra pero la ley establece que no se grava. La diferencia es relevante en el Modelo 303 y a efectos de prorrata.
+Son conceptos distintos que no deben confundirse:
+
+- **No sujeta:** la operación no entra en el ámbito de aplicación del IVA. No hay obligación de repercutir ni de declarar IVA. Ejemplos: suplidos, indemnizaciones, aportaciones de socios.
+- **Exenta:** la operación sí entra en el ámbito del IVA, pero la ley establece que no se grava. Ejemplos: servicios médicos, enseñanza reglada, alquiler de vivienda.
+
+La diferencia importa porque las operaciones exentas pueden afectar al cálculo de la **prorrata** de deducción del IVA soportado, mientras que las no sujetas no afectan.
 
 </Expandable>
 
 <Expandable title="¿Qué es el código Verifactu y para qué sirve?">
 
-Es el código de tipo de operación que se incluye en el registro de facturación según el Reglamento de Sistemas Informáticos de Facturación (RD 1007/2023). Los principales son:
+Es el código de tipo de operación que Banktrack incluye automáticamente en el registro de facturación según el tipo de impuesto que selecciones. Lo exige el Reglamento de Sistemas Informáticos de Facturación (RD 1007/2023, conocido como Verifactu).
 
-- **S1:** Operación sujeta y no exenta (IVA/IGIC/IPSI normal).
-- **S2:** Inversión del sujeto pasivo.
-- **N1:** No sujeta por artículos legales (art. 7, 14, etc.).
-- **N2:** No sujeta por reglas de localización o régimen OSS.
-- **E1 – E6:** Operaciones exentas, según el motivo de exención.
+| Código | Significado |
+|---|---|
+| S1 | Operación sujeta y no exenta (IVA/IGIC/IPSI normal) |
+| S2 | Inversión del sujeto pasivo |
+| N1 | No sujeta por artículos legales (art. 7, 14, etc.) |
+| N2 | No sujeta por reglas de localización o régimen OSS |
+| E1 | Exenta sin derecho a deducción |
+| E2 | Exenta por exportación |
+| E3 | Exenta por operación asimilada a exportación |
+| E4 | Exenta por zona franca o aduanas |
+| E5 | Exenta por entrega intracomunitaria de bienes |
+| E6 | Exenta por otros motivos |
 
-Las retenciones de IRPF no tienen código Verifactu porque no son impuestos indirectos y no forman parte del registro de facturación.
+Las retenciones de IRPF no tienen código Verifactu porque no son impuestos indirectos.
 
 </Expandable>
 
 <Expandable title="¿Cuándo debo usar OSS en lugar de IVA español?">
 
-Si vendes a consumidores finales (B2C) de otros estados miembros de la UE y tu facturación total supera los **10.000 € anuales**, estás obligado a cobrar el IVA del país de destino y declararlo mediante el sistema OSS (Modelo 369). Por debajo de ese umbral puedes aplicar IVA español salvo que te hayas dado de alta voluntariamente en OSS. Si facturas a empresas (B2B), el sistema OSS no aplica: usa inversión del sujeto pasivo o entrega intracomunitaria según el caso.
+Cuando vendas a **consumidores finales** (particulares, no empresas) de otros países de la UE y tu facturación total en ese tipo de ventas supere los **10.000 € anuales**. En ese caso debes cobrar el IVA del país del cliente y declararlo a través del sistema OSS (Modelo 369).
+
+Por debajo de ese umbral puedes seguir aplicando IVA español, salvo que te hayas dado de alta voluntariamente en OSS.
+
+Si facturas a **empresas** de la UE, el sistema OSS no aplica: usa inversión del sujeto pasivo (servicios) o entrega intracomunitaria de bienes, según el caso.
+
+</Expandable>
+
+<Expandable title="¿Puedo combinar IVA e IRPF en la misma factura?">
+
+Sí, y es lo habitual en facturas de servicios profesionales y alquileres. El IVA se suma a la base y el IRPF se resta. Banktrack gestiona ambos cálculos automáticamente cuando seleccionas los dos tipos.
+
+| Concepto | Importe |
+|---|---|
+| Base imponible | 1.000,00 € |
+| + IVA (21%) | 210,00 € |
+| − IRPF (15%) | −150,00 € |
+| **Total a cobrar** | **1.060,00 €** |
+
+</Expandable>
+
+<Expandable title="¿Qué pasa si me equivoco al seleccionar el tipo de impuesto?">
+
+Banktrack calcula los totales y genera el registro Verifactu en base al tipo que tú seleccionas. Si el tipo es incorrecto:
+
+- El cálculo del total de la factura será erróneo.
+- El registro Verifactu se enviará con el código equivocado.
+- La casilla del Modelo 303 en la que se acumule ese importe será incorrecta.
+
+Si detectas un error después de emitir la factura, deberás emitir una **factura rectificativa** que corrija el tipo. Consúltalo con tu asesoría para regularizar correctamente.
 
 </Expandable>
