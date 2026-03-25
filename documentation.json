@@ -34,8 +34,7 @@
                       {
                         "title": "Bienvenido",
                         "path": "banktrack/introduction",
-                        "icon": "lucide-star",
-                        "show-sidebar": false
+                        "icon": "lucide-star"
                       },
                       {
                         "title": "¿Qué es Banktrack?",
